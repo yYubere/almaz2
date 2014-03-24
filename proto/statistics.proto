@@ -1,0 +1,32 @@
+package almaz2.domain_objects;
+
+import "properties.proto";
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "StatisticsClass";
+
+// статистика комуникационного драйвера
+message CommunicationDriverStatistic
+{
+  // идентификатор комуникационного драйвера
+  optional uint32 id = 1;
+
+  // время получения (unix time)
+  optional uint32 time = 2;
+
+  // данные
+  repeated KeyValuePair data = 3;
+}
+
+// статистика оборудования
+message EquipmentStatistic
+{
+  // идентификатор паспорта оборудования
+  optional uint32 id = 1;
+
+  // время получения (unix time)
+  optional uint32 time = 2;
+
+  // данные
+  repeated KeyValuePair data = 3;
+}

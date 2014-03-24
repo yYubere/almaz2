@@ -1,4 +1,4 @@
-import ru.kodos.client.Almaz2Client;
+import ru.kodos.almaz2.client.Almaz2Client;
 
 /**
  * Created with IntelliJ IDEA.

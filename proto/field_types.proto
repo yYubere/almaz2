@@ -1,0 +1,228 @@
+package almaz2.domain_objects;
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "FieldTypesClass";
+
+// мультиязычная строка
+message MultiLanguageString
+{
+  // обязательное имя
+  required string default_string = 1;
+
+  // имя на русском
+  optional string ru_string = 2;
+
+  // имя на английском
+  optional string en_string = 3;
+}
+
+//------------------------------------------------------------------------------
+
+// описание целочисленного поля
+message IntegerDescriptionField
+{
+  // минимальное значение
+  optional int64 min_value = 1;
+
+  // максимальное значение
+  optional int64 max_value = 2;
+}
+
+// значение целочисленного поля
+message IntegerValueField
+{
+  // значение характеристики
+  optional int64 value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание поля с плавающей точкой
+message FloatDescriptionField
+{
+  // ограничение
+}
+
+// значение поля с плавающей точкой
+message FloatValueField
+{
+  // значение характеристики
+  optional float value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание строкового поля
+message StringDescriptionField
+{
+  // ограничение на длину строки
+  optional uint32 max_length = 1 [default = 256];  
+}
+
+// значение строкового поля
+message StringValueField
+{
+  // значение характеристики
+  optional string value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание форматированного строкового поля
+message FormattedStringDescriptionField
+{
+
+}
+
+// значение форматированного строкового поля
+message FormattedStringValueField
+{
+  // значение характеристики
+  optional string value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание поля из справочника
+message ReferenceDescriptionField
+{
+  // id справочника
+  //optional uint32 reference_id = 1;
+  optional string reference_id = 1;
+}
+
+// значение поля из справочника
+message ReferenceValueField
+{
+  // id строки справочника
+  optional uint32 value = 3;
+}
+
+//------------------------------------------------------------------------------
+
+// описание поля с перечисляемыми значениями
+message EnumDescriptionField
+{
+  // перечесление значений
+  // NOTE: до договоренности считаем default_string - неким идентификатором
+  // который будет хранится в значении состояния
+  // и по нему можно будет узнать из этого описания ru_string и en_string
+  repeated MultiLanguageString value = 1;
+}
+
+// значение поля с перечисляемыми значениями
+message EnumValueField
+{
+  // значение, которое хранит default_string из описания поля
+  optional string value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание поля со скалярным значением
+message ScalarDescriptionField
+{
+  // единицы имерения скалярных значений
+  enum ScalarType
+  {
+    METERS = 1;
+    LITERS = 2;
+    KILOGRAM = 3;
+    KPH = 4; // км/ч
+    LPM = 5; // литры в минуту
+  }
+
+  // единица измерения
+  optional ScalarType scalar_type = 1;
+}
+
+// значение поля со скалярным значением
+message ScalarValueField
+{
+  // значение скалярной величины
+  optional double value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание значения поля с координатами
+message PositionDescriptionField
+{
+
+}
+
+// значения поля с координатами
+message PositionValueField
+{
+  // режим работы навигационного приёмника
+  enum GpsMode
+  {
+      GLONAS_MODE = 0;
+      GPS_MODE = 1;
+      COMBO_MODE = 2;
+  }
+
+  // время получения значения (unix time)
+  optional uint32 time = 1;
+
+  // географическая широта (градусы)
+  optional double latitude = 2;
+
+  // географическая долгота (градусы)
+  optional double longitude = 3;
+
+  // признак достоверности значений
+  optional bool valid = 4;
+
+  // скорость, полученая с навигационного приёмника (Км/ч)
+  optional double speed = 5;
+
+  // курс, полученый с навигационного приёмника (градусы)
+  optional double course = 6;
+
+  // высота над уровнем моря, полученая с навигационного приёмника (м)
+  optional double altitude = 7;
+
+  // количество видимых спутников
+  optional uint32 sat_count = 8;
+
+  // магнитное склонение (градусы)
+  optional double mag_def = 9;
+
+  // режим работы навигационного приёмника
+  optional GpsMode gps_mode = 10;
+}
+
+//------------------------------------------------------------------------------
+
+// описание булевого поля
+message BooleanDescriptionField
+{
+}
+
+// значение булевого поля
+message BooleanValueField
+{
+  // значение характеристики
+  optional bool value = 1;
+}
+
+//------------------------------------------------------------------------------
+
+// описание поля с таблицей пересчёта
+message CalibrationTableDescriptionField
+{
+}
+
+// значение поля с таблицей пересчёта
+message CalibrationTableValueField
+{
+  // оригинальное значение
+  repeated double original = 1;
+  
+  // пересчитанное значение
+  repeated double translated = 2;
+    
+}
+
+//------------------------------------------------------------------------------

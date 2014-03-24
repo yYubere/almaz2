@@ -1,0 +1,36 @@
+package almaz2.domain_objects;
+
+import "field_types.proto";
+import "properties.proto";
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "ReferenceDescriptionClass";
+
+//// связь со справочником
+//message ReferenceLink
+//{
+//    // id справочника
+//    optional string reference_id = 1;
+//}
+
+// описание справочника
+message ReferenceDescription
+{
+    // имя справочника
+    optional MultiLanguageString name = 1;
+
+    // описание ключевой колонки справочника
+    optional FieldTypeDescription key_value_field = 2;
+
+    // описание колонки справочника
+    repeated FieldTypeDescription value_field = 3;
+
+    // id справочника
+    optional string reference_id = 4;
+
+    // связь со справочником
+    optional string reference_link_id = 5;
+	
+	// id справочника в базе
+    optional uint32 id = 6;
+}

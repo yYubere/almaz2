@@ -1,0 +1,633 @@
+import "statuses.proto";
+import "zone.proto";
+import "field_types.proto";
+import "properties.proto";
+import "control_object_passport_type.proto";
+import "control_element_passport_type.proto";
+import "equipment_passport_type.proto";
+import "managed_element_passport_type.proto";
+import "sensor_passport_type.proto";
+import "interface_passport_type.proto";
+import "equipment_logical_input_passport_type.proto";
+import "equipment_logical_output_passport_type.proto";
+import "reference.proto";
+import "control_object_passport.proto";
+import "client_passport.proto";
+import "user_passport.proto";
+import "equipment_passport.proto";
+import "interface_passport.proto";
+import "equipment_firmware_passport.proto";
+import "action_commands.proto";
+import "control_object_alarm.proto";
+import "control_object_commands.proto";
+import "database_commands.proto";
+import "equipment_commands.proto";
+import "control_object_state.proto";
+import "periodic_signal.proto";
+
+package almaz2.rpc.commands;
+
+option java_package = "ru.kodos.almaz2.rpc.commands";
+option java_outer_classname = "RpcClass";
+
+/**
+ * Приоритеты очередей (команд).
+ */
+enum Priority
+{
+    LOW_PRIORITY = 99;
+    NORMAL_PRIORITY = 66;
+    HIGHT_PRIORITY = 33;
+    URGENT_PRIORITY = 1;
+}
+
+/** 
+ * Описание структур протокола RPC.
+ */
+message RpcProtocol
+{   
+    message Header
+    {
+        optional uint32 client_id = 1;
+        optional uint32 packet_num = 2;
+        optional int64 time = 3;
+        optional Priority priority = 4;
+        optional uint32 connection_id = 5;
+    }
+
+    message PrimaryAuthRequest
+    {
+        optional uint32 client_id = 1;
+        optional string primary_key = 2;
+    }
+
+    message PrimaryAuthReply
+    {
+        optional uint32 error_code = 1;
+        optional string error_message = 2;
+        optional uint32 client_id = 3;
+        optional string public_key = 4;
+        optional string private_key = 5;
+    }
+
+    message AuthRequest
+    {
+        optional uint32 client_id = 1;
+        optional uint32 connection_id = 2;
+        optional string session = 3;
+        optional string auth_key = 4;
+    }
+
+    message AuthReply
+    {
+        optional uint32 error_code = 1;
+        optional string error_message = 2;
+		optional string session = 3;
+        optional string auth_key = 4;        
+    }
+
+    message UserLoginRequest
+    {
+        optional string login = 1;
+        optional string password = 2;
+    }
+	
+	message SendConfigurationRequest
+    {
+        optional uint32 client_id = 1;
+        optional uint32 user_id = 2;
+    }
+
+    message UserLoginReply
+    {
+        optional uint32 error_code = 1;
+        optional string error_message = 2;
+    }
+
+    message UserLogoutRequest
+    {
+        optional string login = 1;
+    }
+
+    message UserLogoutReply
+    {
+        optional uint32 error_code = 1;
+        optional string error_message = 2;
+    }
+
+    // Добавление/удаление/обновление паспортов КО.
+    message AddControlObjectPassport
+    {
+        optional almaz2.domain_objects.ControlObjectPassport passport = 1;
+    }
+
+    message UpdControlObjectPassport
+    {
+        optional almaz2.domain_objects.ControlObjectPassport passport = 1;
+    }
+
+    message DelControlObjectPassport
+    {
+        optional uint32 passport_id = 1;
+    }    
+
+    message AddControlObjectStatus
+    {
+        optional almaz2.domain_objects.ControlObjectStatus status = 1;
+    }
+
+    message UpdControlObjectStatus
+    {
+        optional almaz2.domain_objects.ControlObjectStatus status = 1;
+    }
+	
+	message UpdControlObjectState
+    {
+        optional almaz2.domain_objects.ControlObjectState state = 1;
+    }
+
+    message AddControlObjectAlarm
+    {
+        optional almaz2.domain_objects.ControlObjectAlarm alarm = 1;
+    }
+
+    message UpdControlObjectAlarm
+    {
+        optional almaz2.domain_objects.ControlObjectAlarm alarm = 1;
+    }
+
+    // Добавление/удаление/обновление паспортов оборудования.
+    message AddEquipmentPassport
+    {
+        optional almaz2.domain_objects.EquipmentPassport passport = 1;
+    }
+
+    message UpdEquipmentPassport
+    {
+        optional almaz2.domain_objects.EquipmentPassport passport = 1;
+    }
+
+    message DelEquipmentPassport
+    {
+        optional uint32 passport_id = 1;
+    }    
+	
+	message AddInterfacePassport
+    {
+        optional almaz2.domain_objects.InterfacePassport passport = 1;
+    }
+
+    message UpdInterfacePassport
+    {
+        optional almaz2.domain_objects.InterfacePassport passport = 1;
+    }
+
+    message DelInterfacePassport
+    {
+        optional uint32 passport_id = 1;
+    }  
+
+    message AddEquipmentStatus
+    {
+        optional almaz2.domain_objects.ControlObjectEquipmentStatus status = 1;
+    }
+
+    message UpdEquipmentStatus
+    {
+        optional almaz2.domain_objects.ControlObjectEquipmentStatus status = 1;
+    }
+	
+	message UpdEquipmentState
+    {
+        optional almaz2.domain_objects.PeriodicSignal state = 1;
+    }
+
+    message UpdCommunicationDriverStatus
+    {
+        optional almaz2.domain_objects.CommunicationDriverStatus status = 1;
+    }
+	
+	message AckRequest
+	{
+		optional uint32 ack_id = 1;
+	}
+	
+	message AckAnswer
+	{
+		optional uint32 ack_id = 1;
+	}
+	
+	message AddZone
+	{
+		optional almaz2.domain_objects.Zone zone = 1;
+	}
+	
+	message UpdZone
+	{
+		optional almaz2.domain_objects.Zone zone = 1;
+	}
+	
+	message DelZone
+	{
+		optional uint32 id = 1;
+	}
+	
+	// Добавление/удаление/обновление паспортов клинта.
+    message AddClientPassport
+    {
+        optional almaz2.domain_objects.ClientPassport passport = 1;
+    }
+	
+	message UpdClientPassport
+    {
+        optional almaz2.domain_objects.ClientPassport passport = 1;
+    }
+	
+	message DelClientPassport
+    {
+        optional uint32 passport_id = 1;
+    }
+
+    message AddUserPassport
+    {
+        optional almaz2.domain_objects.UserPassport passport = 1;
+    }
+
+    message UpdUserPassport
+    {
+        optional almaz2.domain_objects.UserPassport passport = 1;   
+    }
+
+    message DelUserPassport
+    {
+        optional uint32 passport_id = 1;
+    }
+	
+	message AddEquipmentFirmwarePassport
+    {
+        optional almaz2.domain_objects.EquipmentFirmwarePassport passport = 1;
+    }
+
+    message UpdEquipmentFirmwarePassport
+    {
+        optional almaz2.domain_objects.EquipmentFirmwarePassport passport = 1;   
+    }
+
+    message DelEquipmentFirmwarePassport
+    {
+        optional uint32 passport_id = 1;
+    }
+	
+	message AddControlObjectPassportType
+    {
+        optional almaz2.domain_objects.ControlObjectPassportType passport_type = 1;
+    }
+
+    message UpdControlObjectPassportType
+    {
+        optional almaz2.domain_objects.ControlObjectPassportType passport_type = 1;   
+    }
+
+    message DelControlObjectPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddControlElementPassportType
+    {
+        optional almaz2.domain_objects.ControlElementPassportType passport_type = 1;
+    }
+
+    message UpdControlElementPassportType
+    {
+        optional almaz2.domain_objects.ControlElementPassportType passport_type = 1;   
+    }
+
+    message DelControlElementPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddEquipmentPassportType
+    {
+        optional almaz2.domain_objects.EquipmentPassportType passport_type = 1;
+    }
+
+    message UpdEquipmentPassportType
+    {
+        optional almaz2.domain_objects.EquipmentPassportType passport_type = 1;   
+    }
+
+    message DelEquipmentPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddManagedElementPassportType
+    {
+        optional almaz2.domain_objects.ManagedElementPassportType passport_type = 1;
+    }
+
+    message UpdManagedElementPassportType
+    {
+        optional almaz2.domain_objects.ManagedElementPassportType passport_type = 1;   
+    }
+
+    message DelManagedElementPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddSensorControlElementPassportType
+    {
+        optional almaz2.domain_objects.SensorPassportType passport_type = 1;
+    }
+
+    message UpdSensorControlElementPassportType
+    {
+        optional almaz2.domain_objects.SensorPassportType passport_type = 1;   
+    }
+
+    message DelSensorControlElementPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddInterfacePassportType
+    {
+        optional almaz2.domain_objects.InterfacePassportType passport_type = 1;
+    }
+
+    message UpdInterfacePassportType
+    {
+        optional almaz2.domain_objects.InterfacePassportType passport_type = 1;   
+    }
+
+    message DelInterfacePassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddEquipmentLogicalInputPassportType
+    {
+        optional almaz2.domain_objects.EquipmentLogicalInputPassportType passport_type = 1;
+    }
+
+    message UpdEquipmentLogicalInputPassportType
+    {
+        optional almaz2.domain_objects.EquipmentLogicalInputPassportType passport_type = 1;   
+    }
+
+    message DelEquipmentLogicalInputPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddEquipmentLogicalOutputPassportType
+    {
+        optional almaz2.domain_objects.EquipmentLogicalOutputPassportType passport_type = 1;
+    }
+
+    message UpdEquipmentLogicalOutputPassportType
+    {
+        optional almaz2.domain_objects.EquipmentLogicalOutputPassportType passport_type = 1;   
+    }
+
+    message DelEquipmentLogicalOutputPassportType
+    {
+        optional string passport_type_id = 1;
+    }
+	
+	message AddGeneralPurposeReference
+    {
+        optional almaz2.domain_objects.ReferenceDescription reference_description = 1;
+    }
+
+    message UpdGeneralPurposeReference
+    {
+        optional almaz2.domain_objects.ReferenceDescription reference_description = 1;   
+    }
+
+    message DelGeneralPurposeReference
+    {
+        optional uint32 id = 1;
+    }
+	
+	message AddGeneralPurposeReferenceRecord
+    {
+        optional almaz2.domain_objects.FieldTypeValue key_value = 1;
+		optional almaz2.domain_objects.FieldTypeValueArray array_value = 2;
+		optional uint32 reference_value_id = 3;
+		optional uint32 reference_value_link_id = 4;
+		optional string reference_id = 5;
+    }
+
+    message UpdGeneralPurposeReferenceRecord
+    {
+        optional almaz2.domain_objects.FieldTypeValue key_value = 1;
+		optional almaz2.domain_objects.FieldTypeValueArray array_value = 2;
+		optional uint32 reference_value_id = 3;
+		optional uint32 reference_value_link_id = 4;
+		optional string reference_id = 5;  
+    }
+
+    message DelGeneralPurposeReferenceRecord
+    {
+        optional uint32 reference_value_id = 1;
+		optional string reference_id = 2;  
+    }
+
+    message RequestBase
+    {
+        optional Header header = 1;
+        optional AuthRequest auth = 2;
+        optional UserLoginRequest user_login = 3;
+        optional UserLogoutRequest user_logout = 4;
+        optional AddControlObjectPassport add_control_object_passport = 5;
+        optional UpdControlObjectPassport upd_control_object_passport = 6;
+        optional DelControlObjectPassport del_control_object_passport = 7;
+        optional AddEquipmentPassport add_equipment_passport = 8;
+        optional UpdEquipmentPassport upd_equipment_passport = 9;
+        optional DelEquipmentPassport del_equipment_passport = 10;
+		optional AckAnswer ack_answer = 11; // ответ на аск объект
+		
+		optional AddZone add_zone = 12;
+		optional UpdZone upd_zone = 13;
+		optional DelZone del_zone = 14;
+		
+		optional AddClientPassport add_client_passport = 15;
+        optional UpdClientPassport upd_client_passport = 16;
+        optional DelClientPassport del_client_passport = 17;
+		
+        optional AddUserPassport add_user_passport = 19;
+        optional UpdUserPassport upd_user_passport = 20;
+        optional DelUserPassport del_user_passport = 21;
+		
+		optional AddInterfacePassport add_interface_passport = 22;
+        optional UpdInterfacePassport upd_interface_passport = 23;
+        optional DelInterfacePassport del_interface_passport = 24;
+
+		optional AddControlObjectPassportType add_control_object_passport_type = 25;
+        optional UpdControlObjectPassportType upd_control_object_passport_type = 26;
+        optional DelControlObjectPassportType del_control_object_passport_type = 27;
+		
+		optional AddControlElementPassportType add_control_element_passport_type = 28;
+        optional UpdControlElementPassportType upd_control_element_passport_type = 29;
+        optional DelControlElementPassportType del_control_element_passport_type = 30;
+		
+		optional AddEquipmentPassportType add_equipment_passport_type = 31;
+        optional UpdEquipmentPassportType upd_equipment_passport_type = 32;
+        optional DelEquipmentPassportType del_equipment_passport_type = 33;
+		
+		optional AddManagedElementPassportType add_managed_element_passport_type = 34;
+        optional UpdManagedElementPassportType upd_managed_element_passport_type = 35;
+        optional DelManagedElementPassportType del_managed_element_passport_type = 36;
+		
+		optional AddSensorControlElementPassportType add_sensor_control_element_passport_type = 37;
+        optional UpdSensorControlElementPassportType upd_sensor_control_element_passport_type = 38;
+        optional DelSensorControlElementPassportType del_sensor_control_element_passport_type = 39;
+		
+		optional AddGeneralPurposeReference add_general_purpose_reference = 40;
+        //optional UpdGeneralPurposeReference upd_general_purpose_reference = 41;
+        optional DelGeneralPurposeReference del_general_purpose_reference = 42;
+		
+		optional AddGeneralPurposeReferenceRecord add_general_purpose_reference_record = 43;
+        optional UpdGeneralPurposeReferenceRecord upd_general_purpose_reference_record = 44;
+        optional DelGeneralPurposeReferenceRecord del_general_purpose_reference_record = 45;
+		
+		optional SendConfigurationRequest send_configuration = 46;
+		
+		optional AddEquipmentLogicalInputPassportType add_equipment_logical_input_passport_type = 47;
+        optional UpdEquipmentLogicalInputPassportType upd_equipment_logical_input_passport_type = 48;
+        optional DelEquipmentLogicalInputPassportType del_equipment_logical_input_passport_type = 49;
+		
+		optional AddEquipmentLogicalOutputPassportType add_equipment_logical_output_passport_type = 50;
+        optional UpdEquipmentLogicalOutputPassportType upd_equipment_logical_output_passport_type = 51;
+        optional DelEquipmentLogicalOutputPassportType del_equipment_logical_output_passport_type = 52;
+		
+		optional AddEquipmentFirmwarePassport add_equipment_firmware_passport = 53;
+        optional UpdEquipmentFirmwarePassport upd_equipment_firmware_passport = 54;
+        optional DelEquipmentFirmwarePassport del_equipment_firmware_passport = 55;
+	
+		// Первичная авторизация клиента.
+        optional PrimaryAuthRequest primary_auth = 99;
+        
+        // Команды для оборудования объекта.
+        optional EquipmentCommandBase equipment_command = 100;
+
+        // Команды для базы данных.
+        optional DatabaseQueryBase database_query = 200;
+
+        // Команды для контролируемого объекта.
+        optional ControlObjectCommandBase control_object_command = 300;
+		
+		// Команды для действий (оператора)
+        optional ActionCommandBase action_command = 350;
+    }
+
+    message ReplyBase
+    {
+        optional Header header = 1;
+        optional uint32 error_code = 18;
+        optional string error_message = 19;
+
+        optional AuthReply auth = 2;
+        optional UserLoginReply user_login = 3;
+        optional UserLoginReply user_logout = 4;
+
+        optional AddControlObjectPassport add_control_object_passport = 5;
+        optional UpdControlObjectPassport upd_control_object_passport = 7;
+        optional DelControlObjectPassport del_control_object_passport = 8;
+        optional AddControlObjectStatus add_control_object_status = 9;
+        optional UpdControlObjectStatus upd_control_object_status = 10;
+
+        optional AddControlObjectAlarm add_control_object_alarm = 11;
+        optional UpdControlObjectAlarm upd_control_object_alarm = 12;
+
+        optional AddEquipmentStatus add_equipment_status = 13;
+        optional UpdEquipmentStatus upd_equipment_status = 14;
+        optional AddEquipmentPassport add_equipment_passport = 15;
+        optional UpdEquipmentPassport upd_equipment_passport = 16;
+        optional DelEquipmentPassport del_equipment_passport = 17;
+        optional UpdCommunicationDriverStatus upd_communication_driver_status = 20;
+
+		optional AckRequest ack_request = 21; // запрос на ответ 
+		
+		optional AddZone add_zone = 22;
+		optional UpdZone upd_zone = 23;
+		optional DelZone del_zone = 24;
+		
+		optional AddClientPassport add_client_passport = 25;
+        optional UpdClientPassport upd_client_passport = 26;
+        optional DelClientPassport del_client_passport = 27;
+		
+		// Первичная авторизация клиента.
+        optional PrimaryAuthReply primary_auth = 28;
+
+        optional AddUserPassport add_user_passport = 29;
+        optional UpdUserPassport upd_user_passport = 30;
+        optional DelUserPassport del_user_passport = 31;        
+		
+		optional AddInterfacePassport add_interface_passport = 32;
+        optional UpdInterfacePassport upd_interface_passport = 33;
+        optional DelInterfacePassport del_interface_passport = 34;
+		
+		optional AddControlObjectPassportType add_control_object_passport_type = 35;
+        optional UpdControlObjectPassportType upd_control_object_passport_type = 36;
+        optional DelControlObjectPassportType del_control_object_passport_type = 37;
+		
+		optional AddControlElementPassportType add_control_element_passport_type = 38;
+        optional UpdControlElementPassportType upd_control_element_passport_type = 39;
+        optional DelControlElementPassportType del_control_element_passport_type = 40;
+		
+		optional AddEquipmentPassportType add_equipment_passport_type = 41;
+        optional UpdEquipmentPassportType upd_equipment_passport_type = 42;
+        optional DelEquipmentPassportType del_equipment_passport_type = 43;
+		
+		optional AddManagedElementPassportType add_managed_element_passport_type = 44;
+        optional UpdManagedElementPassportType upd_managed_element_passport_type = 45;
+        optional DelManagedElementPassportType del_managed_element_passport_type = 46;
+		
+		optional AddSensorControlElementPassportType add_sensor_control_element_passport_type = 47;
+        optional UpdSensorControlElementPassportType upd_sensor_control_element_passport_type = 48;
+        optional DelSensorControlElementPassportType del_sensor_control_element_passport_type = 49;
+		
+		optional AddGeneralPurposeReference add_general_purpose_reference = 50;
+        optional UpdGeneralPurposeReference upd_general_purpose_reference = 51;
+        optional DelGeneralPurposeReference del_general_purpose_reference = 52;
+		
+		optional AddGeneralPurposeReferenceRecord add_general_purpose_reference_record = 53;
+        optional UpdGeneralPurposeReferenceRecord upd_general_purpose_reference_record = 54;
+        optional DelGeneralPurposeReferenceRecord del_general_purpose_reference_record = 55;
+		
+		optional AddInterfacePassportType add_interface_passport_type = 56;
+        optional UpdInterfacePassportType upd_interface_passport_type = 57;
+        optional DelInterfacePassportType del_interface_passport_type = 58;
+		
+		optional UpdControlObjectState upd_control_object_state = 59;
+		optional UpdEquipmentState upd_equipment_state = 60;
+		
+		optional AddEquipmentLogicalInputPassportType add_equipment_logical_input_passport_type = 61;
+        optional UpdEquipmentLogicalInputPassportType upd_equipment_logical_input_passport_type = 62;
+        optional DelEquipmentLogicalInputPassportType del_equipment_logical_input_passport_type = 63;
+		
+		optional AddEquipmentLogicalOutputPassportType add_equipment_logical_output_passport_type = 64;
+        optional UpdEquipmentLogicalOutputPassportType upd_equipment_logical_output_passport_type = 65;
+        optional DelEquipmentLogicalOutputPassportType del_equipment_logical_output_passport_type = 66;
+		
+		optional AddEquipmentFirmwarePassport add_equipment_firmware_passport = 67;
+        optional UpdEquipmentFirmwarePassport upd_equipment_firmware_passport = 68;
+        optional DelEquipmentFirmwarePassport del_equipment_firmware_passport = 69;
+
+        // Ответы на команды для оборудования объекта.
+        optional EquipmentAnswerBase equipment_answer = 100;
+
+        // Ответы на команды для запросов из базы данных.
+        optional DatabaseResultBase database_result = 200;
+
+        // Ответы на команды для контролируемого объекта.
+    }
+
+    optional RequestBase request = 100;
+    optional ReplyBase reply = 101;
+}

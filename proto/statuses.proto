@@ -1,0 +1,66 @@
+package almaz2.domain_objects;
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "StatusesClass";
+
+// Статус контролируемого объекта
+message ControlObjectStatus
+{
+  enum State
+  {
+    CONNECTED  = 1;
+    DISCONNECTED = 2;
+    RESTRICTED = 3;
+  }
+
+  // id паспорта КО
+  optional uint32 id = 1;
+
+  // время изменения состояния (unix time)
+  optional uint32 time = 2;  
+  
+  // состояние связи
+  optional State state = 3 [default = DISCONNECTED];
+}
+
+// статус комуникационного драйвера
+message CommunicationDriverStatus
+{
+  enum State
+  {
+    CONNECTED  = 1;
+    DISCONNECTED = 2;
+  }
+
+  // идентификатор паспорта интерфейса
+  optional uint32 id = 1;
+
+  // время изменения состояния (unix time)
+  optional uint32 time = 2;
+
+  // состояние связи
+  optional State state = 3 [default = DISCONNECTED];
+
+  // последний код ошибки
+  optional string last_error_code = 4;
+}
+
+// Статус оборудования контролируемого объекта
+message ControlObjectEquipmentStatus
+{
+  enum State
+  {
+    CONNECTED  = 1;
+    DISCONNECTED = 2;
+    RESTRICTED = 3;
+  }
+
+  // идентификатор паспорта оборудования
+  optional uint32 id = 1;
+
+  // время изменения состояния (unix time)
+  optional uint32 time = 2;
+
+  // состояние связи
+  optional State state = 3 [default = DISCONNECTED];
+}

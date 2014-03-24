@@ -1,0 +1,41 @@
+package almaz2.rpc.commands;
+import "equipment_commands.proto";
+
+option java_package = "ru.kodos.almaz2.rpc.commands";
+option java_outer_classname = "ControlObjectCommandsClass";
+
+/**
+ * Команды контролируемого устройства.
+ */
+
+
+
+message SetMonitoringLogicalMode
+{
+    optional SetLogicalMode mode = 1;
+}
+
+message SetBlackBoxLogicalMode
+{
+    optional SetLogicalMode mode = 1;
+}
+
+message SetOnOutState
+{
+    optional SetOutState state = 1;
+}
+
+message SetOffOutState
+{
+    optional SetOutState state = 1;
+}
+
+message ControlObjectCommandBase
+{
+    optional uint32 control_object_id = 1;
+    optional SetLogicalMode set_logical_mode = 2;
+    optional SetOutState set_out_state = 3;
+    optional InputAlarmOff input_alarm_off = 4;
+    optional ConditionLSCreate condition_ls_create = 5;
+}
+

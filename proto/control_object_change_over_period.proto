@@ -1,0 +1,40 @@
+package almaz2.domain_objects;
+
+import "properties.proto";
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "ControlObjectChangeOverPeriodClass";
+
+message ChangeOverPeriodIndex
+{
+  optional uint32 id = 1;
+  optional uint32 from_time = 2;
+  optional uint32 to_time = 3;
+  optional uint32 control_object_id = 4;
+}
+
+message ElementState
+{
+  optional uint32 time = 1;
+  optional FieldTypeValue value = 2;
+}
+
+message ControlElementChangeOverPeriod
+{
+  optional uint32 control_object_id = 1;
+  optional uint32 control_element_id = 3;
+  repeated ElementState states = 4;
+}
+
+message SensorChangeOverPeriod
+{
+  optional uint32 control_object_id = 1;
+  optional uint32 control_element_id = 3;
+  optional uint32 sensor_id = 4;
+  repeated ElementState states = 5;
+}
+
+//message ControlObjectSummaryChangeOverPeriod
+//{
+//  optional uint32 control_object_id = 1;
+//}

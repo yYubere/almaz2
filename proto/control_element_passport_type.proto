@@ -1,0 +1,61 @@
+package almaz2.domain_objects;
+
+import "field_types.proto";
+import "properties.proto";
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "ControlElementPassportTypeClass";
+
+// описание датчика
+message SensorDescription
+{
+  // id датчика КЭ
+  optional uint32 id = 3;
+
+  // id типа датчика КЭ
+  optional string passport_type_id = 1;
+
+  // имя датчика
+  optional MultiLanguageString display_name = 2;
+
+  // значение характеристик
+  repeated FieldTypeValue values = 4;
+}
+
+// описание управляемого элемента
+message ManagedElementDescription
+{
+  // id УЭ
+  optional uint32 id = 3;
+  
+  // id типа датчика УЭ
+  optional string passport_type_id = 1;
+
+  // имя УЭ
+  optional MultiLanguageString display_name = 2;
+
+  // значение характеристик
+  repeated FieldTypeValue values = 4;  
+}
+
+// паспорт типа КЭ
+message ControlElementPassportType
+{
+  // id паспорта типа КЭ
+  optional string type_id = 1;
+
+  // id базового типа КЭ
+  optional string base_type_id = 2;
+
+  // Характеристики
+  optional Properties properties = 4;
+
+  // имя типа
+  optional MultiLanguageString display_name = 5;
+
+  // Датчики
+  repeated SensorDescription sensors = 6;
+
+  // Управляемые элементы
+  repeated ManagedElementDescription managed_elements = 7;
+}

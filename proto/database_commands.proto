@@ -1,0 +1,93 @@
+import "control_object_state.proto";
+import "control_object_change_over_period.proto";
+
+package almaz2.rpc.commands;
+
+option java_package = "ru.kodos.almaz2.rpc.commands";
+option java_outer_classname = "DatabaseCommandsClass";
+
+/**
+ * Запросы получения информации из базы данных.
+ */
+
+message ControlObjectStateQuery
+{
+    optional uint32 control_object_id = 1;
+    optional uint32 from_time = 2;
+    optional uint32 to_time = 3;
+}
+
+message ControlObjectStateResult
+{
+    optional uint32 current_block = 1;
+    optional uint32 total_blocks = 2;
+    repeated almaz2.domain_objects.ControlObjectState control_object_states = 3;
+}
+
+message ControlElementChangeOverPeriodQuery
+{
+    optional uint32 control_object_id = 1;
+	optional uint32 control_element_id = 2;
+    optional uint32 from_time = 3;
+    optional uint32 to_time = 4;
+}
+
+message ControlElementChangeOverPeriodResult
+{
+    optional uint32 current_block = 1;
+    optional uint32 total_blocks = 2;
+    repeated almaz2.domain_objects.ControlElementChangeOverPeriod control_clement_change_over_periods = 3;
+}
+
+message SensorChangeOverPeriodQuery
+{
+    optional uint32 control_object_id = 1;
+	optional uint32 control_element_id = 2;
+	optional uint32 sensor_id = 3;
+    optional uint32 from_time = 4;
+    optional uint32 to_time = 5;
+}
+
+message SensorChangeOverPeriodResult
+{
+    optional uint32 current_block = 1;
+    optional uint32 total_blocks = 2;
+    repeated almaz2.domain_objects.SensorChangeOverPeriod sensor_change_over_periods = 3;
+}
+
+// продолжить выполение запроса
+message DatabaseQueryContinue {}
+// отменить выполение запроса
+message DatabaseQueryCancel {}
+
+/**
+ * Базовое сообщение с запросом данных из БД.
+ */
+message DatabaseQueryBase
+{
+	optional uint32 query_id = 1;
+	//// продолжить выполение запроса, указанного в query_id
+    //optional DatabaseQueryContinue continue_query = 2;
+	//// отменить выполение запроса, указанного в query_id
+    //optional DatabaseQueryCancel cancel_query = 3;
+	
+	// получить список состояний КО за определенный период
+    optional ControlObjectStateQuery get_control_object_state = 4;
+	
+	// получить список суммарных состояний КЕ за определенный период
+	optional ControlElementChangeOverPeriodQuery get_control_clement_change_over_period = 5;
+	
+	// получить список суммарных состояний датчиков за определенный период
+	optional SensorChangeOverPeriodQuery get_sensor_change_over_period = 6;
+}
+
+/**
+ * Базовое сообщение с результатом запроса из БД.
+ */
+message DatabaseResultBase
+{
+	optional uint32 query_id = 1;
+    optional ControlObjectStateResult get_control_object_state_result = 2;
+	optional ControlElementChangeOverPeriodResult get_control_clement_change_over_period_result = 5;
+	optional SensorChangeOverPeriodResult get_sensor_change_over_period_result = 6;
+}

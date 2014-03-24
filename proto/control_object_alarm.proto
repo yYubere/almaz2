@@ -1,0 +1,120 @@
+package almaz2.domain_objects;
+
+option java_package = "ru.kodos.almaz2.domain_objects";
+option java_outer_classname = "ControlObjectAlarmClass";
+
+message ControlObjectAlarm
+{
+    enum AlarmType 
+    {
+        ALARM_NORMAL = 0;
+        ALARM_NEW = 1;
+        ALARM_CONFIRMED = 2;
+    }
+	
+	enum AlarmState
+    {
+        ALARM_STATE_NEW = 0;
+        ALARM_STATE_AT_PROCESS = 1;
+        ALARM_STATE_SOLVED = 2;
+    }
+
+	enum ImportanceType
+	{
+		IMPORTANCE_CRITICAL = 0;
+		IMPORTANCE_IMPORTANT = 1;
+		IMPORTANCE_NORMAL = 2;
+		IMPORTANCE_LOW_HUMIDITY = 3;
+	}
+
+    enum EqupmentModeType
+    {
+        EQUIPMENT_MODE_ACTIVE = 0;
+        EQUIPMENT_MODE_WAIT = 1;
+        EQUIPMENT_MODE_SLEEP = 2;
+        EQUIPMENT_MODE_GUARD = 3;
+        EQUIPMENT_MODE_ALARM = 4;
+    }
+
+    enum EquipmentPositionModeType
+    {
+        EQUIPMENT_POSITION_MODE_GLONASS = 0;
+        EQUIPMENT_POSITION_MODE_GLONASS_GPS = 1;
+        EQUIPMENT_POSITION_MODE_GPS = 2;
+		EQUIPMENT_POSITION_MODE_UKV = 3;
+    }
+	
+	/*
+    message equipment_position_type
+    {
+        optional uint32 time_position = 1;
+        optional float latitude = 2;
+        optional float longitude = 3;
+        optional float altitude = 4;
+        optional bool valid = 5;
+        optional uint32 speed = 6;
+        optional uint32 course = 7;
+        optional int32 accuracy = 8;
+        optional EquipmentPositionModeType equipment_position_mode = 9;
+        optional double odometer = 10;
+        optional uint32 satellite_count = 11;
+        optional float mag_def = 12;
+		optional bool channel_state_gsm = 13;
+		optional bool channel_state_ukv = 14;
+    }
+	*/
+
+	/*
+    message equipment_position_item_type
+    {
+        optional uint32 num = 1;
+        optional equipment_position_type position = 2;
+    }
+	*/
+	
+	/*
+	message equipment_input_state_alarm_type
+	{
+		repeated uint32 digital_inputs  = 1;
+        repeated uint32 adc_inputs = 2;
+        repeated uint32 enum_inputs = 3;
+        repeated uint32 count_inputs = 4;
+	}
+	*/
+  
+    optional uint32 id = 1;
+	optional uint32 alarm_id = 2;
+    optional uint32 time_occurrence = 3;
+    optional uint32 equipment_id = 4;
+    optional uint32 control_object_id = 5;
+    optional AlarmType alarm = 6 [default = ALARM_NORMAL];
+	optional AlarmState state = 7 [default = ALARM_STATE_NEW];
+	optional ImportanceType importance = 8 [default = IMPORTANCE_NORMAL];
+    optional EqupmentModeType equpment_mode = 9 [default = EQUIPMENT_MODE_ACTIVE];
+    //repeated equipment_position_item_type positions = 10;
+	optional uint32 time_process_begin = 11;
+	optional uint32 time_process_end = 12;
+	optional uint32 time_esimated_process_end = 13;
+	optional bool alarm_sended = 14;
+	optional string remark = 15;
+	//optional equipment_input_state_alarm_type input_states_in_alarm = 16;
+	optional bool crew_alarm = 17;
+}
+
+message ControlObjectAlarmAction
+{
+	enum ActionType
+	{
+		PROCESS_BEGIN = 0;
+		PROCESS_ACTION = 1;
+		PROCESS_FINISH = 2;
+	}
+	
+	optional uint32 id = 1;
+	optional uint32 alarm_id = 2;
+	optional uint32 control_object_id = 3;
+	optional uint32 time = 4;
+	optional ActionType type = 5 [default = PROCESS_BEGIN];
+	optional bool action_sended = 6;
+	optional string remark = 7;
+}
