@@ -3,198 +3,182 @@ import "statuses.proto";
  * Команды предназначенные для оборудования.
  */
 
-package almaz2.rpc.commands;
+package almaz2.
+
+rpc
+
+.
+
+commands
+
+;
 
 option java_package = "ru.kodos.almaz2.rpc.commands";
+
 option java_outer_classname = "EquipmentCommandsClass";
 
-enum StatusInfo
-{
-    ERROR_STATUS = 0;
-    OK_STATUS = 1;
-    PROCESSING_STATUS = 2;
+enum StatusInfo {
+  ERROR_STATUS = 0;
+  OK_STATUS = 1;
+  PROCESSING_STATUS = 2;
 }
 
-enum LogicalMode
-{
-    MONITORING = 1;
-    BLACK_BOX = 2;
+enum LogicalMode {
+  MONITORING = 1;
+  BLACK_BOX = 2;
 }
 
-enum OutState
-{
-    OUT_STATE_ON = 1;
-    OUT_STATE_OFF = 2;
+enum OutState {
+  OUT_STATE_ON = 1;
+  OUT_STATE_OFF = 2;
 }
 
 //enum ConditionLSMode
 //{
 //}
 
-message BlackBoxInfo
-{
-    optional uint32 current = 1 [default = 0];
-    optional uint32 total = 2 [default = 0];
-    optional StatusInfo status = 3;
-    optional uint32 time_get = 4;
+message BlackBoxInfo {
+  optional uint32 current = 1 [default = 0];
+  optional uint32 total = 2 [default = 0];
+  optional StatusInfo status = 3;
+  optional uint32 time_get = 4;
 }
 
-message FirmwareUpdateInfo
-{
-    optional uint32 current = 1 [default = 0];
-    optional uint32 total = 2 [default = 0];
-    optional StatusInfo status = 3;
+message FirmwareUpdateInfo {
+  optional uint32 current = 1 [default = 0];
+  optional uint32 total = 2 [default = 0];
+  optional StatusInfo status = 3;
 }
 
-message SettingsInfo
-{
-    optional bool actual = 1 [default = true];
+message SettingsInfo {
+  optional bool actual = 1 [default = true];
 }
 
-message GetDeviceInfo
-{
-    optional uint32 placeholder = 1 [default = 0];
+message GetDeviceInfo {
+  optional uint32 placeholder = 1 [default = 0];
 }
 
-message DeviceInfo
-{
-    //optional almaz2.domain_objects.equipment_info info = 1;
+message DeviceInfo {
+  //optional almaz2.domain_objects.equipment_info info = 1;
 }
 
-message FirmwareUpdate
-{
-    optional string firmware_version = 1;
-    optional bytes firmware = 2;
+message FirmwareUpdate {
+  optional string firmware_version = 1;
+  optional bytes firmware = 2;
 }
 
-message FirmwareBlock
-{
-    optional FirmwareUpdateInfo info = 1;
+message FirmwareBlock {
+  optional FirmwareUpdateInfo info = 1;
 }
 
-message SetLogicalMode
-{
-    optional LogicalMode mode = 1;
+message SetLogicalMode {
+  optional LogicalMode mode = 1;
 }
 
-message SetOutState
-{
-    optional uint32 output = 1;
-    optional OutState state = 2;
+message SetOutState {
+  optional uint32 output = 1;
+  optional OutState state = 2;
 }
 
 
 // Запрос установленного состояния устройства.
-message GetOutStateIn
-{
-    optional uint32 output = 1;
+message GetOutStateIn {
+  optional uint32 output = 1;
 }
 
 // Ответ на запрос установленного состояния устройства.
-message GetOutStateOut
-{
-    optional uint32 output = 1;
-    optional OutState state = 2;
+message GetOutStateOut {
+  optional uint32 output = 1;
+  optional OutState state = 2;
 }
 
 // Команда подтверждения состояния экипажа.
-message ConfirmationCrewState
-{
-	enum CrewState
-    {
-        CREW_STATE_ARRIVED = 0;
-        CREW_STATE_STARTED = 1;
-        CREW_STATE_FREE = 2;
-        CREW_STATE_BUSY = 3;
-    }
-	
-    optional CrewState state = 1;
+message ConfirmationCrewState {
+  enum CrewState {
+    CREW_STATE_ARRIVED = 0;
+    CREW_STATE_STARTED = 1;
+    CREW_STATE_FREE = 2;
+    CREW_STATE_BUSY = 3;
+  }
+
+  optional CrewState state = 1;
 }
 
 // Команда запроса данных из ЧЯ.
-message ReadBlackBoxByTime
-{
-    optional string interface = 1 [default = "TCP"];
-    optional uint32 from_time = 2;
-    optional uint32 to_time = 3;
+message ReadBlackBoxByTime {
+  optional string interface = 1 [default = "TCP"];
+  optional uint32 from_time = 2;
+  optional uint32 to_time = 3;
 }
 
 // Команда прерывания вычитки данных из ЧЯ.
-message BreakReadBlackBox
-{
-    optional uint32 placeholder = 1 [default = 0];
+message BreakReadBlackBox {
+  optional uint32 placeholder = 1 [default = 0];
 }
 
 // Настройка режима формирования периодического сигнала.
-message ConditionLifeSignal
-{
-    optional uint32 max_t = 1;
-    optional uint32 min_t = 2;
-    optional uint32 move = 3;
-    optional uint32 speed = 4;
-    optional uint32 course = 5;
-    optional uint32 mileage = 6;
+message ConditionLifeSignal {
+  optional uint32 max_t = 1;
+  optional uint32 min_t = 2;
+  optional uint32 move = 3;
+  optional uint32 speed = 4;
+  optional uint32 course = 5;
+  optional uint32 mileage = 6;
 }
 
 // Команда установки параметров формирования периодического сигнала.
-message ConditionLSCreate
-{
-	enum EquipmentMode
-	{
-		EQUIPMENT_MODE_ACTIVE = 0;
-		EQUIPMENT_MODE_GUARD = 1;
-		EQUIPMENT_MODE_SLEEP = 2;
-		EQUIPMENT_MODE_WAIT = 3;
-		EQUIPMENT_MODE_ALARM = 4;
-	}
-	
-    optional EquipmentMode mode = 1;
-    optional ConditionLifeSignal condition = 2;
-	optional uint32 version = 3;
+message ConditionLSCreate {
+  enum EquipmentMode {
+    EQUIPMENT_MODE_ACTIVE = 0;
+    EQUIPMENT_MODE_GUARD = 1;
+    EQUIPMENT_MODE_SLEEP = 2;
+    EQUIPMENT_MODE_WAIT = 3;
+    EQUIPMENT_MODE_ALARM = 4;
+  }
+
+  optional EquipmentMode mode = 1;
+  optional ConditionLifeSignal condition = 2;
+  optional uint32 version = 3;
 }
 
 // Команда сброса тревоги входа
-message InputAlarmOff
-{
-	enum InputType
-	{
-		INPUT_TYPE_UNIVERSAL = 0;
-		INPUT_TYPE_COUNT = 1;
-		INPUT_TYPE_ENUM = 2;
-		INPUT_TYPE_DIGITAL = 3;
-		INPUT_TYPE_ADC = 4;
-	}
+message InputAlarmOff {
+  enum InputType {
+    INPUT_TYPE_UNIVERSAL = 0;
+    INPUT_TYPE_COUNT = 1;
+    INPUT_TYPE_ENUM = 2;
+    INPUT_TYPE_DIGITAL = 3;
+    INPUT_TYPE_ADC = 4;
+  }
 
-    optional InputType type = 1;
-    optional uint32 input = 2;
+  optional InputType type = 1;
+  optional uint32 input = 2;
 }
 
 /**
  * Базовое сообщение команды в адрес оборудования.
  */
-message EquipmentCommandBase
-{
-    optional uint32 equipment_id = 1;
+message EquipmentCommandBase {
+  optional uint32 equipment_id = 1;
 
-	optional SetLogicalMode set_logical_mode = 2;
-    optional SetOutState set_out_state = 3;
-    optional GetOutStateIn get_out_state = 4;
-    optional GetDeviceInfo get_device_info = 5;
-    optional FirmwareUpdate firmware_update = 6;
-    optional ConfirmationCrewState confirmation_crew_state = 7;
-    optional ReadBlackBoxByTime read_black_box_by_time = 8;
-    optional BreakReadBlackBox break_read_black_box = 9;
-    optional ConditionLSCreate condition_ls_create = 10;
-    optional InputAlarmOff input_alarm_off = 11;
+  optional SetLogicalMode set_logical_mode = 2;
+  optional SetOutState set_out_state = 3;
+  optional GetOutStateIn get_out_state = 4;
+  optional GetDeviceInfo get_device_info = 5;
+  optional FirmwareUpdate firmware_update = 6;
+  optional ConfirmationCrewState confirmation_crew_state = 7;
+  optional ReadBlackBoxByTime read_black_box_by_time = 8;
+  optional BreakReadBlackBox break_read_black_box = 9;
+  optional ConditionLSCreate condition_ls_create = 10;
+  optional InputAlarmOff input_alarm_off = 11;
 }
 
 /**
  * Базовое сообщение ответа на команду от оборудования.
  */
-message EquipmentAnswerBase
-{
-    optional uint32 equipment_id = 1;
-    optional GetOutStateOut out_state = 2;
-    optional DeviceInfo device_info = 3;
-    optional FirmwareBlock firmware_block = 4;
+message EquipmentAnswerBase {
+  optional uint32 equipment_id = 1;
+  optional GetOutStateOut out_state = 2;
+  optional DeviceInfo device_info = 3;
+  optional FirmwareBlock firmware_block = 4;
 }

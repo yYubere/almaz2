@@ -1,6 +1,15 @@
-package almaz2.rpc.commands;
+package almaz2.
+
+rpc
+
+.
+
+commands
+
+;
 
 option java_package = "ru.kodos.almaz2.rpc.commands";
+
 option java_outer_classname = "ActionCommandsClass";
 
 /**
@@ -10,37 +19,33 @@ option java_outer_classname = "ActionCommandsClass";
 /**
  * Действие над тревогой
  */
-message AlarmAction
-{
-    enum ActionType
-	{
-		PROCESS_UNKNOWN = 0;
-		PROCESS_BEGIN = 1;
-		PROCESS_FINISH = 2;
-	}
-	
-	optional uint32 id = 1;
-	optional uint32 alarm_id = 2;
-	optional uint32 control_object_id = 3;
-	optional uint32 time = 4;
-	optional ActionType type = 5 [default = PROCESS_UNKNOWN];
-	optional bool action_sended = 6;
-	optional string remark = 7;
+message AlarmAction {
+  enum ActionType {
+    PROCESS_UNKNOWN = 0;
+    PROCESS_BEGIN = 1;
+    PROCESS_FINISH = 2;
+  }
+
+  optional uint32 id = 1;
+  optional uint32 alarm_id = 2;
+  optional uint32 control_object_id = 3;
+  optional uint32 time = 4;
+  optional ActionType type = 5 [default = PROCESS_UNKNOWN];
+  optional bool action_sended = 6;
+  optional string remark = 7;
 }
 
 /**
  * Базовое сообщение действия
  */
-message ActionCommandBase
-{
-	optional uint32 id = 1;
-    optional AlarmAction action_alarm = 2;
+message ActionCommandBase {
+  optional uint32 id = 1;
+  optional AlarmAction action_alarm = 2;
 }
 
 /**
  * Базовое сообщение с результатом действия
  */
-message ActionResultBase
-{
-	optional uint32 id = 1;
+message ActionResultBase {
+  optional uint32 id = 1;
 }

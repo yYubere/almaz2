@@ -1,14 +1,15 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "EquipmentPassportClass";
 
 // паспорт физического оборудования
-message EquipmentPassport
-{
+message EquipmentPassport {
   // id паспорта оборудования
   optional uint32 passport_id = 1;
 
@@ -17,7 +18,7 @@ message EquipmentPassport
 
   // имя оборудования
   optional MultiLanguageString display_name = 3;
-  
+
   // значения идентификационных данных
   repeated FieldTypeValue identification_values = 5;
 }

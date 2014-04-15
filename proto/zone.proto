@@ -1,15 +1,15 @@
 package almaz2.domain_objects;
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ZoneClass";
 
 /**
  * Зона
  */
-message Zone
-{
-	optional uint32 id = 1;
-    optional string name = 2;
-    optional string color = 3 [default = "#0000FF"];
-	repeated string poligons = 4;
+message Zone {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional string color = 3 [default = "#0000FF"];
+  repeated string poligons = 4;
 }

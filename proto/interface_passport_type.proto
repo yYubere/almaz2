@@ -1,25 +1,26 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "InterfacePassportTypeClass";
 
 // паспорт типа интерфейса
-message InterfacePassportType
-{
+message InterfacePassportType {
   // id паспорта типа интерфейса
   optional string type_id = 1;
 
   // id базового типа интерфейса
   optional string base_type_id = 2;
-  
+
   // имя типа
   optional MultiLanguageString display_name = 3;
 
   // описания идентификационных данных
-  repeated FieldTypeDescription identification_descriptions = 4;  
+  repeated FieldTypeDescription identification_descriptions = 4;
 
   // блок характеристик
   optional Properties properties = 5;

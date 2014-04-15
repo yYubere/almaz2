@@ -4,1580 +4,1690 @@
 package ru.kodos.almaz2.domain_objects;
 
 public final class SensorPassportTypeClass {
-  private SensorPassportTypeClass() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface SensorPassportTypeOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+    private SensorPassportTypeClass() {
+    }
 
-    // optional string type_id = 1;
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    boolean hasTypeId();
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    java.lang.String getTypeId();
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    com.google.protobuf.ByteString
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
+    }
+
+    public interface SensorPassportTypeOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
+
+        // optional string type_id = 1;
+
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        boolean hasTypeId();
+
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        java.lang.String getTypeId();
+
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        com.google.protobuf.ByteString
         getTypeIdBytes();
 
-    // optional string base_type_id = 2;
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    boolean hasBaseTypeId();
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    java.lang.String getBaseTypeId();
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    com.google.protobuf.ByteString
+        // optional string base_type_id = 2;
+
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        boolean hasBaseTypeId();
+
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        java.lang.String getBaseTypeId();
+
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        com.google.protobuf.ByteString
         getBaseTypeIdBytes();
 
-    // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    boolean hasDisplayName();
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName();
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder();
+        // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
 
-    // optional .almaz2.domain_objects.Properties properties = 4;
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    boolean hasProperties();
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties();
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder();
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        boolean hasDisplayName();
 
-    // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    boolean hasStateDescription();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder();
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.SensorPassportType}
-   *
-   * <pre>
-   * паспорт типа датчика КЭ
-   * </pre>
-   */
-  public static final class SensorPassportType extends
-      com.google.protobuf.GeneratedMessage
-      implements SensorPassportTypeOrBuilder {
-    // Use SensorPassportType.newBuilder() to construct.
-    private SensorPassportType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private SensorPassportType(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName();
 
-    private static final SensorPassportType defaultInstance;
-    public static SensorPassportType getDefaultInstance() {
-      return defaultInstance;
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder();
+
+        // optional .almaz2.domain_objects.Properties properties = 4;
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        boolean hasProperties();
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties();
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder();
+
+        // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        boolean hasStateDescription();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder();
     }
 
-    public SensorPassportType getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SensorPassportType(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              typeId_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              baseTypeId_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000004) == 0x00000004)) {
-                subBuilder = displayName_.toBuilder();
-              }
-              displayName_ = input.readMessage(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(displayName_);
-                displayName_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000004;
-              break;
-            }
-            case 34: {
-              ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000008) == 0x00000008)) {
-                subBuilder = properties_.toBuilder();
-              }
-              properties_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(properties_);
-                properties_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000008;
-              break;
-            }
-            case 42: {
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000010) == 0x00000010)) {
-                subBuilder = stateDescription_.toBuilder();
-              }
-              stateDescription_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(stateDescription_);
-                stateDescription_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000010;
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.class, ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<SensorPassportType> PARSER =
-        new com.google.protobuf.AbstractParser<SensorPassportType>() {
-      public SensorPassportType parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SensorPassportType(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<SensorPassportType> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // optional string type_id = 1;
-    public static final int TYPE_ID_FIELD_NUMBER = 1;
-    private java.lang.Object typeId_;
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    public boolean hasTypeId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    public java.lang.String getTypeId() {
-      java.lang.Object ref = typeId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          typeId_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string type_id = 1;</code>
-     *
-     * <pre>
-     * id паспорта типа датчика КЭ
-     * </pre>
-     */
-    public com.google.protobuf.ByteString
-        getTypeIdBytes() {
-      java.lang.Object ref = typeId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        typeId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional string base_type_id = 2;
-    public static final int BASE_TYPE_ID_FIELD_NUMBER = 2;
-    private java.lang.Object baseTypeId_;
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    public boolean hasBaseTypeId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    public java.lang.String getBaseTypeId() {
-      java.lang.Object ref = baseTypeId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          baseTypeId_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string base_type_id = 2;</code>
-     *
-     * <pre>
-     * id базового типа датчика КЭ
-     * </pre>
-     */
-    public com.google.protobuf.ByteString
-        getBaseTypeIdBytes() {
-      java.lang.Object ref = baseTypeId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        baseTypeId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
-    public static final int DISPLAY_NAME_FIELD_NUMBER = 3;
-    private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString displayName_;
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    public boolean hasDisplayName() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName() {
-      return displayName_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-     *
-     * <pre>
-     * имя типа
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder() {
-      return displayName_;
-    }
-
-    // optional .almaz2.domain_objects.Properties properties = 4;
-    public static final int PROPERTIES_FIELD_NUMBER = 4;
-    private ru.kodos.almaz2.domain_objects.PropertiesClass.Properties properties_;
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    public boolean hasProperties() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties() {
-      return properties_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-     *
-     * <pre>
-     * блок характеристик
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder() {
-      return properties_;
-    }
-
-    // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
-    public static final int STATE_DESCRIPTION_FIELD_NUMBER = 5;
-    private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription stateDescription_;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    public boolean hasStateDescription() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription() {
-      return stateDescription_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-     *
-     * <pre>
-     * описание состояния датчика
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder() {
-      return stateDescription_;
-    }
-
-    private void initFields() {
-      typeId_ = "";
-      baseTypeId_ = "";
-      displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-      properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
-      stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (hasDisplayName()) {
-        if (!getDisplayName().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      if (hasProperties()) {
-        if (!getProperties().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      if (hasStateDescription()) {
-        if (!getStateDescription().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getTypeIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getBaseTypeIdBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, displayName_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeMessage(4, properties_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(5, stateDescription_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getTypeIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getBaseTypeIdBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, displayName_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, properties_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, stateDescription_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.SensorPassportType}
-     *
+     * <p/>
      * <pre>
      * паспорт типа датчика КЭ
      * </pre>
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportTypeOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
-      }
+    public static final class SensorPassportType extends
+            com.google.protobuf.GeneratedMessage
+            implements SensorPassportTypeOrBuilder {
+        // Use SensorPassportType.newBuilder() to construct.
+        private SensorPassportType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
+        }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.class, ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.Builder.class);
-      }
+        private SensorPassportType(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+        }
 
-      // Construct using ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
+        private static final SensorPassportType defaultInstance;
 
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getDisplayNameFieldBuilder();
-          getPropertiesFieldBuilder();
-          getStateDescriptionFieldBuilder();
+        public static SensorPassportType getDefaultInstance() {
+            return defaultInstance;
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        typeId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        baseTypeId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (displayNameBuilder_ == null) {
-          displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-        } else {
-          displayNameBuilder_.clear();
+        public SensorPassportType getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        if (propertiesBuilder_ == null) {
-          properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
-        } else {
-          propertiesBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000008);
-        if (stateDescriptionBuilder_ == null) {
-          stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-        } else {
-          stateDescriptionBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
-      }
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
+        }
 
-      public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.getDefaultInstance();
-      }
+        private SensorPassportType(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 10: {
+                            bitField0_ |= 0x00000001;
+                            typeId_ = input.readBytes();
+                            break;
+                        }
+                        case 18: {
+                            bitField0_ |= 0x00000002;
+                            baseTypeId_ = input.readBytes();
+                            break;
+                        }
+                        case 26: {
+                            ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                                subBuilder = displayName_.toBuilder();
+                            }
+                            displayName_ = input.readMessage(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(displayName_);
+                                displayName_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000004;
+                            break;
+                        }
+                        case 34: {
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                                subBuilder = properties_.toBuilder();
+                            }
+                            properties_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(properties_);
+                                properties_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000008;
+                            break;
+                        }
+                        case 42: {
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                                subBuilder = stateDescription_.toBuilder();
+                            }
+                            stateDescription_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(stateDescription_);
+                                stateDescription_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000010;
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
+        }
 
-      public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType build() {
-        ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
         }
-        return result;
-      }
 
-      public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType buildPartial() {
-        ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType result = new ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.class, ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.Builder.class);
         }
-        result.typeId_ = typeId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.baseTypeId_ = baseTypeId_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        if (displayNameBuilder_ == null) {
-          result.displayName_ = displayName_;
-        } else {
-          result.displayName_ = displayNameBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        if (propertiesBuilder_ == null) {
-          result.properties_ = properties_;
-        } else {
-          result.properties_ = propertiesBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        if (stateDescriptionBuilder_ == null) {
-          result.stateDescription_ = stateDescription_;
-        } else {
-          result.stateDescription_ = stateDescriptionBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
+        public static com.google.protobuf.Parser<SensorPassportType> PARSER =
+                new com.google.protobuf.AbstractParser<SensorPassportType>() {
+                    public SensorPassportType parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new SensorPassportType(input, extensionRegistry);
+                    }
+                };
 
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType other) {
-        if (other == ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.getDefaultInstance()) return this;
-        if (other.hasTypeId()) {
-          bitField0_ |= 0x00000001;
-          typeId_ = other.typeId_;
-          onChanged();
+        @java.lang.Override
+        public com.google.protobuf.Parser<SensorPassportType> getParserForType() {
+            return PARSER;
         }
-        if (other.hasBaseTypeId()) {
-          bitField0_ |= 0x00000002;
-          baseTypeId_ = other.baseTypeId_;
-          onChanged();
-        }
-        if (other.hasDisplayName()) {
-          mergeDisplayName(other.getDisplayName());
-        }
-        if (other.hasProperties()) {
-          mergeProperties(other.getProperties());
-        }
-        if (other.hasStateDescription()) {
-          mergeStateDescription(other.getStateDescription());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        if (hasDisplayName()) {
-          if (!getDisplayName().isInitialized()) {
-            
-            return false;
-          }
-        }
-        if (hasProperties()) {
-          if (!getProperties().isInitialized()) {
-            
-            return false;
-          }
-        }
-        if (hasStateDescription()) {
-          if (!getStateDescription().isInitialized()) {
-            
-            return false;
-          }
-        }
-        return true;
-      }
+        private int bitField0_;
+        // optional string type_id = 1;
+        public static final int TYPE_ID_FIELD_NUMBER = 1;
+        private java.lang.Object typeId_;
 
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        public boolean hasTypeId() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
         }
-        return this;
-      }
-      private int bitField0_;
 
-      // optional string type_id = 1;
-      private java.lang.Object typeId_ = "";
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public boolean hasTypeId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public java.lang.String getTypeId() {
-        java.lang.Object ref = typeId_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          typeId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        public java.lang.String getTypeId() {
+            java.lang.Object ref = typeId_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
+            } else {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                if (bs.isValidUtf8()) {
+                    typeId_ = s;
+                }
+                return s;
+            }
         }
-      }
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getTypeIdBytes() {
-        java.lang.Object ref = typeId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          typeId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public Builder setTypeId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        typeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public Builder clearTypeId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        typeId_ = getDefaultInstance().getTypeId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string type_id = 1;</code>
-       *
-       * <pre>
-       * id паспорта типа датчика КЭ
-       * </pre>
-       */
-      public Builder setTypeIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        typeId_ = value;
-        onChanged();
-        return this;
-      }
 
-      // optional string base_type_id = 2;
-      private java.lang.Object baseTypeId_ = "";
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public boolean hasBaseTypeId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public java.lang.String getBaseTypeId() {
-        java.lang.Object ref = baseTypeId_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          baseTypeId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        /**
+         * <code>optional string type_id = 1;</code>
+         * <p/>
+         * <pre>
+         * id паспорта типа датчика КЭ
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+        getTypeIdBytes() {
+            java.lang.Object ref = typeId_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                typeId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
         }
-      }
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getBaseTypeIdBytes() {
-        java.lang.Object ref = baseTypeId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          baseTypeId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public Builder setBaseTypeId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        baseTypeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public Builder clearBaseTypeId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        baseTypeId_ = getDefaultInstance().getBaseTypeId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string base_type_id = 2;</code>
-       *
-       * <pre>
-       * id базового типа датчика КЭ
-       * </pre>
-       */
-      public Builder setBaseTypeIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        baseTypeId_ = value;
-        onChanged();
-        return this;
-      }
 
-      // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
-      private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> displayNameBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public boolean hasDisplayName() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName() {
-        if (displayNameBuilder_ == null) {
-          return displayName_;
-        } else {
-          return displayNameBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public Builder setDisplayName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
-        if (displayNameBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          displayName_ = value;
-          onChanged();
-        } else {
-          displayNameBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public Builder setDisplayName(
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder builderForValue) {
-        if (displayNameBuilder_ == null) {
-          displayName_ = builderForValue.build();
-          onChanged();
-        } else {
-          displayNameBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public Builder mergeDisplayName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
-        if (displayNameBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              displayName_ != ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance()) {
-            displayName_ =
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.newBuilder(displayName_).mergeFrom(value).buildPartial();
-          } else {
-            displayName_ = value;
-          }
-          onChanged();
-        } else {
-          displayNameBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public Builder clearDisplayName() {
-        if (displayNameBuilder_ == null) {
-          displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-          onChanged();
-        } else {
-          displayNameBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder getDisplayNameBuilder() {
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return getDisplayNameFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder() {
-        if (displayNameBuilder_ != null) {
-          return displayNameBuilder_.getMessageOrBuilder();
-        } else {
-          return displayName_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
-       *
-       * <pre>
-       * имя типа
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> 
-          getDisplayNameFieldBuilder() {
-        if (displayNameBuilder_ == null) {
-          displayNameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>(
-                  displayName_,
-                  getParentForChildren(),
-                  isClean());
-          displayName_ = null;
-        }
-        return displayNameBuilder_;
-      }
+        // optional string base_type_id = 2;
+        public static final int BASE_TYPE_ID_FIELD_NUMBER = 2;
+        private java.lang.Object baseTypeId_;
 
-      // optional .almaz2.domain_objects.Properties properties = 4;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.Properties properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder> propertiesBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public boolean hasProperties() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties() {
-        if (propertiesBuilder_ == null) {
-          return properties_;
-        } else {
-          return propertiesBuilder_.getMessage();
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        public boolean hasBaseTypeId() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
         }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public Builder setProperties(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties value) {
-        if (propertiesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          properties_ = value;
-          onChanged();
-        } else {
-          propertiesBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000008;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public Builder setProperties(
-          ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder builderForValue) {
-        if (propertiesBuilder_ == null) {
-          properties_ = builderForValue.build();
-          onChanged();
-        } else {
-          propertiesBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000008;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public Builder mergeProperties(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties value) {
-        if (propertiesBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008) &&
-              properties_ != ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance()) {
-            properties_ =
-              ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.newBuilder(properties_).mergeFrom(value).buildPartial();
-          } else {
-            properties_ = value;
-          }
-          onChanged();
-        } else {
-          propertiesBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000008;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public Builder clearProperties() {
-        if (propertiesBuilder_ == null) {
-          properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
-          onChanged();
-        } else {
-          propertiesBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000008);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder getPropertiesBuilder() {
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return getPropertiesFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder() {
-        if (propertiesBuilder_ != null) {
-          return propertiesBuilder_.getMessageOrBuilder();
-        } else {
-          return properties_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
-       *
-       * <pre>
-       * блок характеристик
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder> 
-          getPropertiesFieldBuilder() {
-        if (propertiesBuilder_ == null) {
-          propertiesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder>(
-                  properties_,
-                  getParentForChildren(),
-                  isClean());
-          properties_ = null;
-        }
-        return propertiesBuilder_;
-      }
 
-      // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> stateDescriptionBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public boolean hasStateDescription() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription() {
-        if (stateDescriptionBuilder_ == null) {
-          return stateDescription_;
-        } else {
-          return stateDescriptionBuilder_.getMessage();
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        public java.lang.String getBaseTypeId() {
+            java.lang.Object ref = baseTypeId_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
+            } else {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                if (bs.isValidUtf8()) {
+                    baseTypeId_ = s;
+                }
+                return s;
+            }
         }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public Builder setStateDescription(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (stateDescriptionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          stateDescription_ = value;
-          onChanged();
-        } else {
-          stateDescriptionBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public Builder setStateDescription(
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
-        if (stateDescriptionBuilder_ == null) {
-          stateDescription_ = builderForValue.build();
-          onChanged();
-        } else {
-          stateDescriptionBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public Builder mergeStateDescription(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (stateDescriptionBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010) &&
-              stateDescription_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance()) {
-            stateDescription_ =
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.newBuilder(stateDescription_).mergeFrom(value).buildPartial();
-          } else {
-            stateDescription_ = value;
-          }
-          onChanged();
-        } else {
-          stateDescriptionBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public Builder clearStateDescription() {
-        if (stateDescriptionBuilder_ == null) {
-          stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-          onChanged();
-        } else {
-          stateDescriptionBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getStateDescriptionBuilder() {
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return getStateDescriptionFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder() {
-        if (stateDescriptionBuilder_ != null) {
-          return stateDescriptionBuilder_.getMessageOrBuilder();
-        } else {
-          return stateDescription_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
-       *
-       * <pre>
-       * описание состояния датчика
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-          getStateDescriptionFieldBuilder() {
-        if (stateDescriptionBuilder_ == null) {
-          stateDescriptionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
-                  stateDescription_,
-                  getParentForChildren(),
-                  isClean());
-          stateDescription_ = null;
-        }
-        return stateDescriptionBuilder_;
-      }
 
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.SensorPassportType)
+        /**
+         * <code>optional string base_type_id = 2;</code>
+         * <p/>
+         * <pre>
+         * id базового типа датчика КЭ
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+        getBaseTypeIdBytes() {
+            java.lang.Object ref = baseTypeId_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                baseTypeId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
+        public static final int DISPLAY_NAME_FIELD_NUMBER = 3;
+        private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString displayName_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        public boolean hasDisplayName() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName() {
+            return displayName_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+         * <p/>
+         * <pre>
+         * имя типа
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder() {
+            return displayName_;
+        }
+
+        // optional .almaz2.domain_objects.Properties properties = 4;
+        public static final int PROPERTIES_FIELD_NUMBER = 4;
+        private ru.kodos.almaz2.domain_objects.PropertiesClass.Properties properties_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        public boolean hasProperties() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties() {
+            return properties_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+         * <p/>
+         * <pre>
+         * блок характеристик
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder() {
+            return properties_;
+        }
+
+        // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
+        public static final int STATE_DESCRIPTION_FIELD_NUMBER = 5;
+        private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription stateDescription_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        public boolean hasStateDescription() {
+            return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription() {
+            return stateDescription_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+         * <p/>
+         * <pre>
+         * описание состояния датчика
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder() {
+            return stateDescription_;
+        }
+
+        private void initFields() {
+            typeId_ = "";
+            baseTypeId_ = "";
+            displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+            properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
+            stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            if (hasDisplayName()) {
+                if (!getDisplayName().isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            if (hasProperties()) {
+                if (!getProperties().isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            if (hasStateDescription()) {
+                if (!getStateDescription().isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeBytes(1, getTypeIdBytes());
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeBytes(2, getBaseTypeIdBytes());
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                output.writeMessage(3, displayName_);
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                output.writeMessage(4, properties_);
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                output.writeMessage(5, stateDescription_);
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeBytesSize(1, getTypeIdBytes());
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeBytesSize(2, getBaseTypeIdBytes());
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(3, displayName_);
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(4, properties_);
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(5, stateDescription_);
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.SensorPassportType}
+         * <p/>
+         * <pre>
+         * паспорт типа датчика КЭ
+         * </pre>
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportTypeOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.class, ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getDisplayNameFieldBuilder();
+                    getPropertiesFieldBuilder();
+                    getStateDescriptionFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                typeId_ = "";
+                bitField0_ = (bitField0_ & ~0x00000001);
+                baseTypeId_ = "";
+                bitField0_ = (bitField0_ & ~0x00000002);
+                if (displayNameBuilder_ == null) {
+                    displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+                } else {
+                    displayNameBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000004);
+                if (propertiesBuilder_ == null) {
+                    properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
+                } else {
+                    propertiesBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000008);
+                if (stateDescriptionBuilder_ == null) {
+                    stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+                } else {
+                    stateDescriptionBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000010);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType build() {
+                ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType buildPartial() {
+                ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType result = new ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.typeId_ = typeId_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                result.baseTypeId_ = baseTypeId_;
+                if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                    to_bitField0_ |= 0x00000004;
+                }
+                if (displayNameBuilder_ == null) {
+                    result.displayName_ = displayName_;
+                } else {
+                    result.displayName_ = displayNameBuilder_.build();
+                }
+                if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+                    to_bitField0_ |= 0x00000008;
+                }
+                if (propertiesBuilder_ == null) {
+                    result.properties_ = properties_;
+                } else {
+                    result.properties_ = propertiesBuilder_.build();
+                }
+                if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+                    to_bitField0_ |= 0x00000010;
+                }
+                if (stateDescriptionBuilder_ == null) {
+                    result.stateDescription_ = stateDescription_;
+                } else {
+                    result.stateDescription_ = stateDescriptionBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType other) {
+                if (other == ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType.getDefaultInstance())
+                    return this;
+                if (other.hasTypeId()) {
+                    bitField0_ |= 0x00000001;
+                    typeId_ = other.typeId_;
+                    onChanged();
+                }
+                if (other.hasBaseTypeId()) {
+                    bitField0_ |= 0x00000002;
+                    baseTypeId_ = other.baseTypeId_;
+                    onChanged();
+                }
+                if (other.hasDisplayName()) {
+                    mergeDisplayName(other.getDisplayName());
+                }
+                if (other.hasProperties()) {
+                    mergeProperties(other.getProperties());
+                }
+                if (other.hasStateDescription()) {
+                    mergeStateDescription(other.getStateDescription());
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                if (hasDisplayName()) {
+                    if (!getDisplayName().isInitialized()) {
+
+                        return false;
+                    }
+                }
+                if (hasProperties()) {
+                    if (!getProperties().isInitialized()) {
+
+                        return false;
+                    }
+                }
+                if (hasStateDescription()) {
+                    if (!getStateDescription().isInitialized()) {
+
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.SensorPassportTypeClass.SensorPassportType) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional string type_id = 1;
+            private java.lang.Object typeId_ = "";
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public boolean hasTypeId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public java.lang.String getTypeId() {
+                java.lang.Object ref = typeId_;
+                if (!(ref instanceof java.lang.String)) {
+                    java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                            .toStringUtf8();
+                    typeId_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public com.google.protobuf.ByteString
+            getTypeIdBytes() {
+                java.lang.Object ref = typeId_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    typeId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public Builder setTypeId(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000001;
+                typeId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public Builder clearTypeId() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                typeId_ = getDefaultInstance().getTypeId();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string type_id = 1;</code>
+             * <p/>
+             * <pre>
+             * id паспорта типа датчика КЭ
+             * </pre>
+             */
+            public Builder setTypeIdBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000001;
+                typeId_ = value;
+                onChanged();
+                return this;
+            }
+
+            // optional string base_type_id = 2;
+            private java.lang.Object baseTypeId_ = "";
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public boolean hasBaseTypeId() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public java.lang.String getBaseTypeId() {
+                java.lang.Object ref = baseTypeId_;
+                if (!(ref instanceof java.lang.String)) {
+                    java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                            .toStringUtf8();
+                    baseTypeId_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public com.google.protobuf.ByteString
+            getBaseTypeIdBytes() {
+                java.lang.Object ref = baseTypeId_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    baseTypeId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public Builder setBaseTypeId(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000002;
+                baseTypeId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public Builder clearBaseTypeId() {
+                bitField0_ = (bitField0_ & ~0x00000002);
+                baseTypeId_ = getDefaultInstance().getBaseTypeId();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string base_type_id = 2;</code>
+             * <p/>
+             * <pre>
+             * id базового типа датчика КЭ
+             * </pre>
+             */
+            public Builder setBaseTypeIdBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000002;
+                baseTypeId_ = value;
+                onChanged();
+                return this;
+            }
+
+            // optional .almaz2.domain_objects.MultiLanguageString display_name = 3;
+            private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> displayNameBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public boolean hasDisplayName() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getDisplayName() {
+                if (displayNameBuilder_ == null) {
+                    return displayName_;
+                } else {
+                    return displayNameBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public Builder setDisplayName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
+                if (displayNameBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    displayName_ = value;
+                    onChanged();
+                } else {
+                    displayNameBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000004;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public Builder setDisplayName(
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder builderForValue) {
+                if (displayNameBuilder_ == null) {
+                    displayName_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    displayNameBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000004;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public Builder mergeDisplayName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
+                if (displayNameBuilder_ == null) {
+                    if (((bitField0_ & 0x00000004) == 0x00000004) &&
+                            displayName_ != ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance()) {
+                        displayName_ =
+                                ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.newBuilder(displayName_).mergeFrom(value).buildPartial();
+                    } else {
+                        displayName_ = value;
+                    }
+                    onChanged();
+                } else {
+                    displayNameBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000004;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public Builder clearDisplayName() {
+                if (displayNameBuilder_ == null) {
+                    displayName_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+                    onChanged();
+                } else {
+                    displayNameBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000004);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder getDisplayNameBuilder() {
+                bitField0_ |= 0x00000004;
+                onChanged();
+                return getDisplayNameFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getDisplayNameOrBuilder() {
+                if (displayNameBuilder_ != null) {
+                    return displayNameBuilder_.getMessageOrBuilder();
+                } else {
+                    return displayName_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString display_name = 3;</code>
+             * <p/>
+             * <pre>
+             * имя типа
+             * </pre>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>
+            getDisplayNameFieldBuilder() {
+                if (displayNameBuilder_ == null) {
+                    displayNameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>(
+                            displayName_,
+                            getParentForChildren(),
+                            isClean());
+                    displayName_ = null;
+                }
+                return displayNameBuilder_;
+            }
+
+            // optional .almaz2.domain_objects.Properties properties = 4;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.Properties properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder> propertiesBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public boolean hasProperties() {
+                return ((bitField0_ & 0x00000008) == 0x00000008);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties getProperties() {
+                if (propertiesBuilder_ == null) {
+                    return properties_;
+                } else {
+                    return propertiesBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public Builder setProperties(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties value) {
+                if (propertiesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    properties_ = value;
+                    onChanged();
+                } else {
+                    propertiesBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000008;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public Builder setProperties(
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder builderForValue) {
+                if (propertiesBuilder_ == null) {
+                    properties_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    propertiesBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000008;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public Builder mergeProperties(ru.kodos.almaz2.domain_objects.PropertiesClass.Properties value) {
+                if (propertiesBuilder_ == null) {
+                    if (((bitField0_ & 0x00000008) == 0x00000008) &&
+                            properties_ != ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance()) {
+                        properties_ =
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.newBuilder(properties_).mergeFrom(value).buildPartial();
+                    } else {
+                        properties_ = value;
+                    }
+                    onChanged();
+                } else {
+                    propertiesBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000008;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public Builder clearProperties() {
+                if (propertiesBuilder_ == null) {
+                    properties_ = ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.getDefaultInstance();
+                    onChanged();
+                } else {
+                    propertiesBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000008);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder getPropertiesBuilder() {
+                bitField0_ |= 0x00000008;
+                onChanged();
+                return getPropertiesFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder getPropertiesOrBuilder() {
+                if (propertiesBuilder_ != null) {
+                    return propertiesBuilder_.getMessageOrBuilder();
+                } else {
+                    return properties_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.Properties properties = 4;</code>
+             * <p/>
+             * <pre>
+             * блок характеристик
+             * </pre>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder>
+            getPropertiesFieldBuilder() {
+                if (propertiesBuilder_ == null) {
+                    propertiesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.Properties, ru.kodos.almaz2.domain_objects.PropertiesClass.Properties.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.PropertiesOrBuilder>(
+                            properties_,
+                            getParentForChildren(),
+                            isClean());
+                    properties_ = null;
+                }
+                return propertiesBuilder_;
+            }
+
+            // optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> stateDescriptionBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public boolean hasStateDescription() {
+                return ((bitField0_ & 0x00000010) == 0x00000010);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getStateDescription() {
+                if (stateDescriptionBuilder_ == null) {
+                    return stateDescription_;
+                } else {
+                    return stateDescriptionBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public Builder setStateDescription(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (stateDescriptionBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    stateDescription_ = value;
+                    onChanged();
+                } else {
+                    stateDescriptionBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000010;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public Builder setStateDescription(
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
+                if (stateDescriptionBuilder_ == null) {
+                    stateDescription_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    stateDescriptionBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000010;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public Builder mergeStateDescription(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (stateDescriptionBuilder_ == null) {
+                    if (((bitField0_ & 0x00000010) == 0x00000010) &&
+                            stateDescription_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance()) {
+                        stateDescription_ =
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.newBuilder(stateDescription_).mergeFrom(value).buildPartial();
+                    } else {
+                        stateDescription_ = value;
+                    }
+                    onChanged();
+                } else {
+                    stateDescriptionBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000010;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public Builder clearStateDescription() {
+                if (stateDescriptionBuilder_ == null) {
+                    stateDescription_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+                    onChanged();
+                } else {
+                    stateDescriptionBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000010);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getStateDescriptionBuilder() {
+                bitField0_ |= 0x00000010;
+                onChanged();
+                return getStateDescriptionFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getStateDescriptionOrBuilder() {
+                if (stateDescriptionBuilder_ != null) {
+                    return stateDescriptionBuilder_.getMessageOrBuilder();
+                } else {
+                    return stateDescription_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription state_description = 5;</code>
+             * <p/>
+             * <pre>
+             * описание состояния датчика
+             * </pre>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+            getStateDescriptionFieldBuilder() {
+                if (stateDescriptionBuilder_ == null) {
+                    stateDescriptionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
+                            stateDescription_,
+                            getParentForChildren(),
+                            isClean());
+                    stateDescription_ = null;
+                }
+                return stateDescriptionBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.SensorPassportType)
+        }
+
+        static {
+            defaultInstance = new SensorPassportType(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.SensorPassportType)
     }
+
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new SensorPassportType(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\032sensor_passport_type.proto\022\025almaz2.dom" +
+                        "ain_objects\032\021field_types.proto\032\020properti" +
+                        "es.proto\"\374\001\n\022SensorPassportType\022\017\n\007type_" +
+                        "id\030\001 \001(\t\022\024\n\014base_type_id\030\002 \001(\t\022@\n\014displa" +
+                        "y_name\030\003 \001(\0132*.almaz2.domain_objects.Mul" +
+                        "tiLanguageString\0225\n\nproperties\030\004 \001(\0132!.a" +
+                        "lmaz2.domain_objects.Properties\022F\n\021state" +
+                        "_description\030\005 \001(\0132+.almaz2.domain_objec" +
+                        "ts.FieldTypeDescriptionB9\n\036ru.kodos.alma" +
+                        "z2.domain_objectsB\027SensorPassportTypeCla",
+                "ss"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        internal_static_almaz2_domain_objects_SensorPassportType_descriptor =
+                                getDescriptor().getMessageTypes().get(0);
+                        internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_SensorPassportType_descriptor,
+                                new java.lang.String[]{"TypeId", "BaseTypeId", "DisplayName", "Properties", "StateDescription",});
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                                ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
+                        }, assigner
+                );
     }
 
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.SensorPassportType)
-  }
-
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_SensorPassportType_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\032sensor_passport_type.proto\022\025almaz2.dom" +
-      "ain_objects\032\021field_types.proto\032\020properti" +
-      "es.proto\"\374\001\n\022SensorPassportType\022\017\n\007type_" +
-      "id\030\001 \001(\t\022\024\n\014base_type_id\030\002 \001(\t\022@\n\014displa" +
-      "y_name\030\003 \001(\0132*.almaz2.domain_objects.Mul" +
-      "tiLanguageString\0225\n\nproperties\030\004 \001(\0132!.a" +
-      "lmaz2.domain_objects.Properties\022F\n\021state" +
-      "_description\030\005 \001(\0132+.almaz2.domain_objec" +
-      "ts.FieldTypeDescriptionB9\n\036ru.kodos.alma" +
-      "z2.domain_objectsB\027SensorPassportTypeCla",
-      "ss"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_almaz2_domain_objects_SensorPassportType_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_almaz2_domain_objects_SensorPassportType_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_SensorPassportType_descriptor,
-              new java.lang.String[] { "TypeId", "BaseTypeId", "DisplayName", "Properties", "StateDescription", });
-          return null;
-        }
-      };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
-          ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
-        }, assigner);
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

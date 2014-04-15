@@ -1,6 +1,9 @@
 package ru.kodos.almaz2.client;
 
-import ru.kodos.almaz2.rpc.Rpc;
+import ru.kodos.almaz2.rpc.RPCClient;
+
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,14 +12,29 @@ import ru.kodos.almaz2.rpc.Rpc;
  * Time: 13:23
  * To change this template use File | Settings | File Templates.
  */
-public class Almaz2Client {
-    Rpc rpc;
+public class Almaz2Client implements Observer {
+    RPCClient rpc;
 
     public Almaz2Client() {
-        rpc = new Rpc();
+        rpc = new RPCClient();
+        rpc.addObserver(this);
+        rpc.connect("127.0.0.1", 24000);
     }
 
-    public void connect(String host, int port) {
-        rpc.connect(host, port);
+    @Override
+    public void update(Observable o, Object arg) {
+        System.out.println("update fired");
+        if (o instanceof RPCClient) {
+            RPCClient rpcClient = (RPCClient) o;
+            Integer errorCode = (Integer) arg;
+
+            switch (errorCode) {
+                case 0:
+                    break;
+                case 1004:
+                    rpcClient.register("1", "primarykey");
+                    break;
+            }
+        }
     }
 }

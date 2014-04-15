@@ -1,26 +1,27 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "SensorPassportTypeClass";
 
 // паспорт типа датчика КЭ
-message SensorPassportType
-{
-    // id паспорта типа датчика КЭ
-    optional string type_id = 1;
+message SensorPassportType {
+  // id паспорта типа датчика КЭ
+  optional string type_id = 1;
 
-    // id базового типа датчика КЭ
-    optional string base_type_id = 2;
+  // id базового типа датчика КЭ
+  optional string base_type_id = 2;
 
-    // имя типа
-    optional MultiLanguageString display_name = 3;
+  // имя типа
+  optional MultiLanguageString display_name = 3;
 
-    // блок характеристик
-    optional Properties properties = 4;
+  // блок характеристик
+  optional Properties properties = 4;
 
-    // описание состояния датчика
-    optional FieldTypeDescription state_description = 5;       
+  // описание состояния датчика
+  optional FieldTypeDescription state_description = 5;
 }

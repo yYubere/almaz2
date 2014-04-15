@@ -4,2930 +4,3213 @@
 package ru.kodos.almaz2.domain_objects;
 
 public final class PeriodicSignalClass {
-  private PeriodicSignalClass() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface PeriodicSignalOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+    private PeriodicSignalClass() {
+    }
 
-    // optional uint32 id = 1;
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    boolean hasId();
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    int getId();
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
+    }
 
-    // optional uint32 time = 2;
-    /**
-     * <code>optional uint32 time = 2;</code>
-     */
-    boolean hasTime();
-    /**
-     * <code>optional uint32 time = 2;</code>
-     */
-    int getTime();
+    public interface PeriodicSignalOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 get_time = 3;
-    /**
-     * <code>optional uint32 get_time = 3;</code>
-     */
-    boolean hasGetTime();
-    /**
-     * <code>optional uint32 get_time = 3;</code>
-     */
-    int getGetTime();
+        // optional uint32 id = 1;
 
-    // optional uint32 signal_id = 4;
-    /**
-     * <code>optional uint32 signal_id = 4;</code>
-     */
-    boolean hasSignalId();
-    /**
-     * <code>optional uint32 signal_id = 4;</code>
-     */
-    int getSignalId();
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        boolean hasId();
 
-    // optional uint32 equipment_id = 5;
-    /**
-     * <code>optional uint32 equipment_id = 5;</code>
-     */
-    boolean hasEquipmentId();
-    /**
-     * <code>optional uint32 equipment_id = 5;</code>
-     */
-    int getEquipmentId();
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        int getId();
 
-    // optional uint32 cd_id = 6;
-    /**
-     * <code>optional uint32 cd_id = 6;</code>
-     */
-    boolean hasCdId();
-    /**
-     * <code>optional uint32 cd_id = 6;</code>
-     */
-    int getCdId();
+        // optional uint32 time = 2;
 
-    // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-     */
-    boolean hasType();
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType();
+        /**
+         * <code>optional uint32 time = 2;</code>
+         */
+        boolean hasTime();
 
-    // optional bool alarm = 8;
-    /**
-     * <code>optional bool alarm = 8;</code>
-     */
-    boolean hasAlarm();
-    /**
-     * <code>optional bool alarm = 8;</code>
-     */
-    boolean getAlarm();
+        /**
+         * <code>optional uint32 time = 2;</code>
+         */
+        int getTime();
 
-    // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> 
+        // optional uint32 get_time = 3;
+
+        /**
+         * <code>optional uint32 get_time = 3;</code>
+         */
+        boolean hasGetTime();
+
+        /**
+         * <code>optional uint32 get_time = 3;</code>
+         */
+        int getGetTime();
+
+        // optional uint32 signal_id = 4;
+
+        /**
+         * <code>optional uint32 signal_id = 4;</code>
+         */
+        boolean hasSignalId();
+
+        /**
+         * <code>optional uint32 signal_id = 4;</code>
+         */
+        int getSignalId();
+
+        // optional uint32 equipment_id = 5;
+
+        /**
+         * <code>optional uint32 equipment_id = 5;</code>
+         */
+        boolean hasEquipmentId();
+
+        /**
+         * <code>optional uint32 equipment_id = 5;</code>
+         */
+        int getEquipmentId();
+
+        // optional uint32 cd_id = 6;
+
+        /**
+         * <code>optional uint32 cd_id = 6;</code>
+         */
+        boolean hasCdId();
+
+        /**
+         * <code>optional uint32 cd_id = 6;</code>
+         */
+        int getCdId();
+
+        // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+         */
+        boolean hasType();
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType();
+
+        // optional bool alarm = 8;
+
+        /**
+         * <code>optional bool alarm = 8;</code>
+         */
+        boolean hasAlarm();
+
+        /**
+         * <code>optional bool alarm = 8;</code>
+         */
+        boolean getAlarm();
+
+        // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+         */
+        java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType>
         getInputsList();
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index);
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    int getInputsCount();
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> 
+
+        /**
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index);
+
+        /**
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+         */
+        int getInputsCount();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+         */
+        java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>
         getInputsOrBuilderList();
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
-        int index);
 
-    // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    boolean hasRequestState();
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState();
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder();
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.PeriodicSignal}
-   */
-  public static final class PeriodicSignal extends
-      com.google.protobuf.GeneratedMessage
-      implements PeriodicSignalOrBuilder {
-    // Use PeriodicSignal.newBuilder() to construct.
-    private PeriodicSignal(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private PeriodicSignal(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+        /**
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
+                int index);
 
-    private static final PeriodicSignal defaultInstance;
-    public static PeriodicSignal getDefaultInstance() {
-      return defaultInstance;
+        // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+         */
+        boolean hasRequestState();
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState();
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder();
     }
 
-    public PeriodicSignal getDefaultInstanceForType() {
-      return defaultInstance;
-    }
+    /**
+     * Protobuf type {@code almaz2.domain_objects.PeriodicSignal}
+     */
+    public static final class PeriodicSignal extends
+            com.google.protobuf.GeneratedMessage
+            implements PeriodicSignalOrBuilder {
+        // Use PeriodicSignal.newBuilder() to construct.
+        private PeriodicSignal(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
+        }
 
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+        private PeriodicSignal(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+        }
+
+        private static final PeriodicSignal defaultInstance;
+
+        public static PeriodicSignal getDefaultInstance() {
+            return defaultInstance;
+        }
+
+        public PeriodicSignal getDefaultInstanceForType() {
+            return defaultInstance;
+        }
+
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
+
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PeriodicSignal(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              id_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              time_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              getTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              signalId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              equipmentId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              cdId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-              int rawValue = input.readEnum();
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType value = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.valueOf(rawValue);
-              if (value == null) {
-                unknownFields.mergeVarintField(7, rawValue);
-              } else {
-                bitField0_ |= 0x00000040;
-                type_ = value;
-              }
-              break;
-            }
-            case 64: {
-              bitField0_ |= 0x00000080;
-              alarm_ = input.readBool();
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
-                inputs_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType>();
-                mutable_bitField0_ |= 0x00000100;
-              }
-              inputs_.add(input.readMessage(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.PARSER, extensionRegistry));
-              break;
-            }
-            case 82: {
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000100) == 0x00000100)) {
-                subBuilder = requestState_.toBuilder();
-              }
-              requestState_ = input.readMessage(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(requestState_);
-                requestState_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000100;
-              break;
-            }
-          }
+            return this.unknownFields;
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
-          inputs_ = java.util.Collections.unmodifiableList(inputs_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
-    }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<PeriodicSignal> PARSER =
-        new com.google.protobuf.AbstractParser<PeriodicSignal>() {
-      public PeriodicSignal parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PeriodicSignal(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<PeriodicSignal> getParserForType() {
-      return PARSER;
-    }
-
-    /**
-     * Protobuf enum {@code almaz2.domain_objects.PeriodicSignal.SignalType}
-     */
-    public enum SignalType
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>OPERATIONAL = 0;</code>
-       */
-      OPERATIONAL(0, 0),
-      /**
-       * <code>RESEND = 1;</code>
-       */
-      RESEND(1, 1),
-      /**
-       * <code>REQUESTED = 2;</code>
-       */
-      REQUESTED(2, 2),
-      ;
-
-      /**
-       * <code>OPERATIONAL = 0;</code>
-       */
-      public static final int OPERATIONAL_VALUE = 0;
-      /**
-       * <code>RESEND = 1;</code>
-       */
-      public static final int RESEND_VALUE = 1;
-      /**
-       * <code>REQUESTED = 2;</code>
-       */
-      public static final int REQUESTED_VALUE = 2;
-
-
-      public final int getNumber() { return value; }
-
-      public static SignalType valueOf(int value) {
-        switch (value) {
-          case 0: return OPERATIONAL;
-          case 1: return RESEND;
-          case 2: return REQUESTED;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<SignalType>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static com.google.protobuf.Internal.EnumLiteMap<SignalType>
-          internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<SignalType>() {
-              public SignalType findValueByNumber(int number) {
-                return SignalType.valueOf(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final SignalType[] VALUES = values();
-
-      public static SignalType valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private SignalType(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:almaz2.domain_objects.PeriodicSignal.SignalType)
-    }
-
-    public interface InputTypeOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
-
-      // optional uint32 id = 1;
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      boolean hasId();
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      int getId();
-
-      // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      boolean hasValue();
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue();
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder();
-
-      // optional bool alarm = 3;
-      /**
-       * <code>optional bool alarm = 3;</code>
-       */
-      boolean hasAlarm();
-      /**
-       * <code>optional bool alarm = 3;</code>
-       */
-      boolean getAlarm();
-
-      // optional bool guard = 4;
-      /**
-       * <code>optional bool guard = 4;</code>
-       */
-      boolean hasGuard();
-      /**
-       * <code>optional bool guard = 4;</code>
-       */
-      boolean getGuard();
-    }
-    /**
-     * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.InputType}
-     */
-    public static final class InputType extends
-        com.google.protobuf.GeneratedMessage
-        implements InputTypeOrBuilder {
-      // Use InputType.newBuilder() to construct.
-      private InputType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-        super(builder);
-        this.unknownFields = builder.getUnknownFields();
-      }
-      private InputType(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-      private static final InputType defaultInstance;
-      public static InputType getDefaultInstance() {
-        return defaultInstance;
-      }
-
-      public InputType getDefaultInstanceForType() {
-        return defaultInstance;
-      }
-
-      private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-          getUnknownFields() {
-        return this.unknownFields;
-      }
-      private InputType(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        initFields();
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              default: {
-                if (!parseUnknownField(input, unknownFields,
-                                       extensionRegistry, tag)) {
-                  done = true;
+        private PeriodicSignal(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            bitField0_ |= 0x00000001;
+                            id_ = input.readUInt32();
+                            break;
+                        }
+                        case 16: {
+                            bitField0_ |= 0x00000002;
+                            time_ = input.readUInt32();
+                            break;
+                        }
+                        case 24: {
+                            bitField0_ |= 0x00000004;
+                            getTime_ = input.readUInt32();
+                            break;
+                        }
+                        case 32: {
+                            bitField0_ |= 0x00000008;
+                            signalId_ = input.readUInt32();
+                            break;
+                        }
+                        case 40: {
+                            bitField0_ |= 0x00000010;
+                            equipmentId_ = input.readUInt32();
+                            break;
+                        }
+                        case 48: {
+                            bitField0_ |= 0x00000020;
+                            cdId_ = input.readUInt32();
+                            break;
+                        }
+                        case 56: {
+                            int rawValue = input.readEnum();
+                            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType value = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.valueOf(rawValue);
+                            if (value == null) {
+                                unknownFields.mergeVarintField(7, rawValue);
+                            } else {
+                                bitField0_ |= 0x00000040;
+                                type_ = value;
+                            }
+                            break;
+                        }
+                        case 64: {
+                            bitField0_ |= 0x00000080;
+                            alarm_ = input.readBool();
+                            break;
+                        }
+                        case 74: {
+                            if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                                inputs_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType>();
+                                mutable_bitField0_ |= 0x00000100;
+                            }
+                            inputs_.add(input.readMessage(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.PARSER, extensionRegistry));
+                            break;
+                        }
+                        case 82: {
+                            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000100) == 0x00000100)) {
+                                subBuilder = requestState_.toBuilder();
+                            }
+                            requestState_ = input.readMessage(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(requestState_);
+                                requestState_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000100;
+                            break;
+                        }
+                    }
                 }
-                break;
-              }
-              case 8: {
-                bitField0_ |= 0x00000001;
-                id_ = input.readUInt32();
-                break;
-              }
-              case 18: {
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                  subBuilder = value_.toBuilder();
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                    inputs_ = java.util.Collections.unmodifiableList(inputs_);
                 }
-                value_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(value_);
-                  value_ = subBuilder.buildPartial();
-                }
-                bitField0_ |= 0x00000002;
-                break;
-              }
-              case 24: {
-                bitField0_ |= 0x00000004;
-                alarm_ = input.readBool();
-                break;
-              }
-              case 32: {
-                bitField0_ |= 0x00000008;
-                guard_ = input.readBool();
-                break;
-              }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
             }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e.getMessage()).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
         }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
-      }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder.class);
-      }
-
-      public static com.google.protobuf.Parser<InputType> PARSER =
-          new com.google.protobuf.AbstractParser<InputType>() {
-        public InputType parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new InputType(input, extensionRegistry);
-        }
-      };
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<InputType> getParserForType() {
-        return PARSER;
-      }
-
-      private int bitField0_;
-      // optional uint32 id = 1;
-      public static final int ID_FIELD_NUMBER = 1;
-      private int id_;
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-
-      // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-      public static final int VALUE_FIELD_NUMBER = 2;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public boolean hasValue() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
-        return value_;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
-        return value_;
-      }
-
-      // optional bool alarm = 3;
-      public static final int ALARM_FIELD_NUMBER = 3;
-      private boolean alarm_;
-      /**
-       * <code>optional bool alarm = 3;</code>
-       */
-      public boolean hasAlarm() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional bool alarm = 3;</code>
-       */
-      public boolean getAlarm() {
-        return alarm_;
-      }
-
-      // optional bool guard = 4;
-      public static final int GUARD_FIELD_NUMBER = 4;
-      private boolean guard_;
-      /**
-       * <code>optional bool guard = 4;</code>
-       */
-      public boolean hasGuard() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional bool guard = 4;</code>
-       */
-      public boolean getGuard() {
-        return guard_;
-      }
-
-      private void initFields() {
-        id_ = 0;
-        value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-        alarm_ = false;
-        guard_ = false;
-      }
-      private byte memoizedIsInitialized = -1;
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        getSerializedSize();
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeUInt32(1, id_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeMessage(2, value_);
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          output.writeBool(3, alarm_);
-        }
-        if (((bitField0_ & 0x00000008) == 0x00000008)) {
-          output.writeBool(4, guard_);
-        }
-        getUnknownFields().writeTo(output);
-      }
-
-      private int memoizedSerializedSize = -1;
-      public int getSerializedSize() {
-        int size = memoizedSerializedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(1, id_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, value_);
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(3, alarm_);
-        }
-        if (((bitField0_ & 0x00000008) == 0x00000008)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(4, guard_);
-        }
-        size += getUnknownFields().getSerializedSize();
-        memoizedSerializedSize = size;
-        return size;
-      }
-
-      private static final long serialVersionUID = 0L;
-      @java.lang.Override
-      protected java.lang.Object writeReplace()
-          throws java.io.ObjectStreamException {
-        return super.writeReplace();
-      }
-
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType prototype) {
-        return newBuilder().mergeFrom(prototype);
-      }
-      public Builder toBuilder() { return newBuilder(this); }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.InputType}
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
+        getDescriptor() {
+            return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
         }
 
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder.class);
+        internalGetFieldAccessorTable() {
+            return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.Builder.class);
         }
 
-        // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
+        public static com.google.protobuf.Parser<PeriodicSignal> PARSER =
+                new com.google.protobuf.AbstractParser<PeriodicSignal>() {
+                    public PeriodicSignal parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new PeriodicSignal(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<PeriodicSignal> getParserForType() {
+            return PARSER;
         }
 
-        private Builder(
-            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-            getValueFieldBuilder();
-          }
-        }
-        private static Builder create() {
-          return new Builder();
-        }
+        /**
+         * Protobuf enum {@code almaz2.domain_objects.PeriodicSignal.SignalType}
+         */
+        public enum SignalType
+                implements com.google.protobuf.ProtocolMessageEnum {
+            /**
+             * <code>OPERATIONAL = 0;</code>
+             */
+            OPERATIONAL(0, 0),
+            /**
+             * <code>RESEND = 1;</code>
+             */
+            RESEND(1, 1),
+            /**
+             * <code>REQUESTED = 2;</code>
+             */
+            REQUESTED(2, 2),;
 
-        public Builder clear() {
-          super.clear();
-          id_ = 0;
-          bitField0_ = (bitField0_ & ~0x00000001);
-          if (valueBuilder_ == null) {
-            value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-          } else {
-            valueBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000002);
-          alarm_ = false;
-          bitField0_ = (bitField0_ & ~0x00000004);
-          guard_ = false;
-          bitField0_ = (bitField0_ & ~0x00000008);
-          return this;
-        }
+            /**
+             * <code>OPERATIONAL = 0;</code>
+             */
+            public static final int OPERATIONAL_VALUE = 0;
+            /**
+             * <code>RESEND = 1;</code>
+             */
+            public static final int RESEND_VALUE = 1;
+            /**
+             * <code>REQUESTED = 2;</code>
+             */
+            public static final int REQUESTED_VALUE = 2;
 
-        public Builder clone() {
-          return create().mergeFrom(buildPartial());
-        }
 
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getDefaultInstanceForType() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance();
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType build() {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType buildPartial() {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-            to_bitField0_ |= 0x00000001;
-          }
-          result.id_ = id_;
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
-          }
-          if (valueBuilder_ == null) {
-            result.value_ = value_;
-          } else {
-            result.value_ = valueBuilder_.build();
-          }
-          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-            to_bitField0_ |= 0x00000004;
-          }
-          result.alarm_ = alarm_;
-          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-            to_bitField0_ |= 0x00000008;
-          }
-          result.guard_ = guard_;
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType) {
-            return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType other) {
-          if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance()) return this;
-          if (other.hasId()) {
-            setId(other.getId());
-          }
-          if (other.hasValue()) {
-            mergeValue(other.getValue());
-          }
-          if (other.hasAlarm()) {
-            setAlarm(other.getAlarm());
-          }
-          if (other.hasGuard()) {
-            setGuard(other.getGuard());
-          }
-          this.mergeUnknownFields(other.getUnknownFields());
-          return this;
-        }
-
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType) e.getUnfinishedMessage();
-            throw e;
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
+            public final int getNumber() {
+                return value;
             }
-          }
-          return this;
-        }
-        private int bitField0_;
 
+            public static SignalType valueOf(int value) {
+                switch (value) {
+                    case 0:
+                        return OPERATIONAL;
+                    case 1:
+                        return RESEND;
+                    case 2:
+                        return REQUESTED;
+                    default:
+                        return null;
+                }
+            }
+
+            public static com.google.protobuf.Internal.EnumLiteMap<SignalType>
+            internalGetValueMap() {
+                return internalValueMap;
+            }
+
+            private static com.google.protobuf.Internal.EnumLiteMap<SignalType>
+                    internalValueMap =
+                    new com.google.protobuf.Internal.EnumLiteMap<SignalType>() {
+                        public SignalType findValueByNumber(int number) {
+                            return SignalType.valueOf(number);
+                        }
+                    };
+
+            public final com.google.protobuf.Descriptors.EnumValueDescriptor
+            getValueDescriptor() {
+                return getDescriptor().getValues().get(index);
+            }
+
+            public final com.google.protobuf.Descriptors.EnumDescriptor
+            getDescriptorForType() {
+                return getDescriptor();
+            }
+
+            public static final com.google.protobuf.Descriptors.EnumDescriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDescriptor().getEnumTypes().get(0);
+            }
+
+            private static final SignalType[] VALUES = values();
+
+            public static SignalType valueOf(
+                    com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+                if (desc.getType() != getDescriptor()) {
+                    throw new java.lang.IllegalArgumentException(
+                            "EnumValueDescriptor is not for this type.");
+                }
+                return VALUES[desc.getIndex()];
+            }
+
+            private final int index;
+            private final int value;
+
+            private SignalType(int index, int value) {
+                this.index = index;
+                this.value = value;
+            }
+
+            // @@protoc_insertion_point(enum_scope:almaz2.domain_objects.PeriodicSignal.SignalType)
+        }
+
+        public interface InputTypeOrBuilder
+                extends com.google.protobuf.MessageOrBuilder {
+
+            // optional uint32 id = 1;
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            boolean hasId();
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            int getId();
+
+            // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            boolean hasValue();
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue();
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder();
+
+            // optional bool alarm = 3;
+
+            /**
+             * <code>optional bool alarm = 3;</code>
+             */
+            boolean hasAlarm();
+
+            /**
+             * <code>optional bool alarm = 3;</code>
+             */
+            boolean getAlarm();
+
+            // optional bool guard = 4;
+
+            /**
+             * <code>optional bool guard = 4;</code>
+             */
+            boolean hasGuard();
+
+            /**
+             * <code>optional bool guard = 4;</code>
+             */
+            boolean getGuard();
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.InputType}
+         */
+        public static final class InputType extends
+                com.google.protobuf.GeneratedMessage
+                implements InputTypeOrBuilder {
+            // Use InputType.newBuilder() to construct.
+            private InputType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+                super(builder);
+                this.unknownFields = builder.getUnknownFields();
+            }
+
+            private InputType(boolean noInit) {
+                this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+            }
+
+            private static final InputType defaultInstance;
+
+            public static InputType getDefaultInstance() {
+                return defaultInstance;
+            }
+
+            public InputType getDefaultInstanceForType() {
+                return defaultInstance;
+            }
+
+            private final com.google.protobuf.UnknownFieldSet unknownFields;
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+
+            private InputType(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                initFields();
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            default: {
+                                if (!parseUnknownField(input, unknownFields,
+                                        extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                            case 8: {
+                                bitField0_ |= 0x00000001;
+                                id_ = input.readUInt32();
+                                break;
+                            }
+                            case 18: {
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
+                                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                                    subBuilder = value_.toBuilder();
+                                }
+                                value_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
+                                if (subBuilder != null) {
+                                    subBuilder.mergeFrom(value_);
+                                    value_ = subBuilder.buildPartial();
+                                }
+                                bitField0_ |= 0x00000002;
+                                break;
+                            }
+                            case 24: {
+                                bitField0_ |= 0x00000004;
+                                alarm_ = input.readBool();
+                                break;
+                            }
+                            case 32: {
+                                bitField0_ |= 0x00000008;
+                                guard_ = input.readBool();
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e.getMessage()).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder.class);
+            }
+
+            public static com.google.protobuf.Parser<InputType> PARSER =
+                    new com.google.protobuf.AbstractParser<InputType>() {
+                        public InputType parsePartialFrom(
+                                com.google.protobuf.CodedInputStream input,
+                                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                                throws com.google.protobuf.InvalidProtocolBufferException {
+                            return new InputType(input, extensionRegistry);
+                        }
+                    };
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<InputType> getParserForType() {
+                return PARSER;
+            }
+
+            private int bitField0_;
+            // optional uint32 id = 1;
+            public static final int ID_FIELD_NUMBER = 1;
+            private int id_;
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public boolean hasId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public int getId() {
+                return id_;
+            }
+
+            // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+            public static final int VALUE_FIELD_NUMBER = 2;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public boolean hasValue() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
+                return value_;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
+                return value_;
+            }
+
+            // optional bool alarm = 3;
+            public static final int ALARM_FIELD_NUMBER = 3;
+            private boolean alarm_;
+
+            /**
+             * <code>optional bool alarm = 3;</code>
+             */
+            public boolean hasAlarm() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional bool alarm = 3;</code>
+             */
+            public boolean getAlarm() {
+                return alarm_;
+            }
+
+            // optional bool guard = 4;
+            public static final int GUARD_FIELD_NUMBER = 4;
+            private boolean guard_;
+
+            /**
+             * <code>optional bool guard = 4;</code>
+             */
+            public boolean hasGuard() {
+                return ((bitField0_ & 0x00000008) == 0x00000008);
+            }
+
+            /**
+             * <code>optional bool guard = 4;</code>
+             */
+            public boolean getGuard() {
+                return guard_;
+            }
+
+            private void initFields() {
+                id_ = 0;
+                value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                alarm_ = false;
+                guard_ = false;
+            }
+
+            private byte memoizedIsInitialized = -1;
+
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized != -1) return isInitialized == 1;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                getSerializedSize();
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    output.writeUInt32(1, id_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    output.writeMessage(2, value_);
+                }
+                if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                    output.writeBool(3, alarm_);
+                }
+                if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                    output.writeBool(4, guard_);
+                }
+                getUnknownFields().writeTo(output);
+            }
+
+            private int memoizedSerializedSize = -1;
+
+            public int getSerializedSize() {
+                int size = memoizedSerializedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeUInt32Size(1, id_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(2, value_);
+                }
+                if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeBoolSize(3, alarm_);
+                }
+                if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeBoolSize(4, guard_);
+                }
+                size += getUnknownFields().getSerializedSize();
+                memoizedSerializedSize = size;
+                return size;
+            }
+
+            private static final long serialVersionUID = 0L;
+
+            @java.lang.Override
+            protected java.lang.Object writeReplace()
+                    throws java.io.ObjectStreamException {
+                return super.writeReplace();
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static Builder newBuilder() {
+                return Builder.create();
+            }
+
+            public Builder newBuilderForType() {
+                return newBuilder();
+            }
+
+            public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType prototype) {
+                return newBuilder().mergeFrom(prototype);
+            }
+
+            public Builder toBuilder() {
+                return newBuilder(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+
+            /**
+             * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.InputType}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessage.Builder<Builder>
+                    implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
+                }
+
+                protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder.class);
+                }
+
+                // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                        getValueFieldBuilder();
+                    }
+                }
+
+                private static Builder create() {
+                    return new Builder();
+                }
+
+                public Builder clear() {
+                    super.clear();
+                    id_ = 0;
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    if (valueBuilder_ == null) {
+                        value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                    } else {
+                        valueBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    alarm_ = false;
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    guard_ = false;
+                    bitField0_ = (bitField0_ & ~0x00000008);
+                    return this;
+                }
+
+                public Builder clone() {
+                    return create().mergeFrom(buildPartial());
+                }
+
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getDefaultInstanceForType() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance();
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType build() {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType buildPartial() {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType(this);
+                    int from_bitField0_ = bitField0_;
+                    int to_bitField0_ = 0;
+                    if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                        to_bitField0_ |= 0x00000001;
+                    }
+                    result.id_ = id_;
+                    if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                        to_bitField0_ |= 0x00000002;
+                    }
+                    if (valueBuilder_ == null) {
+                        result.value_ = value_;
+                    } else {
+                        result.value_ = valueBuilder_.build();
+                    }
+                    if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                        to_bitField0_ |= 0x00000004;
+                    }
+                    result.alarm_ = alarm_;
+                    if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+                        to_bitField0_ |= 0x00000008;
+                    }
+                    result.guard_ = guard_;
+                    result.bitField0_ = to_bitField0_;
+                    onBuilt();
+                    return result;
+                }
+
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType) {
+                        return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType) other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType other) {
+                    if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance())
+                        return this;
+                    if (other.hasId()) {
+                        setId(other.getId());
+                    }
+                    if (other.hasValue()) {
+                        mergeValue(other.getValue());
+                    }
+                    if (other.hasAlarm()) {
+                        setAlarm(other.getAlarm());
+                    }
+                    if (other.hasGuard()) {
+                        setGuard(other.getGuard());
+                    }
+                    this.mergeUnknownFields(other.getUnknownFields());
+                    return this;
+                }
+
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType) e.getUnfinishedMessage();
+                        throw e;
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int bitField0_;
+
+                // optional uint32 id = 1;
+                private int id_;
+
+                /**
+                 * <code>optional uint32 id = 1;</code>
+                 */
+                public boolean hasId() {
+                    return ((bitField0_ & 0x00000001) == 0x00000001);
+                }
+
+                /**
+                 * <code>optional uint32 id = 1;</code>
+                 */
+                public int getId() {
+                    return id_;
+                }
+
+                /**
+                 * <code>optional uint32 id = 1;</code>
+                 */
+                public Builder setId(int value) {
+                    bitField0_ |= 0x00000001;
+                    id_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional uint32 id = 1;</code>
+                 */
+                public Builder clearId() {
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    id_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+                private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> valueBuilder_;
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public boolean hasValue() {
+                    return ((bitField0_ & 0x00000002) == 0x00000002);
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
+                    if (valueBuilder_ == null) {
+                        return value_;
+                    } else {
+                        return valueBuilder_.getMessage();
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public Builder setValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                    if (valueBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        value_ = value;
+                        onChanged();
+                    } else {
+                        valueBuilder_.setMessage(value);
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public Builder setValue(
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
+                    if (valueBuilder_ == null) {
+                        value_ = builderForValue.build();
+                        onChanged();
+                    } else {
+                        valueBuilder_.setMessage(builderForValue.build());
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public Builder mergeValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                    if (valueBuilder_ == null) {
+                        if (((bitField0_ & 0x00000002) == 0x00000002) &&
+                                value_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
+                            value_ =
+                                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(value_).mergeFrom(value).buildPartial();
+                        } else {
+                            value_ = value;
+                        }
+                        onChanged();
+                    } else {
+                        valueBuilder_.mergeFrom(value);
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public Builder clearValue() {
+                    if (valueBuilder_ == null) {
+                        value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                        onChanged();
+                    } else {
+                        valueBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getValueBuilder() {
+                    bitField0_ |= 0x00000002;
+                    onChanged();
+                    return getValueFieldBuilder().getBuilder();
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
+                    if (valueBuilder_ != null) {
+                        return valueBuilder_.getMessageOrBuilder();
+                    } else {
+                        return value_;
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+                 */
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>
+                getValueFieldBuilder() {
+                    if (valueBuilder_ == null) {
+                        valueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
+                                value_,
+                                getParentForChildren(),
+                                isClean());
+                        value_ = null;
+                    }
+                    return valueBuilder_;
+                }
+
+                // optional bool alarm = 3;
+                private boolean alarm_;
+
+                /**
+                 * <code>optional bool alarm = 3;</code>
+                 */
+                public boolean hasAlarm() {
+                    return ((bitField0_ & 0x00000004) == 0x00000004);
+                }
+
+                /**
+                 * <code>optional bool alarm = 3;</code>
+                 */
+                public boolean getAlarm() {
+                    return alarm_;
+                }
+
+                /**
+                 * <code>optional bool alarm = 3;</code>
+                 */
+                public Builder setAlarm(boolean value) {
+                    bitField0_ |= 0x00000004;
+                    alarm_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional bool alarm = 3;</code>
+                 */
+                public Builder clearAlarm() {
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    alarm_ = false;
+                    onChanged();
+                    return this;
+                }
+
+                // optional bool guard = 4;
+                private boolean guard_;
+
+                /**
+                 * <code>optional bool guard = 4;</code>
+                 */
+                public boolean hasGuard() {
+                    return ((bitField0_ & 0x00000008) == 0x00000008);
+                }
+
+                /**
+                 * <code>optional bool guard = 4;</code>
+                 */
+                public boolean getGuard() {
+                    return guard_;
+                }
+
+                /**
+                 * <code>optional bool guard = 4;</code>
+                 */
+                public Builder setGuard(boolean value) {
+                    bitField0_ |= 0x00000008;
+                    guard_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional bool guard = 4;</code>
+                 */
+                public Builder clearGuard() {
+                    bitField0_ = (bitField0_ & ~0x00000008);
+                    guard_ = false;
+                    onChanged();
+                    return this;
+                }
+
+                // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal.InputType)
+            }
+
+            static {
+                defaultInstance = new InputType(true);
+                defaultInstance.initFields();
+            }
+
+            // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal.InputType)
+        }
+
+        public interface RequestStateTypeOrBuilder
+                extends com.google.protobuf.MessageOrBuilder {
+
+            // optional uint32 current = 1;
+
+            /**
+             * <code>optional uint32 current = 1;</code>
+             */
+            boolean hasCurrent();
+
+            /**
+             * <code>optional uint32 current = 1;</code>
+             */
+            int getCurrent();
+
+            // optional uint32 total = 2;
+
+            /**
+             * <code>optional uint32 total = 2;</code>
+             */
+            boolean hasTotal();
+
+            /**
+             * <code>optional uint32 total = 2;</code>
+             */
+            int getTotal();
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.RequestStateType}
+         */
+        public static final class RequestStateType extends
+                com.google.protobuf.GeneratedMessage
+                implements RequestStateTypeOrBuilder {
+            // Use RequestStateType.newBuilder() to construct.
+            private RequestStateType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+                super(builder);
+                this.unknownFields = builder.getUnknownFields();
+            }
+
+            private RequestStateType(boolean noInit) {
+                this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+            }
+
+            private static final RequestStateType defaultInstance;
+
+            public static RequestStateType getDefaultInstance() {
+                return defaultInstance;
+            }
+
+            public RequestStateType getDefaultInstanceForType() {
+                return defaultInstance;
+            }
+
+            private final com.google.protobuf.UnknownFieldSet unknownFields;
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+
+            private RequestStateType(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                initFields();
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            default: {
+                                if (!parseUnknownField(input, unknownFields,
+                                        extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                            case 8: {
+                                bitField0_ |= 0x00000001;
+                                current_ = input.readUInt32();
+                                break;
+                            }
+                            case 16: {
+                                bitField0_ |= 0x00000002;
+                                total_ = input.readUInt32();
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e.getMessage()).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder.class);
+            }
+
+            public static com.google.protobuf.Parser<RequestStateType> PARSER =
+                    new com.google.protobuf.AbstractParser<RequestStateType>() {
+                        public RequestStateType parsePartialFrom(
+                                com.google.protobuf.CodedInputStream input,
+                                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                                throws com.google.protobuf.InvalidProtocolBufferException {
+                            return new RequestStateType(input, extensionRegistry);
+                        }
+                    };
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<RequestStateType> getParserForType() {
+                return PARSER;
+            }
+
+            private int bitField0_;
+            // optional uint32 current = 1;
+            public static final int CURRENT_FIELD_NUMBER = 1;
+            private int current_;
+
+            /**
+             * <code>optional uint32 current = 1;</code>
+             */
+            public boolean hasCurrent() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 current = 1;</code>
+             */
+            public int getCurrent() {
+                return current_;
+            }
+
+            // optional uint32 total = 2;
+            public static final int TOTAL_FIELD_NUMBER = 2;
+            private int total_;
+
+            /**
+             * <code>optional uint32 total = 2;</code>
+             */
+            public boolean hasTotal() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional uint32 total = 2;</code>
+             */
+            public int getTotal() {
+                return total_;
+            }
+
+            private void initFields() {
+                current_ = 0;
+                total_ = 0;
+            }
+
+            private byte memoizedIsInitialized = -1;
+
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized != -1) return isInitialized == 1;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                getSerializedSize();
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    output.writeUInt32(1, current_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    output.writeUInt32(2, total_);
+                }
+                getUnknownFields().writeTo(output);
+            }
+
+            private int memoizedSerializedSize = -1;
+
+            public int getSerializedSize() {
+                int size = memoizedSerializedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeUInt32Size(1, current_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeUInt32Size(2, total_);
+                }
+                size += getUnknownFields().getSerializedSize();
+                memoizedSerializedSize = size;
+                return size;
+            }
+
+            private static final long serialVersionUID = 0L;
+
+            @java.lang.Override
+            protected java.lang.Object writeReplace()
+                    throws java.io.ObjectStreamException {
+                return super.writeReplace();
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static Builder newBuilder() {
+                return Builder.create();
+            }
+
+            public Builder newBuilderForType() {
+                return newBuilder();
+            }
+
+            public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType prototype) {
+                return newBuilder().mergeFrom(prototype);
+            }
+
+            public Builder toBuilder() {
+                return newBuilder(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+
+            /**
+             * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.RequestStateType}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessage.Builder<Builder>
+                    implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
+                }
+
+                protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder.class);
+                }
+
+                // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    }
+                }
+
+                private static Builder create() {
+                    return new Builder();
+                }
+
+                public Builder clear() {
+                    super.clear();
+                    current_ = 0;
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    total_ = 0;
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    return this;
+                }
+
+                public Builder clone() {
+                    return create().mergeFrom(buildPartial());
+                }
+
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getDefaultInstanceForType() {
+                    return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType build() {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType buildPartial() {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType(this);
+                    int from_bitField0_ = bitField0_;
+                    int to_bitField0_ = 0;
+                    if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                        to_bitField0_ |= 0x00000001;
+                    }
+                    result.current_ = current_;
+                    if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                        to_bitField0_ |= 0x00000002;
+                    }
+                    result.total_ = total_;
+                    result.bitField0_ = to_bitField0_;
+                    onBuilt();
+                    return result;
+                }
+
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType) {
+                        return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType) other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType other) {
+                    if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance())
+                        return this;
+                    if (other.hasCurrent()) {
+                        setCurrent(other.getCurrent());
+                    }
+                    if (other.hasTotal()) {
+                        setTotal(other.getTotal());
+                    }
+                    this.mergeUnknownFields(other.getUnknownFields());
+                    return this;
+                }
+
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType) e.getUnfinishedMessage();
+                        throw e;
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int bitField0_;
+
+                // optional uint32 current = 1;
+                private int current_;
+
+                /**
+                 * <code>optional uint32 current = 1;</code>
+                 */
+                public boolean hasCurrent() {
+                    return ((bitField0_ & 0x00000001) == 0x00000001);
+                }
+
+                /**
+                 * <code>optional uint32 current = 1;</code>
+                 */
+                public int getCurrent() {
+                    return current_;
+                }
+
+                /**
+                 * <code>optional uint32 current = 1;</code>
+                 */
+                public Builder setCurrent(int value) {
+                    bitField0_ |= 0x00000001;
+                    current_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional uint32 current = 1;</code>
+                 */
+                public Builder clearCurrent() {
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    current_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                // optional uint32 total = 2;
+                private int total_;
+
+                /**
+                 * <code>optional uint32 total = 2;</code>
+                 */
+                public boolean hasTotal() {
+                    return ((bitField0_ & 0x00000002) == 0x00000002);
+                }
+
+                /**
+                 * <code>optional uint32 total = 2;</code>
+                 */
+                public int getTotal() {
+                    return total_;
+                }
+
+                /**
+                 * <code>optional uint32 total = 2;</code>
+                 */
+                public Builder setTotal(int value) {
+                    bitField0_ |= 0x00000002;
+                    total_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional uint32 total = 2;</code>
+                 */
+                public Builder clearTotal() {
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    total_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal.RequestStateType)
+            }
+
+            static {
+                defaultInstance = new RequestStateType(true);
+                defaultInstance.initFields();
+            }
+
+            // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal.RequestStateType)
+        }
+
+        private int bitField0_;
         // optional uint32 id = 1;
-        private int id_ ;
+        public static final int ID_FIELD_NUMBER = 1;
+        private int id_;
+
         /**
          * <code>optional uint32 id = 1;</code>
          */
         public boolean hasId() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
+            return ((bitField0_ & 0x00000001) == 0x00000001);
         }
+
         /**
          * <code>optional uint32 id = 1;</code>
          */
         public int getId() {
-          return id_;
-        }
-        /**
-         * <code>optional uint32 id = 1;</code>
-         */
-        public Builder setId(int value) {
-          bitField0_ |= 0x00000001;
-          id_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional uint32 id = 1;</code>
-         */
-        public Builder clearId() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          id_ = 0;
-          onChanged();
-          return this;
+            return id_;
         }
 
-        // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-        private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> valueBuilder_;
+        // optional uint32 time = 2;
+        public static final int TIME_FIELD_NUMBER = 2;
+        private int time_;
+
         /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         * <code>optional uint32 time = 2;</code>
          */
-        public boolean hasValue() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
-          if (valueBuilder_ == null) {
-            return value_;
-          } else {
-            return valueBuilder_.getMessage();
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public Builder setValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-          if (valueBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            value_ = value;
-            onChanged();
-          } else {
-            valueBuilder_.setMessage(value);
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public Builder setValue(
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
-          if (valueBuilder_ == null) {
-            value_ = builderForValue.build();
-            onChanged();
-          } else {
-            valueBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public Builder mergeValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-          if (valueBuilder_ == null) {
-            if (((bitField0_ & 0x00000002) == 0x00000002) &&
-                value_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
-              value_ =
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(value_).mergeFrom(value).buildPartial();
-            } else {
-              value_ = value;
-            }
-            onChanged();
-          } else {
-            valueBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public Builder clearValue() {
-          if (valueBuilder_ == null) {
-            value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-            onChanged();
-          } else {
-            valueBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000002);
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getValueBuilder() {
-          bitField0_ |= 0x00000002;
-          onChanged();
-          return getValueFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
-          if (valueBuilder_ != null) {
-            return valueBuilder_.getMessageOrBuilder();
-          } else {
-            return value_;
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-         */
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> 
-            getValueFieldBuilder() {
-          if (valueBuilder_ == null) {
-            valueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
-                    value_,
-                    getParentForChildren(),
-                    isClean());
-            value_ = null;
-          }
-          return valueBuilder_;
+        public boolean hasTime() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
         }
 
-        // optional bool alarm = 3;
-        private boolean alarm_ ;
         /**
-         * <code>optional bool alarm = 3;</code>
+         * <code>optional uint32 time = 2;</code>
+         */
+        public int getTime() {
+            return time_;
+        }
+
+        // optional uint32 get_time = 3;
+        public static final int GET_TIME_FIELD_NUMBER = 3;
+        private int getTime_;
+
+        /**
+         * <code>optional uint32 get_time = 3;</code>
+         */
+        public boolean hasGetTime() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <code>optional uint32 get_time = 3;</code>
+         */
+        public int getGetTime() {
+            return getTime_;
+        }
+
+        // optional uint32 signal_id = 4;
+        public static final int SIGNAL_ID_FIELD_NUMBER = 4;
+        private int signalId_;
+
+        /**
+         * <code>optional uint32 signal_id = 4;</code>
+         */
+        public boolean hasSignalId() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+
+        /**
+         * <code>optional uint32 signal_id = 4;</code>
+         */
+        public int getSignalId() {
+            return signalId_;
+        }
+
+        // optional uint32 equipment_id = 5;
+        public static final int EQUIPMENT_ID_FIELD_NUMBER = 5;
+        private int equipmentId_;
+
+        /**
+         * <code>optional uint32 equipment_id = 5;</code>
+         */
+        public boolean hasEquipmentId() {
+            return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+
+        /**
+         * <code>optional uint32 equipment_id = 5;</code>
+         */
+        public int getEquipmentId() {
+            return equipmentId_;
+        }
+
+        // optional uint32 cd_id = 6;
+        public static final int CD_ID_FIELD_NUMBER = 6;
+        private int cdId_;
+
+        /**
+         * <code>optional uint32 cd_id = 6;</code>
+         */
+        public boolean hasCdId() {
+            return ((bitField0_ & 0x00000020) == 0x00000020);
+        }
+
+        /**
+         * <code>optional uint32 cd_id = 6;</code>
+         */
+        public int getCdId() {
+            return cdId_;
+        }
+
+        // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
+        public static final int TYPE_FIELD_NUMBER = 7;
+        private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType type_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+         */
+        public boolean hasType() {
+            return ((bitField0_ & 0x00000040) == 0x00000040);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType() {
+            return type_;
+        }
+
+        // optional bool alarm = 8;
+        public static final int ALARM_FIELD_NUMBER = 8;
+        private boolean alarm_;
+
+        /**
+         * <code>optional bool alarm = 8;</code>
          */
         public boolean hasAlarm() {
-          return ((bitField0_ & 0x00000004) == 0x00000004);
+            return ((bitField0_ & 0x00000080) == 0x00000080);
         }
+
         /**
-         * <code>optional bool alarm = 3;</code>
+         * <code>optional bool alarm = 8;</code>
          */
         public boolean getAlarm() {
-          return alarm_;
+            return alarm_;
         }
+
+        // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
+        public static final int INPUTS_FIELD_NUMBER = 9;
+        private java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> inputs_;
+
         /**
-         * <code>optional bool alarm = 3;</code>
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
          */
-        public Builder setAlarm(boolean value) {
-          bitField0_ |= 0x00000004;
-          alarm_ = value;
-          onChanged();
-          return this;
+        public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> getInputsList() {
+            return inputs_;
         }
+
         /**
-         * <code>optional bool alarm = 3;</code>
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
          */
-        public Builder clearAlarm() {
-          bitField0_ = (bitField0_ & ~0x00000004);
-          alarm_ = false;
-          onChanged();
-          return this;
+        public java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>
+        getInputsOrBuilderList() {
+            return inputs_;
         }
 
-        // optional bool guard = 4;
-        private boolean guard_ ;
         /**
-         * <code>optional bool guard = 4;</code>
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
          */
-        public boolean hasGuard() {
-          return ((bitField0_ & 0x00000008) == 0x00000008);
+        public int getInputsCount() {
+            return inputs_.size();
         }
+
         /**
-         * <code>optional bool guard = 4;</code>
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
          */
-        public boolean getGuard() {
-          return guard_;
+        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index) {
+            return inputs_.get(index);
         }
+
         /**
-         * <code>optional bool guard = 4;</code>
+         * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
          */
-        public Builder setGuard(boolean value) {
-          bitField0_ |= 0x00000008;
-          guard_ = value;
-          onChanged();
-          return this;
+        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
+                int index) {
+            return inputs_.get(index);
         }
+
+        // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
+        public static final int REQUEST_STATE_FIELD_NUMBER = 10;
+        private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType requestState_;
+
         /**
-         * <code>optional bool guard = 4;</code>
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
          */
-        public Builder clearGuard() {
-          bitField0_ = (bitField0_ & ~0x00000008);
-          guard_ = false;
-          onChanged();
-          return this;
+        public boolean hasRequestState() {
+            return ((bitField0_ & 0x00000100) == 0x00000100);
         }
 
-        // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal.InputType)
-      }
-
-      static {
-        defaultInstance = new InputType(true);
-        defaultInstance.initFields();
-      }
-
-      // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal.InputType)
-    }
-
-    public interface RequestStateTypeOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
-
-      // optional uint32 current = 1;
-      /**
-       * <code>optional uint32 current = 1;</code>
-       */
-      boolean hasCurrent();
-      /**
-       * <code>optional uint32 current = 1;</code>
-       */
-      int getCurrent();
-
-      // optional uint32 total = 2;
-      /**
-       * <code>optional uint32 total = 2;</code>
-       */
-      boolean hasTotal();
-      /**
-       * <code>optional uint32 total = 2;</code>
-       */
-      int getTotal();
-    }
-    /**
-     * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.RequestStateType}
-     */
-    public static final class RequestStateType extends
-        com.google.protobuf.GeneratedMessage
-        implements RequestStateTypeOrBuilder {
-      // Use RequestStateType.newBuilder() to construct.
-      private RequestStateType(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-        super(builder);
-        this.unknownFields = builder.getUnknownFields();
-      }
-      private RequestStateType(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-      private static final RequestStateType defaultInstance;
-      public static RequestStateType getDefaultInstance() {
-        return defaultInstance;
-      }
-
-      public RequestStateType getDefaultInstanceForType() {
-        return defaultInstance;
-      }
-
-      private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-          getUnknownFields() {
-        return this.unknownFields;
-      }
-      private RequestStateType(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        initFields();
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              default: {
-                if (!parseUnknownField(input, unknownFields,
-                                       extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-              case 8: {
-                bitField0_ |= 0x00000001;
-                current_ = input.readUInt32();
-                break;
-              }
-              case 16: {
-                bitField0_ |= 0x00000002;
-                total_ = input.readUInt32();
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e.getMessage()).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder.class);
-      }
-
-      public static com.google.protobuf.Parser<RequestStateType> PARSER =
-          new com.google.protobuf.AbstractParser<RequestStateType>() {
-        public RequestStateType parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RequestStateType(input, extensionRegistry);
-        }
-      };
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<RequestStateType> getParserForType() {
-        return PARSER;
-      }
-
-      private int bitField0_;
-      // optional uint32 current = 1;
-      public static final int CURRENT_FIELD_NUMBER = 1;
-      private int current_;
-      /**
-       * <code>optional uint32 current = 1;</code>
-       */
-      public boolean hasCurrent() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 current = 1;</code>
-       */
-      public int getCurrent() {
-        return current_;
-      }
-
-      // optional uint32 total = 2;
-      public static final int TOTAL_FIELD_NUMBER = 2;
-      private int total_;
-      /**
-       * <code>optional uint32 total = 2;</code>
-       */
-      public boolean hasTotal() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional uint32 total = 2;</code>
-       */
-      public int getTotal() {
-        return total_;
-      }
-
-      private void initFields() {
-        current_ = 0;
-        total_ = 0;
-      }
-      private byte memoizedIsInitialized = -1;
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        getSerializedSize();
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeUInt32(1, current_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeUInt32(2, total_);
-        }
-        getUnknownFields().writeTo(output);
-      }
-
-      private int memoizedSerializedSize = -1;
-      public int getSerializedSize() {
-        int size = memoizedSerializedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(1, current_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(2, total_);
-        }
-        size += getUnknownFields().getSerializedSize();
-        memoizedSerializedSize = size;
-        return size;
-      }
-
-      private static final long serialVersionUID = 0L;
-      @java.lang.Override
-      protected java.lang.Object writeReplace()
-          throws java.io.ObjectStreamException {
-        return super.writeReplace();
-      }
-
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType prototype) {
-        return newBuilder().mergeFrom(prototype);
-      }
-      public Builder toBuilder() { return newBuilder(this); }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code almaz2.domain_objects.PeriodicSignal.RequestStateType}
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState() {
+            return requestState_;
         }
 
-        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder.class);
+        /**
+         * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder() {
+            return requestState_;
         }
 
-        // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
+        private void initFields() {
+            id_ = 0;
+            time_ = 0;
+            getTime_ = 0;
+            signalId_ = 0;
+            equipmentId_ = 0;
+            cdId_ = 0;
+            type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
+            alarm_ = false;
+            inputs_ = java.util.Collections.emptyList();
+            requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
         }
 
-        private Builder(
-            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          }
-        }
-        private static Builder create() {
-          return new Builder();
-        }
-
-        public Builder clear() {
-          super.clear();
-          current_ = 0;
-          bitField0_ = (bitField0_ & ~0x00000001);
-          total_ = 0;
-          bitField0_ = (bitField0_ & ~0x00000002);
-          return this;
-        }
-
-        public Builder clone() {
-          return create().mergeFrom(buildPartial());
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getDefaultInstanceForType() {
-          return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType build() {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType buildPartial() {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-            to_bitField0_ |= 0x00000001;
-          }
-          result.current_ = current_;
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
-          }
-          result.total_ = total_;
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType) {
-            return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType other) {
-          if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance()) return this;
-          if (other.hasCurrent()) {
-            setCurrent(other.getCurrent());
-          }
-          if (other.hasTotal()) {
-            setTotal(other.getTotal());
-          }
-          this.mergeUnknownFields(other.getUnknownFields());
-          return this;
-        }
+        private byte memoizedIsInitialized = -1;
 
         public final boolean isInitialized() {
-          return true;
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
         }
 
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType) e.getUnfinishedMessage();
-            throw e;
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, id_);
             }
-          }
-          return this;
-        }
-        private int bitField0_;
-
-        // optional uint32 current = 1;
-        private int current_ ;
-        /**
-         * <code>optional uint32 current = 1;</code>
-         */
-        public boolean hasCurrent() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
-        }
-        /**
-         * <code>optional uint32 current = 1;</code>
-         */
-        public int getCurrent() {
-          return current_;
-        }
-        /**
-         * <code>optional uint32 current = 1;</code>
-         */
-        public Builder setCurrent(int value) {
-          bitField0_ |= 0x00000001;
-          current_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional uint32 current = 1;</code>
-         */
-        public Builder clearCurrent() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          current_ = 0;
-          onChanged();
-          return this;
-        }
-
-        // optional uint32 total = 2;
-        private int total_ ;
-        /**
-         * <code>optional uint32 total = 2;</code>
-         */
-        public boolean hasTotal() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
-        }
-        /**
-         * <code>optional uint32 total = 2;</code>
-         */
-        public int getTotal() {
-          return total_;
-        }
-        /**
-         * <code>optional uint32 total = 2;</code>
-         */
-        public Builder setTotal(int value) {
-          bitField0_ |= 0x00000002;
-          total_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional uint32 total = 2;</code>
-         */
-        public Builder clearTotal() {
-          bitField0_ = (bitField0_ & ~0x00000002);
-          total_ = 0;
-          onChanged();
-          return this;
-        }
-
-        // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal.RequestStateType)
-      }
-
-      static {
-        defaultInstance = new RequestStateType(true);
-        defaultInstance.initFields();
-      }
-
-      // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal.RequestStateType)
-    }
-
-    private int bitField0_;
-    // optional uint32 id = 1;
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    // optional uint32 time = 2;
-    public static final int TIME_FIELD_NUMBER = 2;
-    private int time_;
-    /**
-     * <code>optional uint32 time = 2;</code>
-     */
-    public boolean hasTime() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional uint32 time = 2;</code>
-     */
-    public int getTime() {
-      return time_;
-    }
-
-    // optional uint32 get_time = 3;
-    public static final int GET_TIME_FIELD_NUMBER = 3;
-    private int getTime_;
-    /**
-     * <code>optional uint32 get_time = 3;</code>
-     */
-    public boolean hasGetTime() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional uint32 get_time = 3;</code>
-     */
-    public int getGetTime() {
-      return getTime_;
-    }
-
-    // optional uint32 signal_id = 4;
-    public static final int SIGNAL_ID_FIELD_NUMBER = 4;
-    private int signalId_;
-    /**
-     * <code>optional uint32 signal_id = 4;</code>
-     */
-    public boolean hasSignalId() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional uint32 signal_id = 4;</code>
-     */
-    public int getSignalId() {
-      return signalId_;
-    }
-
-    // optional uint32 equipment_id = 5;
-    public static final int EQUIPMENT_ID_FIELD_NUMBER = 5;
-    private int equipmentId_;
-    /**
-     * <code>optional uint32 equipment_id = 5;</code>
-     */
-    public boolean hasEquipmentId() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional uint32 equipment_id = 5;</code>
-     */
-    public int getEquipmentId() {
-      return equipmentId_;
-    }
-
-    // optional uint32 cd_id = 6;
-    public static final int CD_ID_FIELD_NUMBER = 6;
-    private int cdId_;
-    /**
-     * <code>optional uint32 cd_id = 6;</code>
-     */
-    public boolean hasCdId() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>optional uint32 cd_id = 6;</code>
-     */
-    public int getCdId() {
-      return cdId_;
-    }
-
-    // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
-    public static final int TYPE_FIELD_NUMBER = 7;
-    private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType type_;
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-     */
-    public boolean hasType() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType() {
-      return type_;
-    }
-
-    // optional bool alarm = 8;
-    public static final int ALARM_FIELD_NUMBER = 8;
-    private boolean alarm_;
-    /**
-     * <code>optional bool alarm = 8;</code>
-     */
-    public boolean hasAlarm() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
-    }
-    /**
-     * <code>optional bool alarm = 8;</code>
-     */
-    public boolean getAlarm() {
-      return alarm_;
-    }
-
-    // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
-    public static final int INPUTS_FIELD_NUMBER = 9;
-    private java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> inputs_;
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> getInputsList() {
-      return inputs_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    public java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> 
-        getInputsOrBuilderList() {
-      return inputs_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    public int getInputsCount() {
-      return inputs_.size();
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index) {
-      return inputs_.get(index);
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
-        int index) {
-      return inputs_.get(index);
-    }
-
-    // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
-    public static final int REQUEST_STATE_FIELD_NUMBER = 10;
-    private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType requestState_;
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    public boolean hasRequestState() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState() {
-      return requestState_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder() {
-      return requestState_;
-    }
-
-    private void initFields() {
-      id_ = 0;
-      time_ = 0;
-      getTime_ = 0;
-      signalId_ = 0;
-      equipmentId_ = 0;
-      cdId_ = 0;
-      type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
-      alarm_ = false;
-      inputs_ = java.util.Collections.emptyList();
-      requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(2, time_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, getTime_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeUInt32(4, signalId_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeUInt32(5, equipmentId_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeUInt32(6, cdId_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeEnum(7, type_.getNumber());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeBool(8, alarm_);
-      }
-      for (int i = 0; i < inputs_.size(); i++) {
-        output.writeMessage(9, inputs_.get(i));
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeMessage(10, requestState_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, time_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, getTime_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, signalId_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, equipmentId_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cdId_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, type_.getNumber());
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, alarm_);
-      }
-      for (int i = 0; i < inputs_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, inputs_.get(i));
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, requestState_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code almaz2.domain_objects.PeriodicSignal}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignalOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getInputsFieldBuilder();
-          getRequestStateFieldBuilder();
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        id_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        time_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        getTime_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        signalId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        equipmentId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        cdId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
-        bitField0_ = (bitField0_ & ~0x00000040);
-        alarm_ = false;
-        bitField0_ = (bitField0_ & ~0x00000080);
-        if (inputsBuilder_ == null) {
-          inputs_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
-        } else {
-          inputsBuilder_.clear();
-        }
-        if (requestStateBuilder_ == null) {
-          requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
-        } else {
-          requestStateBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000200);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
-      }
-
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal build() {
-        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal buildPartial() {
-        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.id_ = id_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.time_ = time_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.getTime_ = getTime_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.signalId_ = signalId_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.equipmentId_ = equipmentId_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.cdId_ = cdId_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.type_ = type_;
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
-        }
-        result.alarm_ = alarm_;
-        if (inputsBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) == 0x00000100)) {
-            inputs_ = java.util.Collections.unmodifiableList(inputs_);
-            bitField0_ = (bitField0_ & ~0x00000100);
-          }
-          result.inputs_ = inputs_;
-        } else {
-          result.inputs_ = inputsBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
-          to_bitField0_ |= 0x00000100;
-        }
-        if (requestStateBuilder_ == null) {
-          result.requestState_ = requestState_;
-        } else {
-          result.requestState_ = requestStateBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal other) {
-        if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
-        }
-        if (other.hasTime()) {
-          setTime(other.getTime());
-        }
-        if (other.hasGetTime()) {
-          setGetTime(other.getGetTime());
-        }
-        if (other.hasSignalId()) {
-          setSignalId(other.getSignalId());
-        }
-        if (other.hasEquipmentId()) {
-          setEquipmentId(other.getEquipmentId());
-        }
-        if (other.hasCdId()) {
-          setCdId(other.getCdId());
-        }
-        if (other.hasType()) {
-          setType(other.getType());
-        }
-        if (other.hasAlarm()) {
-          setAlarm(other.getAlarm());
-        }
-        if (inputsBuilder_ == null) {
-          if (!other.inputs_.isEmpty()) {
-            if (inputs_.isEmpty()) {
-              inputs_ = other.inputs_;
-              bitField0_ = (bitField0_ & ~0x00000100);
-            } else {
-              ensureInputsIsMutable();
-              inputs_.addAll(other.inputs_);
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeUInt32(2, time_);
             }
-            onChanged();
-          }
-        } else {
-          if (!other.inputs_.isEmpty()) {
-            if (inputsBuilder_.isEmpty()) {
-              inputsBuilder_.dispose();
-              inputsBuilder_ = null;
-              inputs_ = other.inputs_;
-              bitField0_ = (bitField0_ & ~0x00000100);
-              inputsBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getInputsFieldBuilder() : null;
-            } else {
-              inputsBuilder_.addAllMessages(other.inputs_);
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                output.writeUInt32(3, getTime_);
             }
-          }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                output.writeUInt32(4, signalId_);
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                output.writeUInt32(5, equipmentId_);
+            }
+            if (((bitField0_ & 0x00000020) == 0x00000020)) {
+                output.writeUInt32(6, cdId_);
+            }
+            if (((bitField0_ & 0x00000040) == 0x00000040)) {
+                output.writeEnum(7, type_.getNumber());
+            }
+            if (((bitField0_ & 0x00000080) == 0x00000080)) {
+                output.writeBool(8, alarm_);
+            }
+            for (int i = 0; i < inputs_.size(); i++) {
+                output.writeMessage(9, inputs_.get(i));
+            }
+            if (((bitField0_ & 0x00000100) == 0x00000100)) {
+                output.writeMessage(10, requestState_);
+            }
+            getUnknownFields().writeTo(output);
         }
-        if (other.hasRequestState()) {
-          mergeRequestState(other.getRequestState());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        return true;
-      }
+        private int memoizedSerializedSize = -1;
 
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
 
-      // optional uint32 id = 1;
-      private int id_ ;
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public Builder setId(int value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
-        onChanged();
-        return this;
-      }
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(1, id_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(2, time_);
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(3, getTime_);
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(4, signalId_);
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(5, equipmentId_);
+            }
+            if (((bitField0_ & 0x00000020) == 0x00000020)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(6, cdId_);
+            }
+            if (((bitField0_ & 0x00000040) == 0x00000040)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeEnumSize(7, type_.getNumber());
+            }
+            if (((bitField0_ & 0x00000080) == 0x00000080)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeBoolSize(8, alarm_);
+            }
+            for (int i = 0; i < inputs_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(9, inputs_.get(i));
+            }
+            if (((bitField0_ & 0x00000100) == 0x00000100)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(10, requestState_);
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
 
-      // optional uint32 time = 2;
-      private int time_ ;
-      /**
-       * <code>optional uint32 time = 2;</code>
-       */
-      public boolean hasTime() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional uint32 time = 2;</code>
-       */
-      public int getTime() {
-        return time_;
-      }
-      /**
-       * <code>optional uint32 time = 2;</code>
-       */
-      public Builder setTime(int value) {
-        bitField0_ |= 0x00000002;
-        time_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 time = 2;</code>
-       */
-      public Builder clearTime() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        time_ = 0;
-        onChanged();
-        return this;
-      }
+        private static final long serialVersionUID = 0L;
 
-      // optional uint32 get_time = 3;
-      private int getTime_ ;
-      /**
-       * <code>optional uint32 get_time = 3;</code>
-       */
-      public boolean hasGetTime() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional uint32 get_time = 3;</code>
-       */
-      public int getGetTime() {
-        return getTime_;
-      }
-      /**
-       * <code>optional uint32 get_time = 3;</code>
-       */
-      public Builder setGetTime(int value) {
-        bitField0_ |= 0x00000004;
-        getTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 get_time = 3;</code>
-       */
-      public Builder clearGetTime() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        getTime_ = 0;
-        onChanged();
-        return this;
-      }
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
 
-      // optional uint32 signal_id = 4;
-      private int signalId_ ;
-      /**
-       * <code>optional uint32 signal_id = 4;</code>
-       */
-      public boolean hasSignalId() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional uint32 signal_id = 4;</code>
-       */
-      public int getSignalId() {
-        return signalId_;
-      }
-      /**
-       * <code>optional uint32 signal_id = 4;</code>
-       */
-      public Builder setSignalId(int value) {
-        bitField0_ |= 0x00000008;
-        signalId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 signal_id = 4;</code>
-       */
-      public Builder clearSignalId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        signalId_ = 0;
-        onChanged();
-        return this;
-      }
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-      // optional uint32 equipment_id = 5;
-      private int equipmentId_ ;
-      /**
-       * <code>optional uint32 equipment_id = 5;</code>
-       */
-      public boolean hasEquipmentId() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional uint32 equipment_id = 5;</code>
-       */
-      public int getEquipmentId() {
-        return equipmentId_;
-      }
-      /**
-       * <code>optional uint32 equipment_id = 5;</code>
-       */
-      public Builder setEquipmentId(int value) {
-        bitField0_ |= 0x00000010;
-        equipmentId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 equipment_id = 5;</code>
-       */
-      public Builder clearEquipmentId() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        equipmentId_ = 0;
-        onChanged();
-        return this;
-      }
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
 
-      // optional uint32 cd_id = 6;
-      private int cdId_ ;
-      /**
-       * <code>optional uint32 cd_id = 6;</code>
-       */
-      public boolean hasCdId() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>optional uint32 cd_id = 6;</code>
-       */
-      public int getCdId() {
-        return cdId_;
-      }
-      /**
-       * <code>optional uint32 cd_id = 6;</code>
-       */
-      public Builder setCdId(int value) {
-        bitField0_ |= 0x00000020;
-        cdId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 cd_id = 6;</code>
-       */
-      public Builder clearCdId() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        cdId_ = 0;
-        onChanged();
-        return this;
-      }
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-      // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
-      private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-       */
-      public boolean hasType() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType() {
-        return type_;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-       */
-      public Builder setType(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType value) {
-        if (value == null) {
-          throw new NullPointerException();
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
         }
-        bitField0_ |= 0x00000040;
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
-       */
-      public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
-        onChanged();
-        return this;
-      }
 
-      // optional bool alarm = 8;
-      private boolean alarm_ ;
-      /**
-       * <code>optional bool alarm = 8;</code>
-       */
-      public boolean hasAlarm() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
-      }
-      /**
-       * <code>optional bool alarm = 8;</code>
-       */
-      public boolean getAlarm() {
-        return alarm_;
-      }
-      /**
-       * <code>optional bool alarm = 8;</code>
-       */
-      public Builder setAlarm(boolean value) {
-        bitField0_ |= 0x00000080;
-        alarm_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional bool alarm = 8;</code>
-       */
-      public Builder clearAlarm() {
-        bitField0_ = (bitField0_ & ~0x00000080);
-        alarm_ = false;
-        onChanged();
-        return this;
-      }
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
 
-      // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
-      private java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> inputs_ =
-        java.util.Collections.emptyList();
-      private void ensureInputsIsMutable() {
-        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
-          inputs_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType>(inputs_);
-          bitField0_ |= 0x00000100;
-         }
-      }
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
 
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> inputsBuilder_;
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
 
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> getInputsList() {
-        if (inputsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(inputs_);
-        } else {
-          return inputsBuilder_.getMessageList();
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
         }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public int getInputsCount() {
-        if (inputsBuilder_ == null) {
-          return inputs_.size();
-        } else {
-          return inputsBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index) {
-        if (inputsBuilder_ == null) {
-          return inputs_.get(index);
-        } else {
-          return inputsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder setInputs(
-          int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
-        if (inputsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInputsIsMutable();
-          inputs_.set(index, value);
-          onChanged();
-        } else {
-          inputsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder setInputs(
-          int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
-        if (inputsBuilder_ == null) {
-          ensureInputsIsMutable();
-          inputs_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          inputsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder addInputs(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
-        if (inputsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInputsIsMutable();
-          inputs_.add(value);
-          onChanged();
-        } else {
-          inputsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder addInputs(
-          int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
-        if (inputsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInputsIsMutable();
-          inputs_.add(index, value);
-          onChanged();
-        } else {
-          inputsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder addInputs(
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
-        if (inputsBuilder_ == null) {
-          ensureInputsIsMutable();
-          inputs_.add(builderForValue.build());
-          onChanged();
-        } else {
-          inputsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder addInputs(
-          int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
-        if (inputsBuilder_ == null) {
-          ensureInputsIsMutable();
-          inputs_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          inputsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder addAllInputs(
-          java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> values) {
-        if (inputsBuilder_ == null) {
-          ensureInputsIsMutable();
-          super.addAll(values, inputs_);
-          onChanged();
-        } else {
-          inputsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder clearInputs() {
-        if (inputsBuilder_ == null) {
-          inputs_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
-          onChanged();
-        } else {
-          inputsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public Builder removeInputs(int index) {
-        if (inputsBuilder_ == null) {
-          ensureInputsIsMutable();
-          inputs_.remove(index);
-          onChanged();
-        } else {
-          inputsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder getInputsBuilder(
-          int index) {
-        return getInputsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
-          int index) {
-        if (inputsBuilder_ == null) {
-          return inputs_.get(index);  } else {
-          return inputsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> 
-           getInputsOrBuilderList() {
-        if (inputsBuilder_ != null) {
-          return inputsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(inputs_);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder addInputsBuilder() {
-        return getInputsFieldBuilder().addBuilder(
-            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder addInputsBuilder(
-          int index) {
-        return getInputsFieldBuilder().addBuilder(
-            index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder> 
-           getInputsBuilderList() {
-        return getInputsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> 
-          getInputsFieldBuilder() {
-        if (inputsBuilder_ == null) {
-          inputsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>(
-                  inputs_,
-                  ((bitField0_ & 0x00000100) == 0x00000100),
-                  getParentForChildren(),
-                  isClean());
-          inputs_ = null;
-        }
-        return inputsBuilder_;
-      }
 
-      // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
-      private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder> requestStateBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public boolean hasRequestState() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState() {
-        if (requestStateBuilder_ == null) {
-          return requestState_;
-        } else {
-          return requestStateBuilder_.getMessage();
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
         }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public Builder setRequestState(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType value) {
-        if (requestStateBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          requestState_ = value;
-          onChanged();
-        } else {
-          requestStateBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000200;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public Builder setRequestState(
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder builderForValue) {
-        if (requestStateBuilder_ == null) {
-          requestState_ = builderForValue.build();
-          onChanged();
-        } else {
-          requestStateBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000200;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public Builder mergeRequestState(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType value) {
-        if (requestStateBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) == 0x00000200) &&
-              requestState_ != ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance()) {
-            requestState_ =
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.newBuilder(requestState_).mergeFrom(value).buildPartial();
-          } else {
-            requestState_ = value;
-          }
-          onChanged();
-        } else {
-          requestStateBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000200;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public Builder clearRequestState() {
-        if (requestStateBuilder_ == null) {
-          requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
-          onChanged();
-        } else {
-          requestStateBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000200);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder getRequestStateBuilder() {
-        bitField0_ |= 0x00000200;
-        onChanged();
-        return getRequestStateFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder() {
-        if (requestStateBuilder_ != null) {
-          return requestStateBuilder_.getMessageOrBuilder();
-        } else {
-          return requestState_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder> 
-          getRequestStateFieldBuilder() {
-        if (requestStateBuilder_ == null) {
-          requestStateBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder>(
-                  requestState_,
-                  getParentForChildren(),
-                  isClean());
-          requestState_ = null;
-        }
-        return requestStateBuilder_;
-      }
 
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal)
+        public static ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.PeriodicSignal}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignalOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.class, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getInputsFieldBuilder();
+                    getRequestStateFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                id_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                time_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000002);
+                getTime_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000004);
+                signalId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000008);
+                equipmentId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000010);
+                cdId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000020);
+                type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
+                bitField0_ = (bitField0_ & ~0x00000040);
+                alarm_ = false;
+                bitField0_ = (bitField0_ & ~0x00000080);
+                if (inputsBuilder_ == null) {
+                    inputs_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000100);
+                } else {
+                    inputsBuilder_.clear();
+                }
+                if (requestStateBuilder_ == null) {
+                    requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
+                } else {
+                    requestStateBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000200);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal build() {
+                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal buildPartial() {
+                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal result = new ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.id_ = id_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                result.time_ = time_;
+                if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                    to_bitField0_ |= 0x00000004;
+                }
+                result.getTime_ = getTime_;
+                if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+                    to_bitField0_ |= 0x00000008;
+                }
+                result.signalId_ = signalId_;
+                if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+                    to_bitField0_ |= 0x00000010;
+                }
+                result.equipmentId_ = equipmentId_;
+                if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+                    to_bitField0_ |= 0x00000020;
+                }
+                result.cdId_ = cdId_;
+                if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+                    to_bitField0_ |= 0x00000040;
+                }
+                result.type_ = type_;
+                if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+                    to_bitField0_ |= 0x00000080;
+                }
+                result.alarm_ = alarm_;
+                if (inputsBuilder_ == null) {
+                    if (((bitField0_ & 0x00000100) == 0x00000100)) {
+                        inputs_ = java.util.Collections.unmodifiableList(inputs_);
+                        bitField0_ = (bitField0_ & ~0x00000100);
+                    }
+                    result.inputs_ = inputs_;
+                } else {
+                    result.inputs_ = inputsBuilder_.build();
+                }
+                if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+                    to_bitField0_ |= 0x00000100;
+                }
+                if (requestStateBuilder_ == null) {
+                    result.requestState_ = requestState_;
+                } else {
+                    result.requestState_ = requestStateBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal other) {
+                if (other == ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.getDefaultInstance())
+                    return this;
+                if (other.hasId()) {
+                    setId(other.getId());
+                }
+                if (other.hasTime()) {
+                    setTime(other.getTime());
+                }
+                if (other.hasGetTime()) {
+                    setGetTime(other.getGetTime());
+                }
+                if (other.hasSignalId()) {
+                    setSignalId(other.getSignalId());
+                }
+                if (other.hasEquipmentId()) {
+                    setEquipmentId(other.getEquipmentId());
+                }
+                if (other.hasCdId()) {
+                    setCdId(other.getCdId());
+                }
+                if (other.hasType()) {
+                    setType(other.getType());
+                }
+                if (other.hasAlarm()) {
+                    setAlarm(other.getAlarm());
+                }
+                if (inputsBuilder_ == null) {
+                    if (!other.inputs_.isEmpty()) {
+                        if (inputs_.isEmpty()) {
+                            inputs_ = other.inputs_;
+                            bitField0_ = (bitField0_ & ~0x00000100);
+                        } else {
+                            ensureInputsIsMutable();
+                            inputs_.addAll(other.inputs_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.inputs_.isEmpty()) {
+                        if (inputsBuilder_.isEmpty()) {
+                            inputsBuilder_.dispose();
+                            inputsBuilder_ = null;
+                            inputs_ = other.inputs_;
+                            bitField0_ = (bitField0_ & ~0x00000100);
+                            inputsBuilder_ =
+                                    com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                                            getInputsFieldBuilder() : null;
+                        } else {
+                            inputsBuilder_.addAllMessages(other.inputs_);
+                        }
+                    }
+                }
+                if (other.hasRequestState()) {
+                    mergeRequestState(other.getRequestState());
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional uint32 id = 1;
+            private int id_;
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public boolean hasId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public int getId() {
+                return id_;
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public Builder setId(int value) {
+                bitField0_ |= 0x00000001;
+                id_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public Builder clearId() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                id_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 time = 2;
+            private int time_;
+
+            /**
+             * <code>optional uint32 time = 2;</code>
+             */
+            public boolean hasTime() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional uint32 time = 2;</code>
+             */
+            public int getTime() {
+                return time_;
+            }
+
+            /**
+             * <code>optional uint32 time = 2;</code>
+             */
+            public Builder setTime(int value) {
+                bitField0_ |= 0x00000002;
+                time_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 time = 2;</code>
+             */
+            public Builder clearTime() {
+                bitField0_ = (bitField0_ & ~0x00000002);
+                time_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 get_time = 3;
+            private int getTime_;
+
+            /**
+             * <code>optional uint32 get_time = 3;</code>
+             */
+            public boolean hasGetTime() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional uint32 get_time = 3;</code>
+             */
+            public int getGetTime() {
+                return getTime_;
+            }
+
+            /**
+             * <code>optional uint32 get_time = 3;</code>
+             */
+            public Builder setGetTime(int value) {
+                bitField0_ |= 0x00000004;
+                getTime_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 get_time = 3;</code>
+             */
+            public Builder clearGetTime() {
+                bitField0_ = (bitField0_ & ~0x00000004);
+                getTime_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 signal_id = 4;
+            private int signalId_;
+
+            /**
+             * <code>optional uint32 signal_id = 4;</code>
+             */
+            public boolean hasSignalId() {
+                return ((bitField0_ & 0x00000008) == 0x00000008);
+            }
+
+            /**
+             * <code>optional uint32 signal_id = 4;</code>
+             */
+            public int getSignalId() {
+                return signalId_;
+            }
+
+            /**
+             * <code>optional uint32 signal_id = 4;</code>
+             */
+            public Builder setSignalId(int value) {
+                bitField0_ |= 0x00000008;
+                signalId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 signal_id = 4;</code>
+             */
+            public Builder clearSignalId() {
+                bitField0_ = (bitField0_ & ~0x00000008);
+                signalId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 equipment_id = 5;
+            private int equipmentId_;
+
+            /**
+             * <code>optional uint32 equipment_id = 5;</code>
+             */
+            public boolean hasEquipmentId() {
+                return ((bitField0_ & 0x00000010) == 0x00000010);
+            }
+
+            /**
+             * <code>optional uint32 equipment_id = 5;</code>
+             */
+            public int getEquipmentId() {
+                return equipmentId_;
+            }
+
+            /**
+             * <code>optional uint32 equipment_id = 5;</code>
+             */
+            public Builder setEquipmentId(int value) {
+                bitField0_ |= 0x00000010;
+                equipmentId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 equipment_id = 5;</code>
+             */
+            public Builder clearEquipmentId() {
+                bitField0_ = (bitField0_ & ~0x00000010);
+                equipmentId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 cd_id = 6;
+            private int cdId_;
+
+            /**
+             * <code>optional uint32 cd_id = 6;</code>
+             */
+            public boolean hasCdId() {
+                return ((bitField0_ & 0x00000020) == 0x00000020);
+            }
+
+            /**
+             * <code>optional uint32 cd_id = 6;</code>
+             */
+            public int getCdId() {
+                return cdId_;
+            }
+
+            /**
+             * <code>optional uint32 cd_id = 6;</code>
+             */
+            public Builder setCdId(int value) {
+                bitField0_ |= 0x00000020;
+                cdId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 cd_id = 6;</code>
+             */
+            public Builder clearCdId() {
+                bitField0_ = (bitField0_ & ~0x00000020);
+                cdId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;
+            private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+             */
+            public boolean hasType() {
+                return ((bitField0_ & 0x00000040) == 0x00000040);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType getType() {
+                return type_;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+             */
+            public Builder setType(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000040;
+                type_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.SignalType type = 7;</code>
+             */
+            public Builder clearType() {
+                bitField0_ = (bitField0_ & ~0x00000040);
+                type_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.SignalType.OPERATIONAL;
+                onChanged();
+                return this;
+            }
+
+            // optional bool alarm = 8;
+            private boolean alarm_;
+
+            /**
+             * <code>optional bool alarm = 8;</code>
+             */
+            public boolean hasAlarm() {
+                return ((bitField0_ & 0x00000080) == 0x00000080);
+            }
+
+            /**
+             * <code>optional bool alarm = 8;</code>
+             */
+            public boolean getAlarm() {
+                return alarm_;
+            }
+
+            /**
+             * <code>optional bool alarm = 8;</code>
+             */
+            public Builder setAlarm(boolean value) {
+                bitField0_ |= 0x00000080;
+                alarm_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional bool alarm = 8;</code>
+             */
+            public Builder clearAlarm() {
+                bitField0_ = (bitField0_ & ~0x00000080);
+                alarm_ = false;
+                onChanged();
+                return this;
+            }
+
+            // repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;
+            private java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> inputs_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureInputsIsMutable() {
+                if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+                    inputs_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType>(inputs_);
+                    bitField0_ |= 0x00000100;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder> inputsBuilder_;
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> getInputsList() {
+                if (inputsBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(inputs_);
+                } else {
+                    return inputsBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public int getInputsCount() {
+                if (inputsBuilder_ == null) {
+                    return inputs_.size();
+                } else {
+                    return inputsBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType getInputs(int index) {
+                if (inputsBuilder_ == null) {
+                    return inputs_.get(index);
+                } else {
+                    return inputsBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder setInputs(
+                    int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
+                if (inputsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureInputsIsMutable();
+                    inputs_.set(index, value);
+                    onChanged();
+                } else {
+                    inputsBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder setInputs(
+                    int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
+                if (inputsBuilder_ == null) {
+                    ensureInputsIsMutable();
+                    inputs_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    inputsBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder addInputs(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
+                if (inputsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureInputsIsMutable();
+                    inputs_.add(value);
+                    onChanged();
+                } else {
+                    inputsBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder addInputs(
+                    int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType value) {
+                if (inputsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureInputsIsMutable();
+                    inputs_.add(index, value);
+                    onChanged();
+                } else {
+                    inputsBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder addInputs(
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
+                if (inputsBuilder_ == null) {
+                    ensureInputsIsMutable();
+                    inputs_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    inputsBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder addInputs(
+                    int index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder builderForValue) {
+                if (inputsBuilder_ == null) {
+                    ensureInputsIsMutable();
+                    inputs_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    inputsBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder addAllInputs(
+                    java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType> values) {
+                if (inputsBuilder_ == null) {
+                    ensureInputsIsMutable();
+                    super.addAll(values, inputs_);
+                    onChanged();
+                } else {
+                    inputsBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder clearInputs() {
+                if (inputsBuilder_ == null) {
+                    inputs_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000100);
+                    onChanged();
+                } else {
+                    inputsBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public Builder removeInputs(int index) {
+                if (inputsBuilder_ == null) {
+                    ensureInputsIsMutable();
+                    inputs_.remove(index);
+                    onChanged();
+                } else {
+                    inputsBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder getInputsBuilder(
+                    int index) {
+                return getInputsFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder getInputsOrBuilder(
+                    int index) {
+                if (inputsBuilder_ == null) {
+                    return inputs_.get(index);
+                } else {
+                    return inputsBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public java.util.List<? extends ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>
+            getInputsOrBuilderList() {
+                if (inputsBuilder_ != null) {
+                    return inputsBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(inputs_);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder addInputsBuilder() {
+                return getInputsFieldBuilder().addBuilder(
+                        ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder addInputsBuilder(
+                    int index) {
+                return getInputsFieldBuilder().addBuilder(
+                        index, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.PeriodicSignal.InputType inputs = 9;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder>
+            getInputsBuilderList() {
+                return getInputsFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>
+            getInputsFieldBuilder() {
+                if (inputsBuilder_ == null) {
+                    inputsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.InputTypeOrBuilder>(
+                            inputs_,
+                            ((bitField0_ & 0x00000100) == 0x00000100),
+                            getParentForChildren(),
+                            isClean());
+                    inputs_ = null;
+                }
+                return inputsBuilder_;
+            }
+
+            // optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;
+            private ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder> requestStateBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public boolean hasRequestState() {
+                return ((bitField0_ & 0x00000200) == 0x00000200);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType getRequestState() {
+                if (requestStateBuilder_ == null) {
+                    return requestState_;
+                } else {
+                    return requestStateBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public Builder setRequestState(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType value) {
+                if (requestStateBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    requestState_ = value;
+                    onChanged();
+                } else {
+                    requestStateBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000200;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public Builder setRequestState(
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder builderForValue) {
+                if (requestStateBuilder_ == null) {
+                    requestState_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    requestStateBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000200;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public Builder mergeRequestState(ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType value) {
+                if (requestStateBuilder_ == null) {
+                    if (((bitField0_ & 0x00000200) == 0x00000200) &&
+                            requestState_ != ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance()) {
+                        requestState_ =
+                                ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.newBuilder(requestState_).mergeFrom(value).buildPartial();
+                    } else {
+                        requestState_ = value;
+                    }
+                    onChanged();
+                } else {
+                    requestStateBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000200;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public Builder clearRequestState() {
+                if (requestStateBuilder_ == null) {
+                    requestState_ = ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.getDefaultInstance();
+                    onChanged();
+                } else {
+                    requestStateBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000200);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder getRequestStateBuilder() {
+                bitField0_ |= 0x00000200;
+                onChanged();
+                return getRequestStateFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder getRequestStateOrBuilder() {
+                if (requestStateBuilder_ != null) {
+                    return requestStateBuilder_.getMessageOrBuilder();
+                } else {
+                    return requestState_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.PeriodicSignal.RequestStateType request_state = 10;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder>
+            getRequestStateFieldBuilder() {
+                if (requestStateBuilder_ == null) {
+                    requestStateBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateType.Builder, ru.kodos.almaz2.domain_objects.PeriodicSignalClass.PeriodicSignal.RequestStateTypeOrBuilder>(
+                            requestState_,
+                            getParentForChildren(),
+                            isClean());
+                    requestState_ = null;
+                }
+                return requestStateBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.PeriodicSignal)
+        }
+
+        static {
+            defaultInstance = new PeriodicSignal(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal)
     }
+
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new PeriodicSignal(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\025periodic_signal.proto\022\025almaz2.domain_o" +
+                        "bjects\032\021field_types.proto\032\020properties.pr" +
+                        "oto\"\256\004\n\016PeriodicSignal\022\n\n\002id\030\001 \001(\r\022\014\n\004ti" +
+                        "me\030\002 \001(\r\022\020\n\010get_time\030\003 \001(\r\022\021\n\tsignal_id\030" +
+                        "\004 \001(\r\022\024\n\014equipment_id\030\005 \001(\r\022\r\n\005cd_id\030\006 \001" +
+                        "(\r\022>\n\004type\030\007 \001(\01620.almaz2.domain_objects" +
+                        ".PeriodicSignal.SignalType\022\r\n\005alarm\030\010 \001(" +
+                        "\010\022?\n\006inputs\030\t \003(\0132/.almaz2.domain_object" +
+                        "s.PeriodicSignal.InputType\022M\n\rrequest_st" +
+                        "ate\030\n \001(\01326.almaz2.domain_objects.Period",
+                "icSignal.RequestStateType\032k\n\tInputType\022\n" +
+                        "\n\002id\030\001 \001(\r\0224\n\005value\030\002 \001(\0132%.almaz2.domai" +
+                        "n_objects.FieldTypeValue\022\r\n\005alarm\030\003 \001(\010\022" +
+                        "\r\n\005guard\030\004 \001(\010\0322\n\020RequestStateType\022\017\n\007cu" +
+                        "rrent\030\001 \001(\r\022\r\n\005total\030\002 \001(\r\"8\n\nSignalType" +
+                        "\022\017\n\013OPERATIONAL\020\000\022\n\n\006RESEND\020\001\022\r\n\tREQUEST" +
+                        "ED\020\002B5\n\036ru.kodos.almaz2.domain_objectsB\023" +
+                        "PeriodicSignalClass"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        internal_static_almaz2_domain_objects_PeriodicSignal_descriptor =
+                                getDescriptor().getMessageTypes().get(0);
+                        internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_PeriodicSignal_descriptor,
+                                new java.lang.String[]{"Id", "Time", "GetTime", "SignalId", "EquipmentId", "CdId", "Type", "Alarm", "Inputs", "RequestState",});
+                        internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor =
+                                internal_static_almaz2_domain_objects_PeriodicSignal_descriptor.getNestedTypes().get(0);
+                        internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor,
+                                new java.lang.String[]{"Id", "Value", "Alarm", "Guard",});
+                        internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor =
+                                internal_static_almaz2_domain_objects_PeriodicSignal_descriptor.getNestedTypes().get(1);
+                        internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor,
+                                new java.lang.String[]{"Current", "Total",});
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                                ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
+                        }, assigner
+                );
     }
 
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.PeriodicSignal)
-  }
-
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_PeriodicSignal_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\025periodic_signal.proto\022\025almaz2.domain_o" +
-      "bjects\032\021field_types.proto\032\020properties.pr" +
-      "oto\"\256\004\n\016PeriodicSignal\022\n\n\002id\030\001 \001(\r\022\014\n\004ti" +
-      "me\030\002 \001(\r\022\020\n\010get_time\030\003 \001(\r\022\021\n\tsignal_id\030" +
-      "\004 \001(\r\022\024\n\014equipment_id\030\005 \001(\r\022\r\n\005cd_id\030\006 \001" +
-      "(\r\022>\n\004type\030\007 \001(\01620.almaz2.domain_objects" +
-      ".PeriodicSignal.SignalType\022\r\n\005alarm\030\010 \001(" +
-      "\010\022?\n\006inputs\030\t \003(\0132/.almaz2.domain_object" +
-      "s.PeriodicSignal.InputType\022M\n\rrequest_st" +
-      "ate\030\n \001(\01326.almaz2.domain_objects.Period",
-      "icSignal.RequestStateType\032k\n\tInputType\022\n" +
-      "\n\002id\030\001 \001(\r\0224\n\005value\030\002 \001(\0132%.almaz2.domai" +
-      "n_objects.FieldTypeValue\022\r\n\005alarm\030\003 \001(\010\022" +
-      "\r\n\005guard\030\004 \001(\010\0322\n\020RequestStateType\022\017\n\007cu" +
-      "rrent\030\001 \001(\r\022\r\n\005total\030\002 \001(\r\"8\n\nSignalType" +
-      "\022\017\n\013OPERATIONAL\020\000\022\n\n\006RESEND\020\001\022\r\n\tREQUEST" +
-      "ED\020\002B5\n\036ru.kodos.almaz2.domain_objectsB\023" +
-      "PeriodicSignalClass"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_almaz2_domain_objects_PeriodicSignal_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_almaz2_domain_objects_PeriodicSignal_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_PeriodicSignal_descriptor,
-              new java.lang.String[] { "Id", "Time", "GetTime", "SignalId", "EquipmentId", "CdId", "Type", "Alarm", "Inputs", "RequestState", });
-          internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor =
-            internal_static_almaz2_domain_objects_PeriodicSignal_descriptor.getNestedTypes().get(0);
-          internal_static_almaz2_domain_objects_PeriodicSignal_InputType_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_PeriodicSignal_InputType_descriptor,
-              new java.lang.String[] { "Id", "Value", "Alarm", "Guard", });
-          internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor =
-            internal_static_almaz2_domain_objects_PeriodicSignal_descriptor.getNestedTypes().get(1);
-          internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_PeriodicSignal_RequestStateType_descriptor,
-              new java.lang.String[] { "Current", "Total", });
-          return null;
-        }
-      };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
-          ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
-        }, assigner);
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

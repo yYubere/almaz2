@@ -1,11 +1,11 @@
 package almaz2.domain_objects;
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "FieldTypesClass";
 
 // мультиязычная строка
-message MultiLanguageString
-{
+message MultiLanguageString {
   // обязательное имя
   required string default_string = 1;
 
@@ -19,8 +19,7 @@ message MultiLanguageString
 //------------------------------------------------------------------------------
 
 // описание целочисленного поля
-message IntegerDescriptionField
-{
+message IntegerDescriptionField {
   // минимальное значение
   optional int64 min_value = 1;
 
@@ -29,8 +28,7 @@ message IntegerDescriptionField
 }
 
 // значение целочисленного поля
-message IntegerValueField
-{
+message IntegerValueField {
   // значение характеристики
   optional int64 value = 1;
 }
@@ -38,14 +36,12 @@ message IntegerValueField
 //------------------------------------------------------------------------------
 
 // описание поля с плавающей точкой
-message FloatDescriptionField
-{
+message FloatDescriptionField {
   // ограничение
 }
 
 // значение поля с плавающей точкой
-message FloatValueField
-{
+message FloatValueField {
   // значение характеристики
   optional float value = 1;
 }
@@ -53,15 +49,13 @@ message FloatValueField
 //------------------------------------------------------------------------------
 
 // описание строкового поля
-message StringDescriptionField
-{
+message StringDescriptionField {
   // ограничение на длину строки
-  optional uint32 max_length = 1 [default = 256];  
+  optional uint32 max_length = 1 [default = 256];
 }
 
 // значение строкового поля
-message StringValueField
-{
+message StringValueField {
   // значение характеристики
   optional string value = 1;
 }
@@ -69,14 +63,12 @@ message StringValueField
 //------------------------------------------------------------------------------
 
 // описание форматированного строкового поля
-message FormattedStringDescriptionField
-{
+message FormattedStringDescriptionField {
 
 }
 
 // значение форматированного строкового поля
-message FormattedStringValueField
-{
+message FormattedStringValueField {
   // значение характеристики
   optional string value = 1;
 }
@@ -84,16 +76,14 @@ message FormattedStringValueField
 //------------------------------------------------------------------------------
 
 // описание поля из справочника
-message ReferenceDescriptionField
-{
+message ReferenceDescriptionField {
   // id справочника
   //optional uint32 reference_id = 1;
   optional string reference_id = 1;
 }
 
 // значение поля из справочника
-message ReferenceValueField
-{
+message ReferenceValueField {
   // id строки справочника
   optional uint32 value = 3;
 }
@@ -101,8 +91,7 @@ message ReferenceValueField
 //------------------------------------------------------------------------------
 
 // описание поля с перечисляемыми значениями
-message EnumDescriptionField
-{
+message EnumDescriptionField {
   // перечесление значений
   // NOTE: до договоренности считаем default_string - неким идентификатором
   // который будет хранится в значении состояния
@@ -111,8 +100,7 @@ message EnumDescriptionField
 }
 
 // значение поля с перечисляемыми значениями
-message EnumValueField
-{
+message EnumValueField {
   // значение, которое хранит default_string из описания поля
   optional string value = 1;
 }
@@ -120,11 +108,9 @@ message EnumValueField
 //------------------------------------------------------------------------------
 
 // описание поля со скалярным значением
-message ScalarDescriptionField
-{
+message ScalarDescriptionField {
   // единицы имерения скалярных значений
-  enum ScalarType
-  {
+  enum ScalarType {
     METERS = 1;
     LITERS = 2;
     KILOGRAM = 3;
@@ -137,8 +123,7 @@ message ScalarDescriptionField
 }
 
 // значение поля со скалярным значением
-message ScalarValueField
-{
+message ScalarValueField {
   // значение скалярной величины
   optional double value = 1;
 }
@@ -146,20 +131,17 @@ message ScalarValueField
 //------------------------------------------------------------------------------
 
 // описание значения поля с координатами
-message PositionDescriptionField
-{
+message PositionDescriptionField {
 
 }
 
 // значения поля с координатами
-message PositionValueField
-{
+message PositionValueField {
   // режим работы навигационного приёмника
-  enum GpsMode
-  {
-      GLONAS_MODE = 0;
-      GPS_MODE = 1;
-      COMBO_MODE = 2;
+  enum GpsMode {
+    GLONAS_MODE = 0;
+    GPS_MODE = 1;
+    COMBO_MODE = 2;
   }
 
   // время получения значения (unix time)
@@ -196,13 +178,11 @@ message PositionValueField
 //------------------------------------------------------------------------------
 
 // описание булевого поля
-message BooleanDescriptionField
-{
+message BooleanDescriptionField {
 }
 
 // значение булевого поля
-message BooleanValueField
-{
+message BooleanValueField {
   // значение характеристики
   optional bool value = 1;
 }
@@ -210,19 +190,17 @@ message BooleanValueField
 //------------------------------------------------------------------------------
 
 // описание поля с таблицей пересчёта
-message CalibrationTableDescriptionField
-{
+message CalibrationTableDescriptionField {
 }
 
 // значение поля с таблицей пересчёта
-message CalibrationTableValueField
-{
+message CalibrationTableValueField {
   // оригинальное значение
   repeated double original = 1;
-  
+
   // пересчитанное значение
   repeated double translated = 2;
-    
+
 }
 
 //------------------------------------------------------------------------------

@@ -1,35 +1,35 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ControlObjectPassportClass";
 
 // Привязка оборудования к оборудованию КО
-message ControlObjectEquipmentPassportBind
-{
-    // id оборудования КО
-    optional uint32 control_object_equipment_id = 1;
-    // id пасспорта оборудования
-    optional uint32 equipment_passport_id = 2;
+message ControlObjectEquipmentPassportBind {
+  // id оборудования КО
+  optional uint32 control_object_equipment_id = 1;
+  // id пасспорта оборудования
+  optional uint32 equipment_passport_id = 2;
 }
 
 // Паспорт КО
-message ControlObjectPassport
-{
-    // id паспорта КО
-    optional uint32 passport_id = 1;
+message ControlObjectPassport {
+  // id паспорта КО
+  optional uint32 passport_id = 1;
 
-    // id базового типа КО
-    optional string passport_type_id = 2;
+  // id базового типа КО
+  optional string passport_type_id = 2;
 
-    // наименование контролируемого объекта
-    optional MultiLanguageString display_name = 3;    
+  // наименование контролируемого объекта
+  optional MultiLanguageString display_name = 3;
 
-    // значения характеристик
-    repeated FieldTypeValue values = 4;
+  // значения характеристик
+  repeated FieldTypeValue values = 4;
 
-    // Привязка физического оборудования к оборудованию КО
-    repeated ControlObjectEquipmentPassportBind equipment_binds = 5;
+  // Привязка физического оборудования к оборудованию КО
+  repeated ControlObjectEquipmentPassportBind equipment_binds = 5;
 }

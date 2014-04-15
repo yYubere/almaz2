@@ -1,52 +1,51 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "EquipmentPassportTypeClass";
 
 // описание логического входа оборудования
-message EquipmentLogicalInputDescription
-{
+message EquipmentLogicalInputDescription {
   // id логического входа
   optional uint32 id = 1;
-  
+
   // id паспорта типа логического входа
   optional string passport_type_id = 2;
 
   // имя входа
   optional MultiLanguageString display_name = 3;
-  
+
   // характеристика входа оборудования (состав настраиваемых параметров)
   optional Properties properties = 4;
 }
 
 // описание логического выхода оборудования
-message EquipmentLogicalOutputDescription
-{
+message EquipmentLogicalOutputDescription {
   // id описания логического выхода
   optional uint32 id = 1;
-  
+
   // id паспорта типа логического выхода
   optional string passport_type_id = 2;
-  
+
   // имя выхода
   optional MultiLanguageString display_name = 3;
-  
+
   // характеристика выхода оборудования (состав настраиваемых параметров)
   optional Properties properties = 4;
 }
 
 // паспорт типа физического оборудования
-message EquipmentPassportType
-{
+message EquipmentPassportType {
   // id паспорта типа оборудования
   optional string type_id = 1;
 
   // id базового типа оборудования
   optional string base_type_id = 2;
-	
+
   // имя типа
   optional MultiLanguageString display_name = 4;
 

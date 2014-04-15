@@ -3,19 +3,19 @@ package almaz2.domain_objects;
 import "field_types.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "EquipmentFirmwareClass";
 
 // паспорт версии встроенного ПО
-message EquipmentFirmwarePassport
-{
+message EquipmentFirmwarePassport {
   // id версии встроенного ПО
   optional uint32 passport_id = 1;
 
   // id базового типа встроенного ПО (всегда 0)
   optional string passport_type_id = 2;
-  
+
   // наименование версии встроенного ПО
-  optional MultiLanguageString display_name = 3;    
+  optional MultiLanguageString display_name = 3;
 
   // версия встроенного ПО
   optional string version = 4;

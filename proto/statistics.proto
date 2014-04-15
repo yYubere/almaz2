@@ -3,11 +3,11 @@ package almaz2.domain_objects;
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "StatisticsClass";
 
 // статистика комуникационного драйвера
-message CommunicationDriverStatistic
-{
+message CommunicationDriverStatistic {
   // идентификатор комуникационного драйвера
   optional uint32 id = 1;
 
@@ -19,8 +19,7 @@ message CommunicationDriverStatistic
 }
 
 // статистика оборудования
-message EquipmentStatistic
-{
+message EquipmentStatistic {
   // идентификатор паспорта оборудования
   optional uint32 id = 1;
 

@@ -1,14 +1,15 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ControlObjectEquipmentClass";
 
 // логический вход оборудования
-message EquipmentLogicalInput
-{
+message EquipmentLogicalInput {
   // id входа
   optional uint32 id = 1;
 
@@ -17,8 +18,7 @@ message EquipmentLogicalInput
 }
 
 // логический выход оборудования
-message EquipmentLogicalOutput
-{
+message EquipmentLogicalOutput {
   // id выхода
   optional uint32 id = 1;
 
@@ -27,26 +27,25 @@ message EquipmentLogicalOutput
 }
 
 // оборудование КО
-message ControlObjectEquipment
-{
+message ControlObjectEquipment {
   // id оборудования КО (уникальный в контексте конкретного паспорта типа КО)
   optional uint32 id = 1;
 
   // id паспорта типа оборудования
   optional string passport_type_id = 2;
-  
+
   // характеристики оборудования КО (значения)
   repeated FieldTypeValue values = 3;
-  
+
   // имя оборудования КО
   optional MultiLanguageString display_name = 4;
-  
+
   // значения настроек оборудования
   repeated FieldTypeValue settings_values = 6;
 
   // логический вход оборудования
   repeated EquipmentLogicalInput inputs = 7;
-  
+
   // логический выход оборудования
   repeated EquipmentLogicalOutput outputs = 8;
 

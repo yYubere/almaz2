@@ -3,122 +3,117 @@ package almaz2.domain_objects;
 import "field_types.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "PropertiesClass";
 
 // описание поля или состояния 
-message FieldTypeDescription
-{
-    // id характеристики
-    optional string field_id = 1;
-    
-    // мультиязычное имя
-    optional MultiLanguageString display_name = 2;
+message FieldTypeDescription {
+  // id характеристики
+  optional string field_id = 1;
 
-    // наследники --------------------------------- //
-    
-    // описание строкового поля
-    optional StringDescriptionField string_field = 10;
+  // мультиязычное имя
+  optional MultiLanguageString display_name = 2;
 
-    // описание целочисленного поля
-    optional IntegerDescriptionField int_field = 11;
+  // наследники --------------------------------- //
 
-    // описание поля с плавающей точкой
-    optional FloatDescriptionField float_field = 12;
+  // описание строкового поля
+  optional StringDescriptionField string_field = 10;
 
-    // описание поля из справочника
-    optional ReferenceDescriptionField reference_field = 13;
+  // описание целочисленного поля
+  optional IntegerDescriptionField int_field = 11;
 
-    // описание поля с перечисляемыми значениями
-    optional EnumDescriptionField enum_field = 14;
+  // описание поля с плавающей точкой
+  optional FloatDescriptionField float_field = 12;
 
-    // описание поля с координатами
-    optional PositionDescriptionField position_field = 15;
+  // описание поля из справочника
+  optional ReferenceDescriptionField reference_field = 13;
 
-    // описание поля со скалярным значением
-    optional ScalarDescriptionField scalar_field = 16;
-	
-	// описание поля с булевым значением
-	optional BooleanDescriptionField boolean_field = 17;
+  // описание поля с перечисляемыми значениями
+  optional EnumDescriptionField enum_field = 14;
 
-    // -------------------------------------------- //
+  // описание поля с координатами
+  optional PositionDescriptionField position_field = 15;
+
+  // описание поля со скалярным значением
+  optional ScalarDescriptionField scalar_field = 16;
+
+  // описание поля с булевым значением
+  optional BooleanDescriptionField boolean_field = 17;
+
+  // -------------------------------------------- //
 }
 
 // заполняемое значение поля 
-message FieldTypeValue
-{
-    //// id паспорта типа КО
-    //optional string passport_type_id = 1;
+message FieldTypeValue {
+  //// id паспорта типа КО
+  //optional string passport_type_id = 1;
 
-    // id характеристики
-    optional string field_id = 2;
+  // id характеристики
+  optional string field_id = 2;
 
-    // наследники --------------------------------- //
-    
-    // значение строкового поля
-    optional StringValueField string_value = 10;
+  // наследники --------------------------------- //
 
-    // значение целочисленного поля
-    optional IntegerValueField int_value = 11;
+  // значение строкового поля
+  optional StringValueField string_value = 10;
 
-    // значения поля с плавающей точкой
-    optional FloatValueField float_value = 12;
+  // значение целочисленного поля
+  optional IntegerValueField int_value = 11;
 
-    // значение поля из справочника
-    optional ReferenceValueField reference_value = 13;
+  // значения поля с плавающей точкой
+  optional FloatValueField float_value = 12;
 
-    // значение поля с перечисляемыми значениями
-    optional EnumValueField enum_value = 14;
+  // значение поля из справочника
+  optional ReferenceValueField reference_value = 13;
 
-    // значение поля с координатами
-    optional PositionValueField position_value = 15;
+  // значение поля с перечисляемыми значениями
+  optional EnumValueField enum_value = 14;
 
-    // значение поля со скалярным значением
-    optional ScalarValueField scalar_value = 16;
-	
-    // значение поля булевого типа
-    optional BooleanValueField boolean_value = 17;
-	
-	// значения поля с таблицей пересчёта
-	optional CalibrationTableValueField calibration_table_value = 18;
+  // значение поля с координатами
+  optional PositionValueField position_value = 15;
 
-    // -------------------------------------------- //
+  // значение поля со скалярным значением
+  optional ScalarValueField scalar_value = 16;
+
+  // значение поля булевого типа
+  optional BooleanValueField boolean_value = 17;
+
+  // значения поля с таблицей пересчёта
+  optional CalibrationTableValueField calibration_table_value = 18;
+
+  // -------------------------------------------- //
 }
 
 // массив заполняемых значений
-message FieldTypeValueArray
-{
-    repeated FieldTypeValue values = 1;
+message FieldTypeValueArray {
+  repeated FieldTypeValue values = 1;
 }
 
 // Характеристики
-message Properties
-{
-    // описания поля паспорта
-    repeated FieldTypeDescription descriptions = 1;
+message Properties {
+  // описания поля паспорта
+  repeated FieldTypeDescription descriptions = 1;
 
-    // значения поля паспорта
-    repeated FieldTypeValue values = 2;
+  // значения поля паспорта
+  repeated FieldTypeValue values = 2;
 }
 
 // Настройки
-message Setting
-{
-    // мультиязычное имя
-    optional MultiLanguageString display_name = 1;
+message Setting {
+  // мультиязычное имя
+  optional MultiLanguageString display_name = 1;
 
-    // описание поля
-    optional FieldTypeDescription description = 2;
+  // описание поля
+  optional FieldTypeDescription description = 2;
 
-    // значение поля
-    optional FieldTypeValue value = 3;
+  // значение поля
+  optional FieldTypeValue value = 3;
 
-    // поднастройки
-    repeated Setting settings = 4;
+  // поднастройки
+  repeated Setting settings = 4;
 }
 
 // Пара ключ-значение
-message KeyValuePair
-{
+message KeyValuePair {
   // id типа элемента индентификационных данных
   optional string key = 1;
 

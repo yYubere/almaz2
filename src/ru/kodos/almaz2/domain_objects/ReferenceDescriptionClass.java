@@ -4,1915 +4,2048 @@
 package ru.kodos.almaz2.domain_objects;
 
 public final class ReferenceDescriptionClass {
-  private ReferenceDescriptionClass() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface ReferenceDescriptionOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+    private ReferenceDescriptionClass() {
+    }
 
-    // optional .almaz2.domain_objects.MultiLanguageString name = 1;
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    boolean hasName();
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName();
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder();
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
+    }
 
-    // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    boolean hasKeyValueField();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder();
+    public interface ReferenceDescriptionOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
 
-    // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> 
+        // optional .almaz2.domain_objects.MultiLanguageString name = 1;
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        boolean hasName();
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName();
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder();
+
+        // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        boolean hasKeyValueField();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder();
+
+        // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription>
         getValueFieldList();
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index);
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    int getValueFieldCount();
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-        getValueFieldOrBuilderList();
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
-        int index);
 
-    // optional string reference_id = 4;
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    boolean hasReferenceId();
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    java.lang.String getReferenceId();
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    com.google.protobuf.ByteString
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index);
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        int getValueFieldCount();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+        getValueFieldOrBuilderList();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
+                int index);
+
+        // optional string reference_id = 4;
+
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        boolean hasReferenceId();
+
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        java.lang.String getReferenceId();
+
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        com.google.protobuf.ByteString
         getReferenceIdBytes();
 
-    // optional string reference_link_id = 5;
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    boolean hasReferenceLinkId();
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    java.lang.String getReferenceLinkId();
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    com.google.protobuf.ByteString
+        // optional string reference_link_id = 5;
+
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        boolean hasReferenceLinkId();
+
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        java.lang.String getReferenceLinkId();
+
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        com.google.protobuf.ByteString
         getReferenceLinkIdBytes();
 
-    // optional uint32 id = 6;
-    /**
-     * <code>optional uint32 id = 6;</code>
-     *
-     * <pre>
-     * id справочника в базе
-     * </pre>
-     */
-    boolean hasId();
-    /**
-     * <code>optional uint32 id = 6;</code>
-     *
-     * <pre>
-     * id справочника в базе
-     * </pre>
-     */
-    int getId();
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.ReferenceDescription}
-   *
-   * <pre>
-   * описание справочника
-   * </pre>
-   */
-  public static final class ReferenceDescription extends
-      com.google.protobuf.GeneratedMessage
-      implements ReferenceDescriptionOrBuilder {
-    // Use ReferenceDescription.newBuilder() to construct.
-    private ReferenceDescription(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ReferenceDescription(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+        // optional uint32 id = 6;
 
-    private static final ReferenceDescription defaultInstance;
-    public static ReferenceDescription getDefaultInstance() {
-      return defaultInstance;
+        /**
+         * <code>optional uint32 id = 6;</code>
+         * <p/>
+         * <pre>
+         * id справочника в базе
+         * </pre>
+         */
+        boolean hasId();
+
+        /**
+         * <code>optional uint32 id = 6;</code>
+         * <p/>
+         * <pre>
+         * id справочника в базе
+         * </pre>
+         */
+        int getId();
     }
 
-    public ReferenceDescription getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ReferenceDescription(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = name_.toBuilder();
-              }
-              name_ = input.readMessage(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(name_);
-                name_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
-              break;
-            }
-            case 18: {
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                subBuilder = keyValueField_.toBuilder();
-              }
-              keyValueField_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(keyValueField_);
-                keyValueField_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000002;
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                valueField_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              valueField_.add(input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry));
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000004;
-              referenceId_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000008;
-              referenceLinkId_ = input.readBytes();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000010;
-              id_ = input.readUInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-          valueField_ = java.util.Collections.unmodifiableList(valueField_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.class, ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<ReferenceDescription> PARSER =
-        new com.google.protobuf.AbstractParser<ReferenceDescription>() {
-      public ReferenceDescription parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ReferenceDescription(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ReferenceDescription> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // optional .almaz2.domain_objects.MultiLanguageString name = 1;
-    public static final int NAME_FIELD_NUMBER = 1;
-    private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString name_;
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    public boolean hasName() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName() {
-      return name_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-     *
-     * <pre>
-     * имя справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder() {
-      return name_;
-    }
-
-    // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
-    public static final int KEY_VALUE_FIELD_FIELD_NUMBER = 2;
-    private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription keyValueField_;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    public boolean hasKeyValueField() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField() {
-      return keyValueField_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-     *
-     * <pre>
-     * описание ключевой колонки справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder() {
-      return keyValueField_;
-    }
-
-    // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
-    public static final int VALUE_FIELD_FIELD_NUMBER = 3;
-    private java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> valueField_;
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> getValueFieldList() {
-      return valueField_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    public java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-        getValueFieldOrBuilderList() {
-      return valueField_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    public int getValueFieldCount() {
-      return valueField_.size();
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index) {
-      return valueField_.get(index);
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-     *
-     * <pre>
-     * описание колонки справочника
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
-        int index) {
-      return valueField_.get(index);
-    }
-
-    // optional string reference_id = 4;
-    public static final int REFERENCE_ID_FIELD_NUMBER = 4;
-    private java.lang.Object referenceId_;
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    public boolean hasReferenceId() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    public java.lang.String getReferenceId() {
-      java.lang.Object ref = referenceId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          referenceId_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string reference_id = 4;</code>
-     *
-     * <pre>
-     * id справочника
-     * </pre>
-     */
-    public com.google.protobuf.ByteString
-        getReferenceIdBytes() {
-      java.lang.Object ref = referenceId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        referenceId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional string reference_link_id = 5;
-    public static final int REFERENCE_LINK_ID_FIELD_NUMBER = 5;
-    private java.lang.Object referenceLinkId_;
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    public boolean hasReferenceLinkId() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    public java.lang.String getReferenceLinkId() {
-      java.lang.Object ref = referenceLinkId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          referenceLinkId_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string reference_link_id = 5;</code>
-     *
-     * <pre>
-     * связь со справочником
-     * </pre>
-     */
-    public com.google.protobuf.ByteString
-        getReferenceLinkIdBytes() {
-      java.lang.Object ref = referenceLinkId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        referenceLinkId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional uint32 id = 6;
-    public static final int ID_FIELD_NUMBER = 6;
-    private int id_;
-    /**
-     * <code>optional uint32 id = 6;</code>
-     *
-     * <pre>
-     * id справочника в базе
-     * </pre>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional uint32 id = 6;</code>
-     *
-     * <pre>
-     * id справочника в базе
-     * </pre>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    private void initFields() {
-      name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-      keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-      valueField_ = java.util.Collections.emptyList();
-      referenceId_ = "";
-      referenceLinkId_ = "";
-      id_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (hasName()) {
-        if (!getName().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      if (hasKeyValueField()) {
-        if (!getKeyValueField().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      for (int i = 0; i < getValueFieldCount(); i++) {
-        if (!getValueField(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, name_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, keyValueField_);
-      }
-      for (int i = 0; i < valueField_.size(); i++) {
-        output.writeMessage(3, valueField_.get(i));
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(4, getReferenceIdBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(5, getReferenceLinkIdBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeUInt32(6, id_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, name_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, keyValueField_);
-      }
-      for (int i = 0; i < valueField_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, valueField_.get(i));
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getReferenceIdBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getReferenceLinkIdBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, id_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.ReferenceDescription}
-     *
+     * <p/>
      * <pre>
      * описание справочника
      * </pre>
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescriptionOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
-      }
+    public static final class ReferenceDescription extends
+            com.google.protobuf.GeneratedMessage
+            implements ReferenceDescriptionOrBuilder {
+        // Use ReferenceDescription.newBuilder() to construct.
+        private ReferenceDescription(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
+        }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.class, ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.Builder.class);
-      }
+        private ReferenceDescription(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+        }
 
-      // Construct using ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
+        private static final ReferenceDescription defaultInstance;
 
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getNameFieldBuilder();
-          getKeyValueFieldFieldBuilder();
-          getValueFieldFieldBuilder();
+        public static ReferenceDescription getDefaultInstance() {
+            return defaultInstance;
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        if (nameBuilder_ == null) {
-          name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-        } else {
-          nameBuilder_.clear();
+        public ReferenceDescription getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        if (keyValueFieldBuilder_ == null) {
-          keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-        } else {
-          keyValueFieldBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (valueFieldBuilder_ == null) {
-          valueField_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          valueFieldBuilder_.clear();
-        }
-        referenceId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        referenceLinkId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
-        id_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
-      }
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
+        }
 
-      public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription build() {
-        ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription buildPartial() {
-        ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription result = new ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        if (nameBuilder_ == null) {
-          result.name_ = name_;
-        } else {
-          result.name_ = nameBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        if (keyValueFieldBuilder_ == null) {
-          result.keyValueField_ = keyValueField_;
-        } else {
-          result.keyValueField_ = keyValueFieldBuilder_.build();
-        }
-        if (valueFieldBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004)) {
-            valueField_ = java.util.Collections.unmodifiableList(valueField_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.valueField_ = valueField_;
-        } else {
-          result.valueField_ = valueFieldBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.referenceId_ = referenceId_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.referenceLinkId_ = referenceLinkId_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.id_ = id_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription other) {
-        if (other == ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.getDefaultInstance()) return this;
-        if (other.hasName()) {
-          mergeName(other.getName());
-        }
-        if (other.hasKeyValueField()) {
-          mergeKeyValueField(other.getKeyValueField());
-        }
-        if (valueFieldBuilder_ == null) {
-          if (!other.valueField_.isEmpty()) {
-            if (valueField_.isEmpty()) {
-              valueField_ = other.valueField_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureValueFieldIsMutable();
-              valueField_.addAll(other.valueField_);
+        private ReferenceDescription(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 10: {
+                            ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                                subBuilder = name_.toBuilder();
+                            }
+                            name_ = input.readMessage(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(name_);
+                                name_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000001;
+                            break;
+                        }
+                        case 18: {
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                                subBuilder = keyValueField_.toBuilder();
+                            }
+                            keyValueField_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(keyValueField_);
+                                keyValueField_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000002;
+                            break;
+                        }
+                        case 26: {
+                            if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                                valueField_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription>();
+                                mutable_bitField0_ |= 0x00000004;
+                            }
+                            valueField_.add(input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.PARSER, extensionRegistry));
+                            break;
+                        }
+                        case 34: {
+                            bitField0_ |= 0x00000004;
+                            referenceId_ = input.readBytes();
+                            break;
+                        }
+                        case 42: {
+                            bitField0_ |= 0x00000008;
+                            referenceLinkId_ = input.readBytes();
+                            break;
+                        }
+                        case 48: {
+                            bitField0_ |= 0x00000010;
+                            id_ = input.readUInt32();
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                    valueField_ = java.util.Collections.unmodifiableList(valueField_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
             }
-            onChanged();
-          }
-        } else {
-          if (!other.valueField_.isEmpty()) {
-            if (valueFieldBuilder_.isEmpty()) {
-              valueFieldBuilder_.dispose();
-              valueFieldBuilder_ = null;
-              valueField_ = other.valueField_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              valueFieldBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getValueFieldFieldBuilder() : null;
+        }
+
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.class, ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<ReferenceDescription> PARSER =
+                new com.google.protobuf.AbstractParser<ReferenceDescription>() {
+                    public ReferenceDescription parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new ReferenceDescription(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<ReferenceDescription> getParserForType() {
+            return PARSER;
+        }
+
+        private int bitField0_;
+        // optional .almaz2.domain_objects.MultiLanguageString name = 1;
+        public static final int NAME_FIELD_NUMBER = 1;
+        private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString name_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        public boolean hasName() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName() {
+            return name_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+         * <p/>
+         * <pre>
+         * имя справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder() {
+            return name_;
+        }
+
+        // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
+        public static final int KEY_VALUE_FIELD_FIELD_NUMBER = 2;
+        private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription keyValueField_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        public boolean hasKeyValueField() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField() {
+            return keyValueField_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+         * <p/>
+         * <pre>
+         * описание ключевой колонки справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder() {
+            return keyValueField_;
+        }
+
+        // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
+        public static final int VALUE_FIELD_FIELD_NUMBER = 3;
+        private java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> valueField_;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> getValueFieldList() {
+            return valueField_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        public java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+        getValueFieldOrBuilderList() {
+            return valueField_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        public int getValueFieldCount() {
+            return valueField_.size();
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index) {
+            return valueField_.get(index);
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+         * <p/>
+         * <pre>
+         * описание колонки справочника
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
+                int index) {
+            return valueField_.get(index);
+        }
+
+        // optional string reference_id = 4;
+        public static final int REFERENCE_ID_FIELD_NUMBER = 4;
+        private java.lang.Object referenceId_;
+
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        public boolean hasReferenceId() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        public java.lang.String getReferenceId() {
+            java.lang.Object ref = referenceId_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
             } else {
-              valueFieldBuilder_.addAllMessages(other.valueField_);
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                if (bs.isValidUtf8()) {
+                    referenceId_ = s;
+                }
+                return s;
             }
-          }
         }
-        if (other.hasReferenceId()) {
-          bitField0_ |= 0x00000008;
-          referenceId_ = other.referenceId_;
-          onChanged();
-        }
-        if (other.hasReferenceLinkId()) {
-          bitField0_ |= 0x00000010;
-          referenceLinkId_ = other.referenceLinkId_;
-          onChanged();
-        }
-        if (other.hasId()) {
-          setId(other.getId());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        if (hasName()) {
-          if (!getName().isInitialized()) {
-            
-            return false;
-          }
+        /**
+         * <code>optional string reference_id = 4;</code>
+         * <p/>
+         * <pre>
+         * id справочника
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+        getReferenceIdBytes() {
+            java.lang.Object ref = referenceId_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                referenceId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
         }
-        if (hasKeyValueField()) {
-          if (!getKeyValueField().isInitialized()) {
-            
-            return false;
-          }
-        }
-        for (int i = 0; i < getValueFieldCount(); i++) {
-          if (!getValueField(i).isInitialized()) {
-            
-            return false;
-          }
-        }
-        return true;
-      }
 
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
+        // optional string reference_link_id = 5;
+        public static final int REFERENCE_LINK_ID_FIELD_NUMBER = 5;
+        private java.lang.Object referenceLinkId_;
 
-      // optional .almaz2.domain_objects.MultiLanguageString name = 1;
-      private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> nameBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public boolean hasName() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName() {
-        if (nameBuilder_ == null) {
-          return name_;
-        } else {
-          return nameBuilder_.getMessage();
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        public boolean hasReferenceLinkId() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
         }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public Builder setName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
-        if (nameBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          name_ = value;
-          onChanged();
-        } else {
-          nameBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public Builder setName(
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder builderForValue) {
-        if (nameBuilder_ == null) {
-          name_ = builderForValue.build();
-          onChanged();
-        } else {
-          nameBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public Builder mergeName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
-        if (nameBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              name_ != ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance()) {
-            name_ =
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.newBuilder(name_).mergeFrom(value).buildPartial();
-          } else {
-            name_ = value;
-          }
-          onChanged();
-        } else {
-          nameBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public Builder clearName() {
-        if (nameBuilder_ == null) {
-          name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
-          onChanged();
-        } else {
-          nameBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder getNameBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getNameFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder() {
-        if (nameBuilder_ != null) {
-          return nameBuilder_.getMessageOrBuilder();
-        } else {
-          return name_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
-       *
-       * <pre>
-       * имя справочника
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> 
-          getNameFieldBuilder() {
-        if (nameBuilder_ == null) {
-          nameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>(
-                  name_,
-                  getParentForChildren(),
-                  isClean());
-          name_ = null;
-        }
-        return nameBuilder_;
-      }
 
-      // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> keyValueFieldBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public boolean hasKeyValueField() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField() {
-        if (keyValueFieldBuilder_ == null) {
-          return keyValueField_;
-        } else {
-          return keyValueFieldBuilder_.getMessage();
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        public java.lang.String getReferenceLinkId() {
+            java.lang.Object ref = referenceLinkId_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
+            } else {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                if (bs.isValidUtf8()) {
+                    referenceLinkId_ = s;
+                }
+                return s;
+            }
         }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public Builder setKeyValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (keyValueFieldBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          keyValueField_ = value;
-          onChanged();
-        } else {
-          keyValueFieldBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public Builder setKeyValueField(
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
-        if (keyValueFieldBuilder_ == null) {
-          keyValueField_ = builderForValue.build();
-          onChanged();
-        } else {
-          keyValueFieldBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public Builder mergeKeyValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (keyValueFieldBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              keyValueField_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance()) {
-            keyValueField_ =
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.newBuilder(keyValueField_).mergeFrom(value).buildPartial();
-          } else {
-            keyValueField_ = value;
-          }
-          onChanged();
-        } else {
-          keyValueFieldBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public Builder clearKeyValueField() {
-        if (keyValueFieldBuilder_ == null) {
-          keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
-          onChanged();
-        } else {
-          keyValueFieldBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getKeyValueFieldBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getKeyValueFieldFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder() {
-        if (keyValueFieldBuilder_ != null) {
-          return keyValueFieldBuilder_.getMessageOrBuilder();
-        } else {
-          return keyValueField_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
-       *
-       * <pre>
-       * описание ключевой колонки справочника
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-          getKeyValueFieldFieldBuilder() {
-        if (keyValueFieldBuilder_ == null) {
-          keyValueFieldBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
-                  keyValueField_,
-                  getParentForChildren(),
-                  isClean());
-          keyValueField_ = null;
-        }
-        return keyValueFieldBuilder_;
-      }
 
-      // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
-      private java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> valueField_ =
-        java.util.Collections.emptyList();
-      private void ensureValueFieldIsMutable() {
-        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          valueField_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription>(valueField_);
-          bitField0_ |= 0x00000004;
-         }
-      }
+        /**
+         * <code>optional string reference_link_id = 5;</code>
+         * <p/>
+         * <pre>
+         * связь со справочником
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+        getReferenceLinkIdBytes() {
+            java.lang.Object ref = referenceLinkId_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                referenceLinkId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
 
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> valueFieldBuilder_;
+        // optional uint32 id = 6;
+        public static final int ID_FIELD_NUMBER = 6;
+        private int id_;
 
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> getValueFieldList() {
-        if (valueFieldBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(valueField_);
-        } else {
-          return valueFieldBuilder_.getMessageList();
+        /**
+         * <code>optional uint32 id = 6;</code>
+         * <p/>
+         * <pre>
+         * id справочника в базе
+         * </pre>
+         */
+        public boolean hasId() {
+            return ((bitField0_ & 0x00000010) == 0x00000010);
         }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public int getValueFieldCount() {
-        if (valueFieldBuilder_ == null) {
-          return valueField_.size();
-        } else {
-          return valueFieldBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index) {
-        if (valueFieldBuilder_ == null) {
-          return valueField_.get(index);
-        } else {
-          return valueFieldBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder setValueField(
-          int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (valueFieldBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureValueFieldIsMutable();
-          valueField_.set(index, value);
-          onChanged();
-        } else {
-          valueFieldBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder setValueField(
-          int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
-        if (valueFieldBuilder_ == null) {
-          ensureValueFieldIsMutable();
-          valueField_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          valueFieldBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder addValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (valueFieldBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureValueFieldIsMutable();
-          valueField_.add(value);
-          onChanged();
-        } else {
-          valueFieldBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder addValueField(
-          int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
-        if (valueFieldBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureValueFieldIsMutable();
-          valueField_.add(index, value);
-          onChanged();
-        } else {
-          valueFieldBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder addValueField(
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
-        if (valueFieldBuilder_ == null) {
-          ensureValueFieldIsMutable();
-          valueField_.add(builderForValue.build());
-          onChanged();
-        } else {
-          valueFieldBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder addValueField(
-          int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
-        if (valueFieldBuilder_ == null) {
-          ensureValueFieldIsMutable();
-          valueField_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          valueFieldBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder addAllValueField(
-          java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> values) {
-        if (valueFieldBuilder_ == null) {
-          ensureValueFieldIsMutable();
-          super.addAll(values, valueField_);
-          onChanged();
-        } else {
-          valueFieldBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder clearValueField() {
-        if (valueFieldBuilder_ == null) {
-          valueField_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          valueFieldBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public Builder removeValueField(int index) {
-        if (valueFieldBuilder_ == null) {
-          ensureValueFieldIsMutable();
-          valueField_.remove(index);
-          onChanged();
-        } else {
-          valueFieldBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getValueFieldBuilder(
-          int index) {
-        return getValueFieldFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
-          int index) {
-        if (valueFieldBuilder_ == null) {
-          return valueField_.get(index);  } else {
-          return valueFieldBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-           getValueFieldOrBuilderList() {
-        if (valueFieldBuilder_ != null) {
-          return valueFieldBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(valueField_);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder addValueFieldBuilder() {
-        return getValueFieldFieldBuilder().addBuilder(
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder addValueFieldBuilder(
-          int index) {
-        return getValueFieldFieldBuilder().addBuilder(
-            index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
-       *
-       * <pre>
-       * описание колонки справочника
-       * </pre>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder> 
-           getValueFieldBuilderList() {
-        return getValueFieldFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> 
-          getValueFieldFieldBuilder() {
-        if (valueFieldBuilder_ == null) {
-          valueFieldBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
-                  valueField_,
-                  ((bitField0_ & 0x00000004) == 0x00000004),
-                  getParentForChildren(),
-                  isClean());
-          valueField_ = null;
-        }
-        return valueFieldBuilder_;
-      }
 
-      // optional string reference_id = 4;
-      private java.lang.Object referenceId_ = "";
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public boolean hasReferenceId() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public java.lang.String getReferenceId() {
-        java.lang.Object ref = referenceId_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          referenceId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        /**
+         * <code>optional uint32 id = 6;</code>
+         * <p/>
+         * <pre>
+         * id справочника в базе
+         * </pre>
+         */
+        public int getId() {
+            return id_;
         }
-      }
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getReferenceIdBytes() {
-        java.lang.Object ref = referenceId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          referenceId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public Builder setReferenceId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        referenceId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public Builder clearReferenceId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        referenceId_ = getDefaultInstance().getReferenceId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reference_id = 4;</code>
-       *
-       * <pre>
-       * id справочника
-       * </pre>
-       */
-      public Builder setReferenceIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        referenceId_ = value;
-        onChanged();
-        return this;
-      }
 
-      // optional string reference_link_id = 5;
-      private java.lang.Object referenceLinkId_ = "";
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public boolean hasReferenceLinkId() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public java.lang.String getReferenceLinkId() {
-        java.lang.Object ref = referenceLinkId_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          referenceLinkId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        private void initFields() {
+            name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+            keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+            valueField_ = java.util.Collections.emptyList();
+            referenceId_ = "";
+            referenceLinkId_ = "";
+            id_ = 0;
         }
-      }
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getReferenceLinkIdBytes() {
-        java.lang.Object ref = referenceLinkId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          referenceLinkId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            if (hasName()) {
+                if (!getName().isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            if (hasKeyValueField()) {
+                if (!getKeyValueField().isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            for (int i = 0; i < getValueFieldCount(); i++) {
+                if (!getValueField(i).isInitialized()) {
+                    memoizedIsInitialized = 0;
+                    return false;
+                }
+            }
+            memoizedIsInitialized = 1;
+            return true;
         }
-      }
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public Builder setReferenceLinkId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        referenceLinkId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public Builder clearReferenceLinkId() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        referenceLinkId_ = getDefaultInstance().getReferenceLinkId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reference_link_id = 5;</code>
-       *
-       * <pre>
-       * связь со справочником
-       * </pre>
-       */
-      public Builder setReferenceLinkIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        referenceLinkId_ = value;
-        onChanged();
-        return this;
-      }
 
-      // optional uint32 id = 6;
-      private int id_ ;
-      /**
-       * <code>optional uint32 id = 6;</code>
-       *
-       * <pre>
-       * id справочника в базе
-       * </pre>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>optional uint32 id = 6;</code>
-       *
-       * <pre>
-       * id справочника в базе
-       * </pre>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>optional uint32 id = 6;</code>
-       *
-       * <pre>
-       * id справочника в базе
-       * </pre>
-       */
-      public Builder setId(int value) {
-        bitField0_ |= 0x00000020;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 id = 6;</code>
-       *
-       * <pre>
-       * id справочника в базе
-       * </pre>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        id_ = 0;
-        onChanged();
-        return this;
-      }
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeMessage(1, name_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeMessage(2, keyValueField_);
+            }
+            for (int i = 0; i < valueField_.size(); i++) {
+                output.writeMessage(3, valueField_.get(i));
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                output.writeBytes(4, getReferenceIdBytes());
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                output.writeBytes(5, getReferenceLinkIdBytes());
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                output.writeUInt32(6, id_);
+            }
+            getUnknownFields().writeTo(output);
+        }
 
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ReferenceDescription)
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(1, name_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(2, keyValueField_);
+            }
+            for (int i = 0; i < valueField_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(3, valueField_.get(i));
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeBytesSize(4, getReferenceIdBytes());
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeBytesSize(5, getReferenceLinkIdBytes());
+            }
+            if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(6, id_);
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ReferenceDescription}
+         * <p/>
+         * <pre>
+         * описание справочника
+         * </pre>
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescriptionOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.class, ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getNameFieldBuilder();
+                    getKeyValueFieldFieldBuilder();
+                    getValueFieldFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                if (nameBuilder_ == null) {
+                    name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+                } else {
+                    nameBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000001);
+                if (keyValueFieldBuilder_ == null) {
+                    keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+                } else {
+                    keyValueFieldBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000002);
+                if (valueFieldBuilder_ == null) {
+                    valueField_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                } else {
+                    valueFieldBuilder_.clear();
+                }
+                referenceId_ = "";
+                bitField0_ = (bitField0_ & ~0x00000008);
+                referenceLinkId_ = "";
+                bitField0_ = (bitField0_ & ~0x00000010);
+                id_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000020);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription build() {
+                ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription buildPartial() {
+                ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription result = new ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                if (nameBuilder_ == null) {
+                    result.name_ = name_;
+                } else {
+                    result.name_ = nameBuilder_.build();
+                }
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                if (keyValueFieldBuilder_ == null) {
+                    result.keyValueField_ = keyValueField_;
+                } else {
+                    result.keyValueField_ = keyValueFieldBuilder_.build();
+                }
+                if (valueFieldBuilder_ == null) {
+                    if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                        valueField_ = java.util.Collections.unmodifiableList(valueField_);
+                        bitField0_ = (bitField0_ & ~0x00000004);
+                    }
+                    result.valueField_ = valueField_;
+                } else {
+                    result.valueField_ = valueFieldBuilder_.build();
+                }
+                if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+                    to_bitField0_ |= 0x00000004;
+                }
+                result.referenceId_ = referenceId_;
+                if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+                    to_bitField0_ |= 0x00000008;
+                }
+                result.referenceLinkId_ = referenceLinkId_;
+                if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+                    to_bitField0_ |= 0x00000010;
+                }
+                result.id_ = id_;
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription other) {
+                if (other == ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription.getDefaultInstance())
+                    return this;
+                if (other.hasName()) {
+                    mergeName(other.getName());
+                }
+                if (other.hasKeyValueField()) {
+                    mergeKeyValueField(other.getKeyValueField());
+                }
+                if (valueFieldBuilder_ == null) {
+                    if (!other.valueField_.isEmpty()) {
+                        if (valueField_.isEmpty()) {
+                            valueField_ = other.valueField_;
+                            bitField0_ = (bitField0_ & ~0x00000004);
+                        } else {
+                            ensureValueFieldIsMutable();
+                            valueField_.addAll(other.valueField_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.valueField_.isEmpty()) {
+                        if (valueFieldBuilder_.isEmpty()) {
+                            valueFieldBuilder_.dispose();
+                            valueFieldBuilder_ = null;
+                            valueField_ = other.valueField_;
+                            bitField0_ = (bitField0_ & ~0x00000004);
+                            valueFieldBuilder_ =
+                                    com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                                            getValueFieldFieldBuilder() : null;
+                        } else {
+                            valueFieldBuilder_.addAllMessages(other.valueField_);
+                        }
+                    }
+                }
+                if (other.hasReferenceId()) {
+                    bitField0_ |= 0x00000008;
+                    referenceId_ = other.referenceId_;
+                    onChanged();
+                }
+                if (other.hasReferenceLinkId()) {
+                    bitField0_ |= 0x00000010;
+                    referenceLinkId_ = other.referenceLinkId_;
+                    onChanged();
+                }
+                if (other.hasId()) {
+                    setId(other.getId());
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                if (hasName()) {
+                    if (!getName().isInitialized()) {
+
+                        return false;
+                    }
+                }
+                if (hasKeyValueField()) {
+                    if (!getKeyValueField().isInitialized()) {
+
+                        return false;
+                    }
+                }
+                for (int i = 0; i < getValueFieldCount(); i++) {
+                    if (!getValueField(i).isInitialized()) {
+
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ReferenceDescriptionClass.ReferenceDescription) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional .almaz2.domain_objects.MultiLanguageString name = 1;
+            private ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder> nameBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public boolean hasName() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString getName() {
+                if (nameBuilder_ == null) {
+                    return name_;
+                } else {
+                    return nameBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public Builder setName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
+                if (nameBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    name_ = value;
+                    onChanged();
+                } else {
+                    nameBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000001;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public Builder setName(
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder builderForValue) {
+                if (nameBuilder_ == null) {
+                    name_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    nameBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000001;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public Builder mergeName(ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString value) {
+                if (nameBuilder_ == null) {
+                    if (((bitField0_ & 0x00000001) == 0x00000001) &&
+                            name_ != ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance()) {
+                        name_ =
+                                ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.newBuilder(name_).mergeFrom(value).buildPartial();
+                    } else {
+                        name_ = value;
+                    }
+                    onChanged();
+                } else {
+                    nameBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000001;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public Builder clearName() {
+                if (nameBuilder_ == null) {
+                    name_ = ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.getDefaultInstance();
+                    onChanged();
+                } else {
+                    nameBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000001);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder getNameBuilder() {
+                bitField0_ |= 0x00000001;
+                onChanged();
+                return getNameFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder getNameOrBuilder() {
+                if (nameBuilder_ != null) {
+                    return nameBuilder_.getMessageOrBuilder();
+                } else {
+                    return name_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.MultiLanguageString name = 1;</code>
+             * <p/>
+             * <pre>
+             * имя справочника
+             * </pre>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>
+            getNameFieldBuilder() {
+                if (nameBuilder_ == null) {
+                    nameBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageString.Builder, ru.kodos.almaz2.domain_objects.FieldTypesClass.MultiLanguageStringOrBuilder>(
+                            name_,
+                            getParentForChildren(),
+                            isClean());
+                    name_ = null;
+                }
+                return nameBuilder_;
+            }
+
+            // optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> keyValueFieldBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public boolean hasKeyValueField() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getKeyValueField() {
+                if (keyValueFieldBuilder_ == null) {
+                    return keyValueField_;
+                } else {
+                    return keyValueFieldBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public Builder setKeyValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (keyValueFieldBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    keyValueField_ = value;
+                    onChanged();
+                } else {
+                    keyValueFieldBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public Builder setKeyValueField(
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
+                if (keyValueFieldBuilder_ == null) {
+                    keyValueField_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    keyValueFieldBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public Builder mergeKeyValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (keyValueFieldBuilder_ == null) {
+                    if (((bitField0_ & 0x00000002) == 0x00000002) &&
+                            keyValueField_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance()) {
+                        keyValueField_ =
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.newBuilder(keyValueField_).mergeFrom(value).buildPartial();
+                    } else {
+                        keyValueField_ = value;
+                    }
+                    onChanged();
+                } else {
+                    keyValueFieldBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public Builder clearKeyValueField() {
+                if (keyValueFieldBuilder_ == null) {
+                    keyValueField_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance();
+                    onChanged();
+                } else {
+                    keyValueFieldBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000002);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getKeyValueFieldBuilder() {
+                bitField0_ |= 0x00000002;
+                onChanged();
+                return getKeyValueFieldFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getKeyValueFieldOrBuilder() {
+                if (keyValueFieldBuilder_ != null) {
+                    return keyValueFieldBuilder_.getMessageOrBuilder();
+                } else {
+                    return keyValueField_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeDescription key_value_field = 2;</code>
+             * <p/>
+             * <pre>
+             * описание ключевой колонки справочника
+             * </pre>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+            getKeyValueFieldFieldBuilder() {
+                if (keyValueFieldBuilder_ == null) {
+                    keyValueFieldBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
+                            keyValueField_,
+                            getParentForChildren(),
+                            isClean());
+                    keyValueField_ = null;
+                }
+                return keyValueFieldBuilder_;
+            }
+
+            // repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;
+            private java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> valueField_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureValueFieldIsMutable() {
+                if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+                    valueField_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription>(valueField_);
+                    bitField0_ |= 0x00000004;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder> valueFieldBuilder_;
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> getValueFieldList() {
+                if (valueFieldBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(valueField_);
+                } else {
+                    return valueFieldBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public int getValueFieldCount() {
+                if (valueFieldBuilder_ == null) {
+                    return valueField_.size();
+                } else {
+                    return valueFieldBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription getValueField(int index) {
+                if (valueFieldBuilder_ == null) {
+                    return valueField_.get(index);
+                } else {
+                    return valueFieldBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder setValueField(
+                    int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (valueFieldBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureValueFieldIsMutable();
+                    valueField_.set(index, value);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder setValueField(
+                    int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
+                if (valueFieldBuilder_ == null) {
+                    ensureValueFieldIsMutable();
+                    valueField_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder addValueField(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (valueFieldBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureValueFieldIsMutable();
+                    valueField_.add(value);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder addValueField(
+                    int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription value) {
+                if (valueFieldBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureValueFieldIsMutable();
+                    valueField_.add(index, value);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder addValueField(
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
+                if (valueFieldBuilder_ == null) {
+                    ensureValueFieldIsMutable();
+                    valueField_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder addValueField(
+                    int index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder builderForValue) {
+                if (valueFieldBuilder_ == null) {
+                    ensureValueFieldIsMutable();
+                    valueField_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder addAllValueField(
+                    java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription> values) {
+                if (valueFieldBuilder_ == null) {
+                    ensureValueFieldIsMutable();
+                    super.addAll(values, valueField_);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder clearValueField() {
+                if (valueFieldBuilder_ == null) {
+                    valueField_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public Builder removeValueField(int index) {
+                if (valueFieldBuilder_ == null) {
+                    ensureValueFieldIsMutable();
+                    valueField_.remove(index);
+                    onChanged();
+                } else {
+                    valueFieldBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder getValueFieldBuilder(
+                    int index) {
+                return getValueFieldFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder getValueFieldOrBuilder(
+                    int index) {
+                if (valueFieldBuilder_ == null) {
+                    return valueField_.get(index);
+                } else {
+                    return valueFieldBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public java.util.List<? extends ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+            getValueFieldOrBuilderList() {
+                if (valueFieldBuilder_ != null) {
+                    return valueFieldBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(valueField_);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder addValueFieldBuilder() {
+                return getValueFieldFieldBuilder().addBuilder(
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder addValueFieldBuilder(
+                    int index) {
+                return getValueFieldFieldBuilder().addBuilder(
+                        index, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.FieldTypeDescription value_field = 3;</code>
+             * <p/>
+             * <pre>
+             * описание колонки справочника
+             * </pre>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder>
+            getValueFieldBuilderList() {
+                return getValueFieldFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>
+            getValueFieldFieldBuilder() {
+                if (valueFieldBuilder_ == null) {
+                    valueFieldBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescription.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeDescriptionOrBuilder>(
+                            valueField_,
+                            ((bitField0_ & 0x00000004) == 0x00000004),
+                            getParentForChildren(),
+                            isClean());
+                    valueField_ = null;
+                }
+                return valueFieldBuilder_;
+            }
+
+            // optional string reference_id = 4;
+            private java.lang.Object referenceId_ = "";
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public boolean hasReferenceId() {
+                return ((bitField0_ & 0x00000008) == 0x00000008);
+            }
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public java.lang.String getReferenceId() {
+                java.lang.Object ref = referenceId_;
+                if (!(ref instanceof java.lang.String)) {
+                    java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                            .toStringUtf8();
+                    referenceId_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public com.google.protobuf.ByteString
+            getReferenceIdBytes() {
+                java.lang.Object ref = referenceId_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    referenceId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public Builder setReferenceId(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000008;
+                referenceId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public Builder clearReferenceId() {
+                bitField0_ = (bitField0_ & ~0x00000008);
+                referenceId_ = getDefaultInstance().getReferenceId();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string reference_id = 4;</code>
+             * <p/>
+             * <pre>
+             * id справочника
+             * </pre>
+             */
+            public Builder setReferenceIdBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000008;
+                referenceId_ = value;
+                onChanged();
+                return this;
+            }
+
+            // optional string reference_link_id = 5;
+            private java.lang.Object referenceLinkId_ = "";
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public boolean hasReferenceLinkId() {
+                return ((bitField0_ & 0x00000010) == 0x00000010);
+            }
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public java.lang.String getReferenceLinkId() {
+                java.lang.Object ref = referenceLinkId_;
+                if (!(ref instanceof java.lang.String)) {
+                    java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                            .toStringUtf8();
+                    referenceLinkId_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public com.google.protobuf.ByteString
+            getReferenceLinkIdBytes() {
+                java.lang.Object ref = referenceLinkId_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    referenceLinkId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public Builder setReferenceLinkId(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000010;
+                referenceLinkId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public Builder clearReferenceLinkId() {
+                bitField0_ = (bitField0_ & ~0x00000010);
+                referenceLinkId_ = getDefaultInstance().getReferenceLinkId();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional string reference_link_id = 5;</code>
+             * <p/>
+             * <pre>
+             * связь со справочником
+             * </pre>
+             */
+            public Builder setReferenceLinkIdBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000010;
+                referenceLinkId_ = value;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 id = 6;
+            private int id_;
+
+            /**
+             * <code>optional uint32 id = 6;</code>
+             * <p/>
+             * <pre>
+             * id справочника в базе
+             * </pre>
+             */
+            public boolean hasId() {
+                return ((bitField0_ & 0x00000020) == 0x00000020);
+            }
+
+            /**
+             * <code>optional uint32 id = 6;</code>
+             * <p/>
+             * <pre>
+             * id справочника в базе
+             * </pre>
+             */
+            public int getId() {
+                return id_;
+            }
+
+            /**
+             * <code>optional uint32 id = 6;</code>
+             * <p/>
+             * <pre>
+             * id справочника в базе
+             * </pre>
+             */
+            public Builder setId(int value) {
+                bitField0_ |= 0x00000020;
+                id_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 id = 6;</code>
+             * <p/>
+             * <pre>
+             * id справочника в базе
+             * </pre>
+             */
+            public Builder clearId() {
+                bitField0_ = (bitField0_ & ~0x00000020);
+                id_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ReferenceDescription)
+        }
+
+        static {
+            defaultInstance = new ReferenceDescription(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ReferenceDescription)
     }
+
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new ReferenceDescription(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\017reference.proto\022\025almaz2.domain_objects" +
+                        "\032\021field_types.proto\032\020properties.proto\"\225\002" +
+                        "\n\024ReferenceDescription\0228\n\004name\030\001 \001(\0132*.a" +
+                        "lmaz2.domain_objects.MultiLanguageString" +
+                        "\022D\n\017key_value_field\030\002 \001(\0132+.almaz2.domai" +
+                        "n_objects.FieldTypeDescription\022@\n\013value_" +
+                        "field\030\003 \003(\0132+.almaz2.domain_objects.Fiel" +
+                        "dTypeDescription\022\024\n\014reference_id\030\004 \001(\t\022\031" +
+                        "\n\021reference_link_id\030\005 \001(\t\022\n\n\002id\030\006 \001(\rB;\n" +
+                        "\036ru.kodos.almaz2.domain_objectsB\031Referen",
+                "ceDescriptionClass"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        internal_static_almaz2_domain_objects_ReferenceDescription_descriptor =
+                                getDescriptor().getMessageTypes().get(0);
+                        internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ReferenceDescription_descriptor,
+                                new java.lang.String[]{"Name", "KeyValueField", "ValueField", "ReferenceId", "ReferenceLinkId", "Id",});
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                                ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
+                        }, assigner
+                );
     }
 
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ReferenceDescription)
-  }
-
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ReferenceDescription_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\017reference.proto\022\025almaz2.domain_objects" +
-      "\032\021field_types.proto\032\020properties.proto\"\225\002" +
-      "\n\024ReferenceDescription\0228\n\004name\030\001 \001(\0132*.a" +
-      "lmaz2.domain_objects.MultiLanguageString" +
-      "\022D\n\017key_value_field\030\002 \001(\0132+.almaz2.domai" +
-      "n_objects.FieldTypeDescription\022@\n\013value_" +
-      "field\030\003 \003(\0132+.almaz2.domain_objects.Fiel" +
-      "dTypeDescription\022\024\n\014reference_id\030\004 \001(\t\022\031" +
-      "\n\021reference_link_id\030\005 \001(\t\022\n\n\002id\030\006 \001(\rB;\n" +
-      "\036ru.kodos.almaz2.domain_objectsB\031Referen",
-      "ceDescriptionClass"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_almaz2_domain_objects_ReferenceDescription_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_almaz2_domain_objects_ReferenceDescription_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ReferenceDescription_descriptor,
-              new java.lang.String[] { "Name", "KeyValueField", "ValueField", "ReferenceId", "ReferenceLinkId", "Id", });
-          return null;
-        }
-      };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ru.kodos.almaz2.domain_objects.FieldTypesClass.getDescriptor(),
-          ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
-        }, assigner);
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

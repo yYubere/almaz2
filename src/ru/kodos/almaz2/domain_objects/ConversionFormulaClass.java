@@ -4,2253 +4,2425 @@
 package ru.kodos.almaz2.domain_objects;
 
 public final class ConversionFormulaClass {
-  private ConversionFormulaClass() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface ConversionOperationOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+    private ConversionFormulaClass() {
+    }
 
-    // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
-    /**
-     * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-     *
-     * <pre>
-     * тип операции
-     * </pre>
-     */
-    boolean hasType();
-    /**
-     * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-     *
-     * <pre>
-     * тип операции
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType();
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
+    }
 
-    // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> 
+    public interface ConversionOperationOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
+
+        // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
+
+        /**
+         * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+         * <p/>
+         * <pre>
+         * тип операции
+         * </pre>
+         */
+        boolean hasType();
+
+        /**
+         * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+         * <p/>
+         * <pre>
+         * тип операции
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType();
+
+        // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument>
         getArgumentsList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index);
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    int getArgumentsCount();
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> 
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index);
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        int getArgumentsCount();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>
         getArgumentsOrBuilderList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.ConversionOperation}
-   *
-   * <pre>
-   * арифметическая или логическая операция над аргументами формулы
-   * </pre>
-   */
-  public static final class ConversionOperation extends
-      com.google.protobuf.GeneratedMessage
-      implements ConversionOperationOrBuilder {
-    // Use ConversionOperation.newBuilder() to construct.
-    private ConversionOperation(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ConversionOperation(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final ConversionOperation defaultInstance;
-    public static ConversionOperation getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public ConversionOperation getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ConversionOperation(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              int rawValue = input.readEnum();
-              ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type value = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.valueOf(rawValue);
-              if (value == null) {
-                unknownFields.mergeVarintField(1, rawValue);
-              } else {
-                bitField0_ |= 0x00000001;
-                type_ = value;
-              }
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                arguments_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              arguments_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.PARSER, extensionRegistry));
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-          arguments_ = java.util.Collections.unmodifiableList(arguments_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<ConversionOperation> PARSER =
-        new com.google.protobuf.AbstractParser<ConversionOperation>() {
-      public ConversionOperation parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ConversionOperation(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConversionOperation> getParserForType() {
-      return PARSER;
-    }
-
-    /**
-     * Protobuf enum {@code almaz2.domain_objects.ConversionOperation.Type}
-     *
-     * <pre>
-     * перечисление возможных типов операций
-     * </pre>
-     */
-    public enum Type
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>IF = 1;</code>
-       *
-       * <pre>
-       * arg1 ? arg2 : arg3 
-       * </pre>
-       */
-      IF(0, 1),
-      /**
-       * <code>EQ = 2;</code>
-       *
-       * <pre>
-       * arg1 == arg2
-       * </pre>
-       */
-      EQ(1, 2),
-      /**
-       * <code>NE = 3;</code>
-       *
-       * <pre>
-       * arg1 != arg2
-       * </pre>
-       */
-      NE(2, 3),
-      /**
-       * <code>GT = 4;</code>
-       *
-       * <pre>
-       * arg1 &gt; arg2
-       * </pre>
-       */
-      GT(3, 4),
-      /**
-       * <code>LT = 5;</code>
-       *
-       * <pre>
-       * arg1 &lt; arg2
-       * </pre>
-       */
-      LT(4, 5),
-      /**
-       * <code>GE = 6;</code>
-       *
-       * <pre>
-       * arg1 &gt;= arg2
-       * </pre>
-       */
-      GE(5, 6),
-      /**
-       * <code>LE = 7;</code>
-       *
-       * <pre>
-       * arg1 &lt;= arg2
-       * </pre>
-       */
-      LE(6, 7),
-      /**
-       * <code>AND = 8;</code>
-       *
-       * <pre>
-       * arg1 &amp;&amp; arg2
-       * </pre>
-       */
-      AND(7, 8),
-      /**
-       * <code>OR = 9;</code>
-       *
-       * <pre>
-       * arg1 || arg2
-       * </pre>
-       */
-      OR(8, 9),
-      /**
-       * <code>SET = 10;</code>
-       *
-       * <pre>
-       * arg1
-       * </pre>
-       */
-      SET(9, 10),
-      /**
-       * <code>ADD = 11;</code>
-       *
-       * <pre>
-       * arg1 + arg2
-       * </pre>
-       */
-      ADD(10, 11),
-      /**
-       * <code>SUB = 12;</code>
-       *
-       * <pre>
-       * arg1 - arg2
-       * </pre>
-       */
-      SUB(11, 12),
-      /**
-       * <code>MUL = 13;</code>
-       *
-       * <pre>
-       * arg1 * arg2
-       * </pre>
-       */
-      MUL(12, 13),
-      /**
-       * <code>DIV = 14;</code>
-       *
-       * <pre>
-       * arg1 / arg2
-       * </pre>
-       */
-      DIV(13, 14),
-      /**
-       * <code>TAB = 15;</code>
-       *
-       * <pre>
-       * пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
-       * </pre>
-       */
-      TAB(14, 15),
-      ;
-
-      /**
-       * <code>IF = 1;</code>
-       *
-       * <pre>
-       * arg1 ? arg2 : arg3 
-       * </pre>
-       */
-      public static final int IF_VALUE = 1;
-      /**
-       * <code>EQ = 2;</code>
-       *
-       * <pre>
-       * arg1 == arg2
-       * </pre>
-       */
-      public static final int EQ_VALUE = 2;
-      /**
-       * <code>NE = 3;</code>
-       *
-       * <pre>
-       * arg1 != arg2
-       * </pre>
-       */
-      public static final int NE_VALUE = 3;
-      /**
-       * <code>GT = 4;</code>
-       *
-       * <pre>
-       * arg1 &gt; arg2
-       * </pre>
-       */
-      public static final int GT_VALUE = 4;
-      /**
-       * <code>LT = 5;</code>
-       *
-       * <pre>
-       * arg1 &lt; arg2
-       * </pre>
-       */
-      public static final int LT_VALUE = 5;
-      /**
-       * <code>GE = 6;</code>
-       *
-       * <pre>
-       * arg1 &gt;= arg2
-       * </pre>
-       */
-      public static final int GE_VALUE = 6;
-      /**
-       * <code>LE = 7;</code>
-       *
-       * <pre>
-       * arg1 &lt;= arg2
-       * </pre>
-       */
-      public static final int LE_VALUE = 7;
-      /**
-       * <code>AND = 8;</code>
-       *
-       * <pre>
-       * arg1 &amp;&amp; arg2
-       * </pre>
-       */
-      public static final int AND_VALUE = 8;
-      /**
-       * <code>OR = 9;</code>
-       *
-       * <pre>
-       * arg1 || arg2
-       * </pre>
-       */
-      public static final int OR_VALUE = 9;
-      /**
-       * <code>SET = 10;</code>
-       *
-       * <pre>
-       * arg1
-       * </pre>
-       */
-      public static final int SET_VALUE = 10;
-      /**
-       * <code>ADD = 11;</code>
-       *
-       * <pre>
-       * arg1 + arg2
-       * </pre>
-       */
-      public static final int ADD_VALUE = 11;
-      /**
-       * <code>SUB = 12;</code>
-       *
-       * <pre>
-       * arg1 - arg2
-       * </pre>
-       */
-      public static final int SUB_VALUE = 12;
-      /**
-       * <code>MUL = 13;</code>
-       *
-       * <pre>
-       * arg1 * arg2
-       * </pre>
-       */
-      public static final int MUL_VALUE = 13;
-      /**
-       * <code>DIV = 14;</code>
-       *
-       * <pre>
-       * arg1 / arg2
-       * </pre>
-       */
-      public static final int DIV_VALUE = 14;
-      /**
-       * <code>TAB = 15;</code>
-       *
-       * <pre>
-       * пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
-       * </pre>
-       */
-      public static final int TAB_VALUE = 15;
-
-
-      public final int getNumber() { return value; }
-
-      public static Type valueOf(int value) {
-        switch (value) {
-          case 1: return IF;
-          case 2: return EQ;
-          case 3: return NE;
-          case 4: return GT;
-          case 5: return LT;
-          case 6: return GE;
-          case 7: return LE;
-          case 8: return AND;
-          case 9: return OR;
-          case 10: return SET;
-          case 11: return ADD;
-          case 12: return SUB;
-          case 13: return MUL;
-          case 14: return DIV;
-          case 15: return TAB;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<Type>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static com.google.protobuf.Internal.EnumLiteMap<Type>
-          internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<Type>() {
-              public Type findValueByNumber(int number) {
-                return Type.valueOf(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        return getDescriptor().getValues().get(index);
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final Type[] VALUES = values();
-
-      public static Type valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int index;
-      private final int value;
-
-      private Type(int index, int value) {
-        this.index = index;
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:almaz2.domain_objects.ConversionOperation.Type)
-    }
-
-    public interface ArgumentOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
-
-      // optional uint32 argument_index = 1;
-      /**
-       * <code>optional uint32 argument_index = 1;</code>
-       *
-       * <pre>
-       * индекс аргумента, переданного в формулу
-       * </pre>
-       */
-      boolean hasArgumentIndex();
-      /**
-       * <code>optional uint32 argument_index = 1;</code>
-       *
-       * <pre>
-       * индекс аргумента, переданного в формулу
-       * </pre>
-       */
-      int getArgumentIndex();
-
-      // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      boolean hasConstant();
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant();
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder();
-
-      // optional .almaz2.domain_objects.ConversionOperation operation = 3;
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      boolean hasOperation();
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation();
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder();
-    }
-    /**
-     * Protobuf type {@code almaz2.domain_objects.ConversionOperation.Argument}
-     *
-     * <pre>
-     * описание аргумента операции
-     * </pre>
-     */
-    public static final class Argument extends
-        com.google.protobuf.GeneratedMessage
-        implements ArgumentOrBuilder {
-      // Use Argument.newBuilder() to construct.
-      private Argument(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-        super(builder);
-        this.unknownFields = builder.getUnknownFields();
-      }
-      private Argument(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-      private static final Argument defaultInstance;
-      public static Argument getDefaultInstance() {
-        return defaultInstance;
-      }
-
-      public Argument getDefaultInstanceForType() {
-        return defaultInstance;
-      }
-
-      private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-          getUnknownFields() {
-        return this.unknownFields;
-      }
-      private Argument(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        initFields();
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              default: {
-                if (!parseUnknownField(input, unknownFields,
-                                       extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-              case 8: {
-                bitField0_ |= 0x00000001;
-                argumentIndex_ = input.readUInt32();
-                break;
-              }
-              case 18: {
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                  subBuilder = constant_.toBuilder();
-                }
-                constant_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(constant_);
-                  constant_ = subBuilder.buildPartial();
-                }
-                bitField0_ |= 0x00000002;
-                break;
-              }
-              case 26: {
-                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder subBuilder = null;
-                if (((bitField0_ & 0x00000004) == 0x00000004)) {
-                  subBuilder = operation_.toBuilder();
-                }
-                operation_ = input.readMessage(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(operation_);
-                  operation_ = subBuilder.buildPartial();
-                }
-                bitField0_ |= 0x00000004;
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e.getMessage()).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder.class);
-      }
-
-      public static com.google.protobuf.Parser<Argument> PARSER =
-          new com.google.protobuf.AbstractParser<Argument>() {
-        public Argument parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Argument(input, extensionRegistry);
-        }
-      };
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<Argument> getParserForType() {
-        return PARSER;
-      }
-
-      private int bitField0_;
-      // optional uint32 argument_index = 1;
-      public static final int ARGUMENT_INDEX_FIELD_NUMBER = 1;
-      private int argumentIndex_;
-      /**
-       * <code>optional uint32 argument_index = 1;</code>
-       *
-       * <pre>
-       * индекс аргумента, переданного в формулу
-       * </pre>
-       */
-      public boolean hasArgumentIndex() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 argument_index = 1;</code>
-       *
-       * <pre>
-       * индекс аргумента, переданного в формулу
-       * </pre>
-       */
-      public int getArgumentIndex() {
-        return argumentIndex_;
-      }
-
-      // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
-      public static final int CONSTANT_FIELD_NUMBER = 2;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue constant_;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      public boolean hasConstant() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant() {
-        return constant_;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-       *
-       * <pre>
-       * константное значение
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder() {
-        return constant_;
-      }
-
-      // optional .almaz2.domain_objects.ConversionOperation operation = 3;
-      public static final int OPERATION_FIELD_NUMBER = 3;
-      private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation operation_;
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      public boolean hasOperation() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation() {
-        return operation_;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-       *
-       * <pre>
-       * вложенная операция
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder() {
-        return operation_;
-      }
-
-      private void initFields() {
-        argumentIndex_ = 0;
-        constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-        operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
-      }
-      private byte memoizedIsInitialized = -1;
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        getSerializedSize();
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeUInt32(1, argumentIndex_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeMessage(2, constant_);
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          output.writeMessage(3, operation_);
-        }
-        getUnknownFields().writeTo(output);
-      }
-
-      private int memoizedSerializedSize = -1;
-      public int getSerializedSize() {
-        int size = memoizedSerializedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(1, argumentIndex_);
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, constant_);
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, operation_);
-        }
-        size += getUnknownFields().getSerializedSize();
-        memoizedSerializedSize = size;
-        return size;
-      }
-
-      private static final long serialVersionUID = 0L;
-      @java.lang.Override
-      protected java.lang.Object writeReplace()
-          throws java.io.ObjectStreamException {
-        return super.writeReplace();
-      }
-
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input, extensionRegistry);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument prototype) {
-        return newBuilder().mergeFrom(prototype);
-      }
-      public Builder toBuilder() { return newBuilder(this); }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code almaz2.domain_objects.ConversionOperation.Argument}
-       *
-       * <pre>
-       * описание аргумента операции
-       * </pre>
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder.class);
-        }
-
-        // Construct using ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-            getConstantFieldBuilder();
-            getOperationFieldBuilder();
-          }
-        }
-        private static Builder create() {
-          return new Builder();
-        }
-
-        public Builder clear() {
-          super.clear();
-          argumentIndex_ = 0;
-          bitField0_ = (bitField0_ & ~0x00000001);
-          if (constantBuilder_ == null) {
-            constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-          } else {
-            constantBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000002);
-          if (operationBuilder_ == null) {
-            operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
-          } else {
-            operationBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000004);
-          return this;
-        }
-
-        public Builder clone() {
-          return create().mergeFrom(buildPartial());
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
-        }
-
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getDefaultInstanceForType() {
-          return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance();
-        }
-
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument build() {
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument buildPartial() {
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument result = new ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-            to_bitField0_ |= 0x00000001;
-          }
-          result.argumentIndex_ = argumentIndex_;
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
-          }
-          if (constantBuilder_ == null) {
-            result.constant_ = constant_;
-          } else {
-            result.constant_ = constantBuilder_.build();
-          }
-          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-            to_bitField0_ |= 0x00000004;
-          }
-          if (operationBuilder_ == null) {
-            result.operation_ = operation_;
-          } else {
-            result.operation_ = operationBuilder_.build();
-          }
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument) {
-            return mergeFrom((ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument other) {
-          if (other == ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance()) return this;
-          if (other.hasArgumentIndex()) {
-            setArgumentIndex(other.getArgumentIndex());
-          }
-          if (other.hasConstant()) {
-            mergeConstant(other.getConstant());
-          }
-          if (other.hasOperation()) {
-            mergeOperation(other.getOperation());
-          }
-          this.mergeUnknownFields(other.getUnknownFields());
-          return this;
-        }
-
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument) e.getUnfinishedMessage();
-            throw e;
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
-          return this;
-        }
-        private int bitField0_;
-
-        // optional uint32 argument_index = 1;
-        private int argumentIndex_ ;
         /**
-         * <code>optional uint32 argument_index = 1;</code>
-         *
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
          * <pre>
-         * индекс аргумента, переданного в формулу
+         * список аргументов
          * </pre>
          */
-        public boolean hasArgumentIndex() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
-        }
-        /**
-         * <code>optional uint32 argument_index = 1;</code>
-         *
-         * <pre>
-         * индекс аргумента, переданного в формулу
-         * </pre>
-         */
-        public int getArgumentIndex() {
-          return argumentIndex_;
-        }
-        /**
-         * <code>optional uint32 argument_index = 1;</code>
-         *
-         * <pre>
-         * индекс аргумента, переданного в формулу
-         * </pre>
-         */
-        public Builder setArgumentIndex(int value) {
-          bitField0_ |= 0x00000001;
-          argumentIndex_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional uint32 argument_index = 1;</code>
-         *
-         * <pre>
-         * индекс аргумента, переданного в формулу
-         * </pre>
-         */
-        public Builder clearArgumentIndex() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          argumentIndex_ = 0;
-          onChanged();
-          return this;
-        }
-
-        // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
-        private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> constantBuilder_;
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public boolean hasConstant() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant() {
-          if (constantBuilder_ == null) {
-            return constant_;
-          } else {
-            return constantBuilder_.getMessage();
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public Builder setConstant(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-          if (constantBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            constant_ = value;
-            onChanged();
-          } else {
-            constantBuilder_.setMessage(value);
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public Builder setConstant(
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
-          if (constantBuilder_ == null) {
-            constant_ = builderForValue.build();
-            onChanged();
-          } else {
-            constantBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public Builder mergeConstant(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-          if (constantBuilder_ == null) {
-            if (((bitField0_ & 0x00000002) == 0x00000002) &&
-                constant_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
-              constant_ =
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(constant_).mergeFrom(value).buildPartial();
-            } else {
-              constant_ = value;
-            }
-            onChanged();
-          } else {
-            constantBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00000002;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public Builder clearConstant() {
-          if (constantBuilder_ == null) {
-            constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-            onChanged();
-          } else {
-            constantBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000002);
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getConstantBuilder() {
-          bitField0_ |= 0x00000002;
-          onChanged();
-          return getConstantFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder() {
-          if (constantBuilder_ != null) {
-            return constantBuilder_.getMessageOrBuilder();
-          } else {
-            return constant_;
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
-         *
-         * <pre>
-         * константное значение
-         * </pre>
-         */
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> 
-            getConstantFieldBuilder() {
-          if (constantBuilder_ == null) {
-            constantBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
-                    constant_,
-                    getParentForChildren(),
-                    isClean());
-            constant_ = null;
-          }
-          return constantBuilder_;
-        }
-
-        // optional .almaz2.domain_objects.ConversionOperation operation = 3;
-        private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder> operationBuilder_;
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public boolean hasOperation() {
-          return ((bitField0_ & 0x00000004) == 0x00000004);
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation() {
-          if (operationBuilder_ == null) {
-            return operation_;
-          } else {
-            return operationBuilder_.getMessage();
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public Builder setOperation(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation value) {
-          if (operationBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            operation_ = value;
-            onChanged();
-          } else {
-            operationBuilder_.setMessage(value);
-          }
-          bitField0_ |= 0x00000004;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public Builder setOperation(
-            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder builderForValue) {
-          if (operationBuilder_ == null) {
-            operation_ = builderForValue.build();
-            onChanged();
-          } else {
-            operationBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00000004;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public Builder mergeOperation(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation value) {
-          if (operationBuilder_ == null) {
-            if (((bitField0_ & 0x00000004) == 0x00000004) &&
-                operation_ != ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance()) {
-              operation_ =
-                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.newBuilder(operation_).mergeFrom(value).buildPartial();
-            } else {
-              operation_ = value;
-            }
-            onChanged();
-          } else {
-            operationBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00000004;
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public Builder clearOperation() {
-          if (operationBuilder_ == null) {
-            operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
-            onChanged();
-          } else {
-            operationBuilder_.clear();
-          }
-          bitField0_ = (bitField0_ & ~0x00000004);
-          return this;
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder getOperationBuilder() {
-          bitField0_ |= 0x00000004;
-          onChanged();
-          return getOperationFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder() {
-          if (operationBuilder_ != null) {
-            return operationBuilder_.getMessageOrBuilder();
-          } else {
-            return operation_;
-          }
-        }
-        /**
-         * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
-         *
-         * <pre>
-         * вложенная операция
-         * </pre>
-         */
-        private com.google.protobuf.SingleFieldBuilder<
-            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder> 
-            getOperationFieldBuilder() {
-          if (operationBuilder_ == null) {
-            operationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder>(
-                    operation_,
-                    getParentForChildren(),
-                    isClean());
-            operation_ = null;
-          }
-          return operationBuilder_;
-        }
-
-        // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ConversionOperation.Argument)
-      }
-
-      static {
-        defaultInstance = new Argument(true);
-        defaultInstance.initFields();
-      }
-
-      // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ConversionOperation.Argument)
+        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
+                int index);
     }
 
-    private int bitField0_;
-    // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
-    public static final int TYPE_FIELD_NUMBER = 1;
-    private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type type_;
-    /**
-     * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-     *
-     * <pre>
-     * тип операции
-     * </pre>
-     */
-    public boolean hasType() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-     *
-     * <pre>
-     * тип операции
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType() {
-      return type_;
-    }
-
-    // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
-    public static final int ARGUMENTS_FIELD_NUMBER = 2;
-    private java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> arguments_;
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> getArgumentsList() {
-      return arguments_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    public java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> 
-        getArgumentsOrBuilderList() {
-      return arguments_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    public int getArgumentsCount() {
-      return arguments_.size();
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index) {
-      return arguments_.get(index);
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-     *
-     * <pre>
-     * список аргументов
-     * </pre>
-     */
-    public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
-        int index) {
-      return arguments_.get(index);
-    }
-
-    private void initFields() {
-      type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
-      arguments_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeEnum(1, type_.getNumber());
-      }
-      for (int i = 0; i < arguments_.size(); i++) {
-        output.writeMessage(2, arguments_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, type_.getNumber());
-      }
-      for (int i = 0; i < arguments_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, arguments_.get(i));
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.ConversionOperation}
-     *
+     * <p/>
      * <pre>
      * арифметическая или логическая операция над аргументами формулы
      * </pre>
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getArgumentsFieldBuilder();
+    public static final class ConversionOperation extends
+            com.google.protobuf.GeneratedMessage
+            implements ConversionOperationOrBuilder {
+        // Use ConversionOperation.newBuilder() to construct.
+        private ConversionOperation(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        if (argumentsBuilder_ == null) {
-          arguments_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          argumentsBuilder_.clear();
+        private ConversionOperation(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private static final ConversionOperation defaultInstance;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
-      }
-
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation build() {
-        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        public static ConversionOperation getDefaultInstance() {
+            return defaultInstance;
         }
-        return result;
-      }
 
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation buildPartial() {
-        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation result = new ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        public ConversionOperation getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        result.type_ = type_;
-        if (argumentsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
-            arguments_ = java.util.Collections.unmodifiableList(arguments_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.arguments_ = arguments_;
-        } else {
-          result.arguments_ = argumentsBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation other) {
-        if (other == ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance()) return this;
-        if (other.hasType()) {
-          setType(other.getType());
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
         }
-        if (argumentsBuilder_ == null) {
-          if (!other.arguments_.isEmpty()) {
-            if (arguments_.isEmpty()) {
-              arguments_ = other.arguments_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureArgumentsIsMutable();
-              arguments_.addAll(other.arguments_);
+
+        private ConversionOperation(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            int rawValue = input.readEnum();
+                            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type value = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.valueOf(rawValue);
+                            if (value == null) {
+                                unknownFields.mergeVarintField(1, rawValue);
+                            } else {
+                                bitField0_ |= 0x00000001;
+                                type_ = value;
+                            }
+                            break;
+                        }
+                        case 18: {
+                            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                                arguments_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument>();
+                                mutable_bitField0_ |= 0x00000002;
+                            }
+                            arguments_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.PARSER, extensionRegistry));
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                    arguments_ = java.util.Collections.unmodifiableList(arguments_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
             }
-            onChanged();
-          }
-        } else {
-          if (!other.arguments_.isEmpty()) {
-            if (argumentsBuilder_.isEmpty()) {
-              argumentsBuilder_.dispose();
-              argumentsBuilder_ = null;
-              arguments_ = other.arguments_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              argumentsBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getArgumentsFieldBuilder() : null;
-            } else {
-              argumentsBuilder_.addAllMessages(other.arguments_);
+        }
+
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<ConversionOperation> PARSER =
+                new com.google.protobuf.AbstractParser<ConversionOperation>() {
+                    public ConversionOperation parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new ConversionOperation(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<ConversionOperation> getParserForType() {
+            return PARSER;
+        }
+
+        /**
+         * Protobuf enum {@code almaz2.domain_objects.ConversionOperation.Type}
+         * <p/>
+         * <pre>
+         * перечисление возможных типов операций
+         * </pre>
+         */
+        public enum Type
+                implements com.google.protobuf.ProtocolMessageEnum {
+            /**
+             * <code>IF = 1;</code>
+             * <p/>
+             * <pre>
+             * arg1 ? arg2 : arg3
+             * </pre>
+             */
+            IF(0, 1),
+            /**
+             * <code>EQ = 2;</code>
+             * <p/>
+             * <pre>
+             * arg1 == arg2
+             * </pre>
+             */
+            EQ(1, 2),
+            /**
+             * <code>NE = 3;</code>
+             * <p/>
+             * <pre>
+             * arg1 != arg2
+             * </pre>
+             */
+            NE(2, 3),
+            /**
+             * <code>GT = 4;</code>
+             * <p/>
+             * <pre>
+             * arg1 &gt; arg2
+             * </pre>
+             */
+            GT(3, 4),
+            /**
+             * <code>LT = 5;</code>
+             * <p/>
+             * <pre>
+             * arg1 &lt; arg2
+             * </pre>
+             */
+            LT(4, 5),
+            /**
+             * <code>GE = 6;</code>
+             * <p/>
+             * <pre>
+             * arg1 &gt;= arg2
+             * </pre>
+             */
+            GE(5, 6),
+            /**
+             * <code>LE = 7;</code>
+             * <p/>
+             * <pre>
+             * arg1 &lt;= arg2
+             * </pre>
+             */
+            LE(6, 7),
+            /**
+             * <code>AND = 8;</code>
+             * <p/>
+             * <pre>
+             * arg1 &amp;&amp; arg2
+             * </pre>
+             */
+            AND(7, 8),
+            /**
+             * <code>OR = 9;</code>
+             * <p/>
+             * <pre>
+             * arg1 || arg2
+             * </pre>
+             */
+            OR(8, 9),
+            /**
+             * <code>SET = 10;</code>
+             * <p/>
+             * <pre>
+             * arg1
+             * </pre>
+             */
+            SET(9, 10),
+            /**
+             * <code>ADD = 11;</code>
+             * <p/>
+             * <pre>
+             * arg1 + arg2
+             * </pre>
+             */
+            ADD(10, 11),
+            /**
+             * <code>SUB = 12;</code>
+             * <p/>
+             * <pre>
+             * arg1 - arg2
+             * </pre>
+             */
+            SUB(11, 12),
+            /**
+             * <code>MUL = 13;</code>
+             * <p/>
+             * <pre>
+             * arg1 * arg2
+             * </pre>
+             */
+            MUL(12, 13),
+            /**
+             * <code>DIV = 14;</code>
+             * <p/>
+             * <pre>
+             * arg1 / arg2
+             * </pre>
+             */
+            DIV(13, 14),
+            /**
+             * <code>TAB = 15;</code>
+             * <p/>
+             * <pre>
+             * пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
+             * </pre>
+             */
+            TAB(14, 15),;
+
+            /**
+             * <code>IF = 1;</code>
+             * <p/>
+             * <pre>
+             * arg1 ? arg2 : arg3
+             * </pre>
+             */
+            public static final int IF_VALUE = 1;
+            /**
+             * <code>EQ = 2;</code>
+             * <p/>
+             * <pre>
+             * arg1 == arg2
+             * </pre>
+             */
+            public static final int EQ_VALUE = 2;
+            /**
+             * <code>NE = 3;</code>
+             * <p/>
+             * <pre>
+             * arg1 != arg2
+             * </pre>
+             */
+            public static final int NE_VALUE = 3;
+            /**
+             * <code>GT = 4;</code>
+             * <p/>
+             * <pre>
+             * arg1 &gt; arg2
+             * </pre>
+             */
+            public static final int GT_VALUE = 4;
+            /**
+             * <code>LT = 5;</code>
+             * <p/>
+             * <pre>
+             * arg1 &lt; arg2
+             * </pre>
+             */
+            public static final int LT_VALUE = 5;
+            /**
+             * <code>GE = 6;</code>
+             * <p/>
+             * <pre>
+             * arg1 &gt;= arg2
+             * </pre>
+             */
+            public static final int GE_VALUE = 6;
+            /**
+             * <code>LE = 7;</code>
+             * <p/>
+             * <pre>
+             * arg1 &lt;= arg2
+             * </pre>
+             */
+            public static final int LE_VALUE = 7;
+            /**
+             * <code>AND = 8;</code>
+             * <p/>
+             * <pre>
+             * arg1 &amp;&amp; arg2
+             * </pre>
+             */
+            public static final int AND_VALUE = 8;
+            /**
+             * <code>OR = 9;</code>
+             * <p/>
+             * <pre>
+             * arg1 || arg2
+             * </pre>
+             */
+            public static final int OR_VALUE = 9;
+            /**
+             * <code>SET = 10;</code>
+             * <p/>
+             * <pre>
+             * arg1
+             * </pre>
+             */
+            public static final int SET_VALUE = 10;
+            /**
+             * <code>ADD = 11;</code>
+             * <p/>
+             * <pre>
+             * arg1 + arg2
+             * </pre>
+             */
+            public static final int ADD_VALUE = 11;
+            /**
+             * <code>SUB = 12;</code>
+             * <p/>
+             * <pre>
+             * arg1 - arg2
+             * </pre>
+             */
+            public static final int SUB_VALUE = 12;
+            /**
+             * <code>MUL = 13;</code>
+             * <p/>
+             * <pre>
+             * arg1 * arg2
+             * </pre>
+             */
+            public static final int MUL_VALUE = 13;
+            /**
+             * <code>DIV = 14;</code>
+             * <p/>
+             * <pre>
+             * arg1 / arg2
+             * </pre>
+             */
+            public static final int DIV_VALUE = 14;
+            /**
+             * <code>TAB = 15;</code>
+             * <p/>
+             * <pre>
+             * пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
+             * </pre>
+             */
+            public static final int TAB_VALUE = 15;
+
+
+            public final int getNumber() {
+                return value;
             }
-          }
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        return true;
-      }
+            public static Type valueOf(int value) {
+                switch (value) {
+                    case 1:
+                        return IF;
+                    case 2:
+                        return EQ;
+                    case 3:
+                        return NE;
+                    case 4:
+                        return GT;
+                    case 5:
+                        return LT;
+                    case 6:
+                        return GE;
+                    case 7:
+                        return LE;
+                    case 8:
+                        return AND;
+                    case 9:
+                        return OR;
+                    case 10:
+                        return SET;
+                    case 11:
+                        return ADD;
+                    case 12:
+                        return SUB;
+                    case 13:
+                        return MUL;
+                    case 14:
+                        return DIV;
+                    case 15:
+                        return TAB;
+                    default:
+                        return null;
+                }
+            }
 
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
+            public static com.google.protobuf.Internal.EnumLiteMap<Type>
+            internalGetValueMap() {
+                return internalValueMap;
+            }
 
-      // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
-      private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-       *
-       * <pre>
-       * тип операции
-       * </pre>
-       */
-      public boolean hasType() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-       *
-       * <pre>
-       * тип операции
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType() {
-        return type_;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-       *
-       * <pre>
-       * тип операции
-       * </pre>
-       */
-      public Builder setType(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bitField0_ |= 0x00000001;
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
-       *
-       * <pre>
-       * тип операции
-       * </pre>
-       */
-      public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
-        onChanged();
-        return this;
-      }
+            private static com.google.protobuf.Internal.EnumLiteMap<Type>
+                    internalValueMap =
+                    new com.google.protobuf.Internal.EnumLiteMap<Type>() {
+                        public Type findValueByNumber(int number) {
+                            return Type.valueOf(number);
+                        }
+                    };
 
-      // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
-      private java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> arguments_ =
-        java.util.Collections.emptyList();
-      private void ensureArgumentsIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          arguments_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument>(arguments_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+            public final com.google.protobuf.Descriptors.EnumValueDescriptor
+            getValueDescriptor() {
+                return getDescriptor().getValues().get(index);
+            }
 
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> argumentsBuilder_;
+            public final com.google.protobuf.Descriptors.EnumDescriptor
+            getDescriptorForType() {
+                return getDescriptor();
+            }
 
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> getArgumentsList() {
-        if (argumentsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(arguments_);
-        } else {
-          return argumentsBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public int getArgumentsCount() {
-        if (argumentsBuilder_ == null) {
-          return arguments_.size();
-        } else {
-          return argumentsBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index) {
-        if (argumentsBuilder_ == null) {
-          return arguments_.get(index);
-        } else {
-          return argumentsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder setArguments(
-          int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
-        if (argumentsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureArgumentsIsMutable();
-          arguments_.set(index, value);
-          onChanged();
-        } else {
-          argumentsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder setArguments(
-          int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
-        if (argumentsBuilder_ == null) {
-          ensureArgumentsIsMutable();
-          arguments_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          argumentsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder addArguments(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
-        if (argumentsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureArgumentsIsMutable();
-          arguments_.add(value);
-          onChanged();
-        } else {
-          argumentsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder addArguments(
-          int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
-        if (argumentsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureArgumentsIsMutable();
-          arguments_.add(index, value);
-          onChanged();
-        } else {
-          argumentsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder addArguments(
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
-        if (argumentsBuilder_ == null) {
-          ensureArgumentsIsMutable();
-          arguments_.add(builderForValue.build());
-          onChanged();
-        } else {
-          argumentsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder addArguments(
-          int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
-        if (argumentsBuilder_ == null) {
-          ensureArgumentsIsMutable();
-          arguments_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          argumentsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder addAllArguments(
-          java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> values) {
-        if (argumentsBuilder_ == null) {
-          ensureArgumentsIsMutable();
-          super.addAll(values, arguments_);
-          onChanged();
-        } else {
-          argumentsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder clearArguments() {
-        if (argumentsBuilder_ == null) {
-          arguments_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          argumentsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public Builder removeArguments(int index) {
-        if (argumentsBuilder_ == null) {
-          ensureArgumentsIsMutable();
-          arguments_.remove(index);
-          onChanged();
-        } else {
-          argumentsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder getArgumentsBuilder(
-          int index) {
-        return getArgumentsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
-          int index) {
-        if (argumentsBuilder_ == null) {
-          return arguments_.get(index);  } else {
-          return argumentsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> 
-           getArgumentsOrBuilderList() {
-        if (argumentsBuilder_ != null) {
-          return argumentsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(arguments_);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder addArgumentsBuilder() {
-        return getArgumentsFieldBuilder().addBuilder(
-            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder addArgumentsBuilder(
-          int index) {
-        return getArgumentsFieldBuilder().addBuilder(
-            index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
-       *
-       * <pre>
-       * список аргументов
-       * </pre>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder> 
-           getArgumentsBuilderList() {
-        return getArgumentsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> 
-          getArgumentsFieldBuilder() {
-        if (argumentsBuilder_ == null) {
-          argumentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>(
-                  arguments_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
-                  getParentForChildren(),
-                  isClean());
-          arguments_ = null;
-        }
-        return argumentsBuilder_;
-      }
+            public static final com.google.protobuf.Descriptors.EnumDescriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDescriptor().getEnumTypes().get(0);
+            }
 
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ConversionOperation)
+            private static final Type[] VALUES = values();
+
+            public static Type valueOf(
+                    com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+                if (desc.getType() != getDescriptor()) {
+                    throw new java.lang.IllegalArgumentException(
+                            "EnumValueDescriptor is not for this type.");
+                }
+                return VALUES[desc.getIndex()];
+            }
+
+            private final int index;
+            private final int value;
+
+            private Type(int index, int value) {
+                this.index = index;
+                this.value = value;
+            }
+
+            // @@protoc_insertion_point(enum_scope:almaz2.domain_objects.ConversionOperation.Type)
+        }
+
+        public interface ArgumentOrBuilder
+                extends com.google.protobuf.MessageOrBuilder {
+
+            // optional uint32 argument_index = 1;
+
+            /**
+             * <code>optional uint32 argument_index = 1;</code>
+             * <p/>
+             * <pre>
+             * индекс аргумента, переданного в формулу
+             * </pre>
+             */
+            boolean hasArgumentIndex();
+
+            /**
+             * <code>optional uint32 argument_index = 1;</code>
+             * <p/>
+             * <pre>
+             * индекс аргумента, переданного в формулу
+             * </pre>
+             */
+            int getArgumentIndex();
+
+            // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            boolean hasConstant();
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant();
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder();
+
+            // optional .almaz2.domain_objects.ConversionOperation operation = 3;
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            boolean hasOperation();
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation();
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder();
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ConversionOperation.Argument}
+         * <p/>
+         * <pre>
+         * описание аргумента операции
+         * </pre>
+         */
+        public static final class Argument extends
+                com.google.protobuf.GeneratedMessage
+                implements ArgumentOrBuilder {
+            // Use Argument.newBuilder() to construct.
+            private Argument(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+                super(builder);
+                this.unknownFields = builder.getUnknownFields();
+            }
+
+            private Argument(boolean noInit) {
+                this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+            }
+
+            private static final Argument defaultInstance;
+
+            public static Argument getDefaultInstance() {
+                return defaultInstance;
+            }
+
+            public Argument getDefaultInstanceForType() {
+                return defaultInstance;
+            }
+
+            private final com.google.protobuf.UnknownFieldSet unknownFields;
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+
+            private Argument(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                initFields();
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            default: {
+                                if (!parseUnknownField(input, unknownFields,
+                                        extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                            case 8: {
+                                bitField0_ |= 0x00000001;
+                                argumentIndex_ = input.readUInt32();
+                                break;
+                            }
+                            case 18: {
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
+                                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                                    subBuilder = constant_.toBuilder();
+                                }
+                                constant_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
+                                if (subBuilder != null) {
+                                    subBuilder.mergeFrom(constant_);
+                                    constant_ = subBuilder.buildPartial();
+                                }
+                                bitField0_ |= 0x00000002;
+                                break;
+                            }
+                            case 26: {
+                                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder subBuilder = null;
+                                if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                                    subBuilder = operation_.toBuilder();
+                                }
+                                operation_ = input.readMessage(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.PARSER, extensionRegistry);
+                                if (subBuilder != null) {
+                                    subBuilder.mergeFrom(operation_);
+                                    operation_ = subBuilder.buildPartial();
+                                }
+                                bitField0_ |= 0x00000004;
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e.getMessage()).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder.class);
+            }
+
+            public static com.google.protobuf.Parser<Argument> PARSER =
+                    new com.google.protobuf.AbstractParser<Argument>() {
+                        public Argument parsePartialFrom(
+                                com.google.protobuf.CodedInputStream input,
+                                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                                throws com.google.protobuf.InvalidProtocolBufferException {
+                            return new Argument(input, extensionRegistry);
+                        }
+                    };
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<Argument> getParserForType() {
+                return PARSER;
+            }
+
+            private int bitField0_;
+            // optional uint32 argument_index = 1;
+            public static final int ARGUMENT_INDEX_FIELD_NUMBER = 1;
+            private int argumentIndex_;
+
+            /**
+             * <code>optional uint32 argument_index = 1;</code>
+             * <p/>
+             * <pre>
+             * индекс аргумента, переданного в формулу
+             * </pre>
+             */
+            public boolean hasArgumentIndex() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 argument_index = 1;</code>
+             * <p/>
+             * <pre>
+             * индекс аргумента, переданного в формулу
+             * </pre>
+             */
+            public int getArgumentIndex() {
+                return argumentIndex_;
+            }
+
+            // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
+            public static final int CONSTANT_FIELD_NUMBER = 2;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue constant_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            public boolean hasConstant() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant() {
+                return constant_;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+             * <p/>
+             * <pre>
+             * константное значение
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder() {
+                return constant_;
+            }
+
+            // optional .almaz2.domain_objects.ConversionOperation operation = 3;
+            public static final int OPERATION_FIELD_NUMBER = 3;
+            private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation operation_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            public boolean hasOperation() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation() {
+                return operation_;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+             * <p/>
+             * <pre>
+             * вложенная операция
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder() {
+                return operation_;
+            }
+
+            private void initFields() {
+                argumentIndex_ = 0;
+                constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
+            }
+
+            private byte memoizedIsInitialized = -1;
+
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized != -1) return isInitialized == 1;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                getSerializedSize();
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    output.writeUInt32(1, argumentIndex_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    output.writeMessage(2, constant_);
+                }
+                if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                    output.writeMessage(3, operation_);
+                }
+                getUnknownFields().writeTo(output);
+            }
+
+            private int memoizedSerializedSize = -1;
+
+            public int getSerializedSize() {
+                int size = memoizedSerializedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeUInt32Size(1, argumentIndex_);
+                }
+                if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(2, constant_);
+                }
+                if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(3, operation_);
+                }
+                size += getUnknownFields().getSerializedSize();
+                memoizedSerializedSize = size;
+                return size;
+            }
+
+            private static final long serialVersionUID = 0L;
+
+            @java.lang.Override
+            protected java.lang.Object writeReplace()
+                    throws java.io.ObjectStreamException {
+                return super.writeReplace();
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseDelimitedFrom(input, extensionRegistry);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input);
+            }
+
+            public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return PARSER.parseFrom(input, extensionRegistry);
+            }
+
+            public static Builder newBuilder() {
+                return Builder.create();
+            }
+
+            public Builder newBuilderForType() {
+                return newBuilder();
+            }
+
+            public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument prototype) {
+                return newBuilder().mergeFrom(prototype);
+            }
+
+            public Builder toBuilder() {
+                return newBuilder(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+
+            /**
+             * Protobuf type {@code almaz2.domain_objects.ConversionOperation.Argument}
+             * <p/>
+             * <pre>
+             * описание аргумента операции
+             * </pre>
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessage.Builder<Builder>
+                    implements ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
+                }
+
+                protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder.class);
+                }
+
+                // Construct using ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                        getConstantFieldBuilder();
+                        getOperationFieldBuilder();
+                    }
+                }
+
+                private static Builder create() {
+                    return new Builder();
+                }
+
+                public Builder clear() {
+                    super.clear();
+                    argumentIndex_ = 0;
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    if (constantBuilder_ == null) {
+                        constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                    } else {
+                        constantBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    if (operationBuilder_ == null) {
+                        operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
+                    } else {
+                        operationBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    return this;
+                }
+
+                public Builder clone() {
+                    return create().mergeFrom(buildPartial());
+                }
+
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
+                }
+
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getDefaultInstanceForType() {
+                    return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance();
+                }
+
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument build() {
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument buildPartial() {
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument result = new ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument(this);
+                    int from_bitField0_ = bitField0_;
+                    int to_bitField0_ = 0;
+                    if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                        to_bitField0_ |= 0x00000001;
+                    }
+                    result.argumentIndex_ = argumentIndex_;
+                    if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                        to_bitField0_ |= 0x00000002;
+                    }
+                    if (constantBuilder_ == null) {
+                        result.constant_ = constant_;
+                    } else {
+                        result.constant_ = constantBuilder_.build();
+                    }
+                    if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                        to_bitField0_ |= 0x00000004;
+                    }
+                    if (operationBuilder_ == null) {
+                        result.operation_ = operation_;
+                    } else {
+                        result.operation_ = operationBuilder_.build();
+                    }
+                    result.bitField0_ = to_bitField0_;
+                    onBuilt();
+                    return result;
+                }
+
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument) {
+                        return mergeFrom((ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument) other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument other) {
+                    if (other == ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance())
+                        return this;
+                    if (other.hasArgumentIndex()) {
+                        setArgumentIndex(other.getArgumentIndex());
+                    }
+                    if (other.hasConstant()) {
+                        mergeConstant(other.getConstant());
+                    }
+                    if (other.hasOperation()) {
+                        mergeOperation(other.getOperation());
+                    }
+                    this.mergeUnknownFields(other.getUnknownFields());
+                    return this;
+                }
+
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument) e.getUnfinishedMessage();
+                        throw e;
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int bitField0_;
+
+                // optional uint32 argument_index = 1;
+                private int argumentIndex_;
+
+                /**
+                 * <code>optional uint32 argument_index = 1;</code>
+                 * <p/>
+                 * <pre>
+                 * индекс аргумента, переданного в формулу
+                 * </pre>
+                 */
+                public boolean hasArgumentIndex() {
+                    return ((bitField0_ & 0x00000001) == 0x00000001);
+                }
+
+                /**
+                 * <code>optional uint32 argument_index = 1;</code>
+                 * <p/>
+                 * <pre>
+                 * индекс аргумента, переданного в формулу
+                 * </pre>
+                 */
+                public int getArgumentIndex() {
+                    return argumentIndex_;
+                }
+
+                /**
+                 * <code>optional uint32 argument_index = 1;</code>
+                 * <p/>
+                 * <pre>
+                 * индекс аргумента, переданного в формулу
+                 * </pre>
+                 */
+                public Builder setArgumentIndex(int value) {
+                    bitField0_ |= 0x00000001;
+                    argumentIndex_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                /**
+                 * <code>optional uint32 argument_index = 1;</code>
+                 * <p/>
+                 * <pre>
+                 * индекс аргумента, переданного в формулу
+                 * </pre>
+                 */
+                public Builder clearArgumentIndex() {
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    argumentIndex_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                // optional .almaz2.domain_objects.FieldTypeValue constant = 2;
+                private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> constantBuilder_;
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public boolean hasConstant() {
+                    return ((bitField0_ & 0x00000002) == 0x00000002);
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getConstant() {
+                    if (constantBuilder_ == null) {
+                        return constant_;
+                    } else {
+                        return constantBuilder_.getMessage();
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public Builder setConstant(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                    if (constantBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        constant_ = value;
+                        onChanged();
+                    } else {
+                        constantBuilder_.setMessage(value);
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public Builder setConstant(
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
+                    if (constantBuilder_ == null) {
+                        constant_ = builderForValue.build();
+                        onChanged();
+                    } else {
+                        constantBuilder_.setMessage(builderForValue.build());
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public Builder mergeConstant(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                    if (constantBuilder_ == null) {
+                        if (((bitField0_ & 0x00000002) == 0x00000002) &&
+                                constant_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
+                            constant_ =
+                                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(constant_).mergeFrom(value).buildPartial();
+                        } else {
+                            constant_ = value;
+                        }
+                        onChanged();
+                    } else {
+                        constantBuilder_.mergeFrom(value);
+                    }
+                    bitField0_ |= 0x00000002;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public Builder clearConstant() {
+                    if (constantBuilder_ == null) {
+                        constant_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                        onChanged();
+                    } else {
+                        constantBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getConstantBuilder() {
+                    bitField0_ |= 0x00000002;
+                    onChanged();
+                    return getConstantFieldBuilder().getBuilder();
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getConstantOrBuilder() {
+                    if (constantBuilder_ != null) {
+                        return constantBuilder_.getMessageOrBuilder();
+                    } else {
+                        return constant_;
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.FieldTypeValue constant = 2;</code>
+                 * <p/>
+                 * <pre>
+                 * константное значение
+                 * </pre>
+                 */
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>
+                getConstantFieldBuilder() {
+                    if (constantBuilder_ == null) {
+                        constantBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
+                                constant_,
+                                getParentForChildren(),
+                                isClean());
+                        constant_ = null;
+                    }
+                    return constantBuilder_;
+                }
+
+                // optional .almaz2.domain_objects.ConversionOperation operation = 3;
+                private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder> operationBuilder_;
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public boolean hasOperation() {
+                    return ((bitField0_ & 0x00000004) == 0x00000004);
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getOperation() {
+                    if (operationBuilder_ == null) {
+                        return operation_;
+                    } else {
+                        return operationBuilder_.getMessage();
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public Builder setOperation(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation value) {
+                    if (operationBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        operation_ = value;
+                        onChanged();
+                    } else {
+                        operationBuilder_.setMessage(value);
+                    }
+                    bitField0_ |= 0x00000004;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public Builder setOperation(
+                        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder builderForValue) {
+                    if (operationBuilder_ == null) {
+                        operation_ = builderForValue.build();
+                        onChanged();
+                    } else {
+                        operationBuilder_.setMessage(builderForValue.build());
+                    }
+                    bitField0_ |= 0x00000004;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public Builder mergeOperation(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation value) {
+                    if (operationBuilder_ == null) {
+                        if (((bitField0_ & 0x00000004) == 0x00000004) &&
+                                operation_ != ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance()) {
+                            operation_ =
+                                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.newBuilder(operation_).mergeFrom(value).buildPartial();
+                        } else {
+                            operation_ = value;
+                        }
+                        onChanged();
+                    } else {
+                        operationBuilder_.mergeFrom(value);
+                    }
+                    bitField0_ |= 0x00000004;
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public Builder clearOperation() {
+                    if (operationBuilder_ == null) {
+                        operation_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
+                        onChanged();
+                    } else {
+                        operationBuilder_.clear();
+                    }
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    return this;
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder getOperationBuilder() {
+                    bitField0_ |= 0x00000004;
+                    onChanged();
+                    return getOperationFieldBuilder().getBuilder();
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder getOperationOrBuilder() {
+                    if (operationBuilder_ != null) {
+                        return operationBuilder_.getMessageOrBuilder();
+                    } else {
+                        return operation_;
+                    }
+                }
+
+                /**
+                 * <code>optional .almaz2.domain_objects.ConversionOperation operation = 3;</code>
+                 * <p/>
+                 * <pre>
+                 * вложенная операция
+                 * </pre>
+                 */
+                private com.google.protobuf.SingleFieldBuilder<
+                        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder>
+                getOperationFieldBuilder() {
+                    if (operationBuilder_ == null) {
+                        operationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder>(
+                                operation_,
+                                getParentForChildren(),
+                                isClean());
+                        operation_ = null;
+                    }
+                    return operationBuilder_;
+                }
+
+                // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ConversionOperation.Argument)
+            }
+
+            static {
+                defaultInstance = new Argument(true);
+                defaultInstance.initFields();
+            }
+
+            // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ConversionOperation.Argument)
+        }
+
+        private int bitField0_;
+        // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
+        public static final int TYPE_FIELD_NUMBER = 1;
+        private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type type_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+         * <p/>
+         * <pre>
+         * тип операции
+         * </pre>
+         */
+        public boolean hasType() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+         * <p/>
+         * <pre>
+         * тип операции
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType() {
+            return type_;
+        }
+
+        // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
+        public static final int ARGUMENTS_FIELD_NUMBER = 2;
+        private java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> arguments_;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> getArgumentsList() {
+            return arguments_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        public java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>
+        getArgumentsOrBuilderList() {
+            return arguments_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        public int getArgumentsCount() {
+            return arguments_.size();
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index) {
+            return arguments_.get(index);
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+         * <p/>
+         * <pre>
+         * список аргументов
+         * </pre>
+         */
+        public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
+                int index) {
+            return arguments_.get(index);
+        }
+
+        private void initFields() {
+            type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
+            arguments_ = java.util.Collections.emptyList();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeEnum(1, type_.getNumber());
+            }
+            for (int i = 0; i < arguments_.size(); i++) {
+                output.writeMessage(2, arguments_.get(i));
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeEnumSize(1, type_.getNumber());
+            }
+            for (int i = 0; i < arguments_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(2, arguments_.get(i));
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ConversionOperation}
+         * <p/>
+         * <pre>
+         * арифметическая или логическая операция над аргументами формулы
+         * </pre>
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperationOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.class, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getArgumentsFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                if (argumentsBuilder_ == null) {
+                    arguments_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                } else {
+                    argumentsBuilder_.clear();
+                }
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation build() {
+                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation buildPartial() {
+                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation result = new ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.type_ = type_;
+                if (argumentsBuilder_ == null) {
+                    if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                        arguments_ = java.util.Collections.unmodifiableList(arguments_);
+                        bitField0_ = (bitField0_ & ~0x00000002);
+                    }
+                    result.arguments_ = arguments_;
+                } else {
+                    result.arguments_ = argumentsBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation other) {
+                if (other == ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.getDefaultInstance())
+                    return this;
+                if (other.hasType()) {
+                    setType(other.getType());
+                }
+                if (argumentsBuilder_ == null) {
+                    if (!other.arguments_.isEmpty()) {
+                        if (arguments_.isEmpty()) {
+                            arguments_ = other.arguments_;
+                            bitField0_ = (bitField0_ & ~0x00000002);
+                        } else {
+                            ensureArgumentsIsMutable();
+                            arguments_.addAll(other.arguments_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.arguments_.isEmpty()) {
+                        if (argumentsBuilder_.isEmpty()) {
+                            argumentsBuilder_.dispose();
+                            argumentsBuilder_ = null;
+                            arguments_ = other.arguments_;
+                            bitField0_ = (bitField0_ & ~0x00000002);
+                            argumentsBuilder_ =
+                                    com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                                            getArgumentsFieldBuilder() : null;
+                        } else {
+                            argumentsBuilder_.addAllMessages(other.arguments_);
+                        }
+                    }
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional .almaz2.domain_objects.ConversionOperation.Type type = 1;
+            private ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+             * <p/>
+             * <pre>
+             * тип операции
+             * </pre>
+             */
+            public boolean hasType() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+             * <p/>
+             * <pre>
+             * тип операции
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type getType() {
+                return type_;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+             * <p/>
+             * <pre>
+             * тип операции
+             * </pre>
+             */
+            public Builder setType(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bitField0_ |= 0x00000001;
+                type_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.ConversionOperation.Type type = 1;</code>
+             * <p/>
+             * <pre>
+             * тип операции
+             * </pre>
+             */
+            public Builder clearType() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                type_ = ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Type.IF;
+                onChanged();
+                return this;
+            }
+
+            // repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;
+            private java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> arguments_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureArgumentsIsMutable() {
+                if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+                    arguments_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument>(arguments_);
+                    bitField0_ |= 0x00000002;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder> argumentsBuilder_;
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> getArgumentsList() {
+                if (argumentsBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(arguments_);
+                } else {
+                    return argumentsBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public int getArgumentsCount() {
+                if (argumentsBuilder_ == null) {
+                    return arguments_.size();
+                } else {
+                    return argumentsBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument getArguments(int index) {
+                if (argumentsBuilder_ == null) {
+                    return arguments_.get(index);
+                } else {
+                    return argumentsBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder setArguments(
+                    int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
+                if (argumentsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureArgumentsIsMutable();
+                    arguments_.set(index, value);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder setArguments(
+                    int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
+                if (argumentsBuilder_ == null) {
+                    ensureArgumentsIsMutable();
+                    arguments_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    argumentsBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder addArguments(ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
+                if (argumentsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureArgumentsIsMutable();
+                    arguments_.add(value);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder addArguments(
+                    int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument value) {
+                if (argumentsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureArgumentsIsMutable();
+                    arguments_.add(index, value);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder addArguments(
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
+                if (argumentsBuilder_ == null) {
+                    ensureArgumentsIsMutable();
+                    arguments_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    argumentsBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder addArguments(
+                    int index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder builderForValue) {
+                if (argumentsBuilder_ == null) {
+                    ensureArgumentsIsMutable();
+                    arguments_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    argumentsBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder addAllArguments(
+                    java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument> values) {
+                if (argumentsBuilder_ == null) {
+                    ensureArgumentsIsMutable();
+                    super.addAll(values, arguments_);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder clearArguments() {
+                if (argumentsBuilder_ == null) {
+                    arguments_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000002);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public Builder removeArguments(int index) {
+                if (argumentsBuilder_ == null) {
+                    ensureArgumentsIsMutable();
+                    arguments_.remove(index);
+                    onChanged();
+                } else {
+                    argumentsBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder getArgumentsBuilder(
+                    int index) {
+                return getArgumentsFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder getArgumentsOrBuilder(
+                    int index) {
+                if (argumentsBuilder_ == null) {
+                    return arguments_.get(index);
+                } else {
+                    return argumentsBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public java.util.List<? extends ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>
+            getArgumentsOrBuilderList() {
+                if (argumentsBuilder_ != null) {
+                    return argumentsBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(arguments_);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder addArgumentsBuilder() {
+                return getArgumentsFieldBuilder().addBuilder(
+                        ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder addArgumentsBuilder(
+                    int index) {
+                return getArgumentsFieldBuilder().addBuilder(
+                        index, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ConversionOperation.Argument arguments = 2;</code>
+             * <p/>
+             * <pre>
+             * список аргументов
+             * </pre>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder>
+            getArgumentsBuilderList() {
+                return getArgumentsFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>
+            getArgumentsFieldBuilder() {
+                if (argumentsBuilder_ == null) {
+                    argumentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.Argument.Builder, ru.kodos.almaz2.domain_objects.ConversionFormulaClass.ConversionOperation.ArgumentOrBuilder>(
+                            arguments_,
+                            ((bitField0_ & 0x00000002) == 0x00000002),
+                            getParentForChildren(),
+                            isClean());
+                    arguments_ = null;
+                }
+                return argumentsBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ConversionOperation)
+        }
+
+        static {
+            defaultInstance = new ConversionOperation(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ConversionOperation)
     }
+
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new ConversionOperation(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\030conversion_formula.proto\022\025almaz2.domai" +
+                        "n_objects\032\020properties.proto\"\301\003\n\023Conversi" +
+                        "onOperation\022=\n\004type\030\001 \001(\0162/.almaz2.domai" +
+                        "n_objects.ConversionOperation.Type\022F\n\tar" +
+                        "guments\030\002 \003(\01323.almaz2.domain_objects.Co" +
+                        "nversionOperation.Argument\032\232\001\n\010Argument\022" +
+                        "\026\n\016argument_index\030\001 \001(\r\0227\n\010constant\030\002 \001(" +
+                        "\0132%.almaz2.domain_objects.FieldTypeValue" +
+                        "\022=\n\toperation\030\003 \001(\0132*.almaz2.domain_obje" +
+                        "cts.ConversionOperation\"\205\001\n\004Type\022\006\n\002IF\020\001",
+                "\022\006\n\002EQ\020\002\022\006\n\002NE\020\003\022\006\n\002GT\020\004\022\006\n\002LT\020\005\022\006\n\002GE\020\006" +
+                        "\022\006\n\002LE\020\007\022\007\n\003AND\020\010\022\006\n\002OR\020\t\022\007\n\003SET\020\n\022\007\n\003AD" +
+                        "D\020\013\022\007\n\003SUB\020\014\022\007\n\003MUL\020\r\022\007\n\003DIV\020\016\022\007\n\003TAB\020\017B" +
+                        "8\n\036ru.kodos.almaz2.domain_objectsB\026Conve" +
+                        "rsionFormulaClass"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        internal_static_almaz2_domain_objects_ConversionOperation_descriptor =
+                                getDescriptor().getMessageTypes().get(0);
+                        internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ConversionOperation_descriptor,
+                                new java.lang.String[]{"Type", "Arguments",});
+                        internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor =
+                                internal_static_almaz2_domain_objects_ConversionOperation_descriptor.getNestedTypes().get(0);
+                        internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor,
+                                new java.lang.String[]{"ArgumentIndex", "Constant", "Operation",});
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
+                        }, assigner
+                );
     }
 
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ConversionOperation)
-  }
-
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ConversionOperation_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\030conversion_formula.proto\022\025almaz2.domai" +
-      "n_objects\032\020properties.proto\"\301\003\n\023Conversi" +
-      "onOperation\022=\n\004type\030\001 \001(\0162/.almaz2.domai" +
-      "n_objects.ConversionOperation.Type\022F\n\tar" +
-      "guments\030\002 \003(\01323.almaz2.domain_objects.Co" +
-      "nversionOperation.Argument\032\232\001\n\010Argument\022" +
-      "\026\n\016argument_index\030\001 \001(\r\0227\n\010constant\030\002 \001(" +
-      "\0132%.almaz2.domain_objects.FieldTypeValue" +
-      "\022=\n\toperation\030\003 \001(\0132*.almaz2.domain_obje" +
-      "cts.ConversionOperation\"\205\001\n\004Type\022\006\n\002IF\020\001",
-      "\022\006\n\002EQ\020\002\022\006\n\002NE\020\003\022\006\n\002GT\020\004\022\006\n\002LT\020\005\022\006\n\002GE\020\006" +
-      "\022\006\n\002LE\020\007\022\007\n\003AND\020\010\022\006\n\002OR\020\t\022\007\n\003SET\020\n\022\007\n\003AD" +
-      "D\020\013\022\007\n\003SUB\020\014\022\007\n\003MUL\020\r\022\007\n\003DIV\020\016\022\007\n\003TAB\020\017B" +
-      "8\n\036ru.kodos.almaz2.domain_objectsB\026Conve" +
-      "rsionFormulaClass"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_almaz2_domain_objects_ConversionOperation_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_almaz2_domain_objects_ConversionOperation_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ConversionOperation_descriptor,
-              new java.lang.String[] { "Type", "Arguments", });
-          internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor =
-            internal_static_almaz2_domain_objects_ConversionOperation_descriptor.getNestedTypes().get(0);
-          internal_static_almaz2_domain_objects_ConversionOperation_Argument_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ConversionOperation_Argument_descriptor,
-              new java.lang.String[] { "ArgumentIndex", "Constant", "Operation", });
-          return null;
-        }
-      };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
-        }, assigner);
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

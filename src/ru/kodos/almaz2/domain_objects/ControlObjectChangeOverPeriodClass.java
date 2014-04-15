@@ -4,3080 +4,3381 @@
 package ru.kodos.almaz2.domain_objects;
 
 public final class ControlObjectChangeOverPeriodClass {
-  private ControlObjectChangeOverPeriodClass() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface ChangeOverPeriodIndexOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // optional uint32 id = 1;
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    boolean hasId();
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    int getId();
-
-    // optional uint32 from_time = 2;
-    /**
-     * <code>optional uint32 from_time = 2;</code>
-     */
-    boolean hasFromTime();
-    /**
-     * <code>optional uint32 from_time = 2;</code>
-     */
-    int getFromTime();
-
-    // optional uint32 to_time = 3;
-    /**
-     * <code>optional uint32 to_time = 3;</code>
-     */
-    boolean hasToTime();
-    /**
-     * <code>optional uint32 to_time = 3;</code>
-     */
-    int getToTime();
-
-    // optional uint32 control_object_id = 4;
-    /**
-     * <code>optional uint32 control_object_id = 4;</code>
-     */
-    boolean hasControlObjectId();
-    /**
-     * <code>optional uint32 control_object_id = 4;</code>
-     */
-    int getControlObjectId();
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.ChangeOverPeriodIndex}
-   */
-  public static final class ChangeOverPeriodIndex extends
-      com.google.protobuf.GeneratedMessage
-      implements ChangeOverPeriodIndexOrBuilder {
-    // Use ChangeOverPeriodIndex.newBuilder() to construct.
-    private ChangeOverPeriodIndex(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ChangeOverPeriodIndex(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final ChangeOverPeriodIndex defaultInstance;
-    public static ChangeOverPeriodIndex getDefaultInstance() {
-      return defaultInstance;
+    private ControlObjectChangeOverPeriodClass() {
     }
 
-    public ChangeOverPeriodIndex getDefaultInstanceForType() {
-      return defaultInstance;
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
     }
 
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ChangeOverPeriodIndex(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              id_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              fromTime_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              toTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              controlObjectId_ = input.readUInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
+    public interface ChangeOverPeriodIndexOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
+
+        // optional uint32 id = 1;
+
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        boolean hasId();
+
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        int getId();
+
+        // optional uint32 from_time = 2;
+
+        /**
+         * <code>optional uint32 from_time = 2;</code>
+         */
+        boolean hasFromTime();
+
+        /**
+         * <code>optional uint32 from_time = 2;</code>
+         */
+        int getFromTime();
+
+        // optional uint32 to_time = 3;
+
+        /**
+         * <code>optional uint32 to_time = 3;</code>
+         */
+        boolean hasToTime();
+
+        /**
+         * <code>optional uint32 to_time = 3;</code>
+         */
+        int getToTime();
+
+        // optional uint32 control_object_id = 4;
+
+        /**
+         * <code>optional uint32 control_object_id = 4;</code>
+         */
+        boolean hasControlObjectId();
+
+        /**
+         * <code>optional uint32 control_object_id = 4;</code>
+         */
+        int getControlObjectId();
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<ChangeOverPeriodIndex> PARSER =
-        new com.google.protobuf.AbstractParser<ChangeOverPeriodIndex>() {
-      public ChangeOverPeriodIndex parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ChangeOverPeriodIndex(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ChangeOverPeriodIndex> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // optional uint32 id = 1;
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 id = 1;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    // optional uint32 from_time = 2;
-    public static final int FROM_TIME_FIELD_NUMBER = 2;
-    private int fromTime_;
-    /**
-     * <code>optional uint32 from_time = 2;</code>
-     */
-    public boolean hasFromTime() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional uint32 from_time = 2;</code>
-     */
-    public int getFromTime() {
-      return fromTime_;
-    }
-
-    // optional uint32 to_time = 3;
-    public static final int TO_TIME_FIELD_NUMBER = 3;
-    private int toTime_;
-    /**
-     * <code>optional uint32 to_time = 3;</code>
-     */
-    public boolean hasToTime() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional uint32 to_time = 3;</code>
-     */
-    public int getToTime() {
-      return toTime_;
-    }
-
-    // optional uint32 control_object_id = 4;
-    public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 4;
-    private int controlObjectId_;
-    /**
-     * <code>optional uint32 control_object_id = 4;</code>
-     */
-    public boolean hasControlObjectId() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional uint32 control_object_id = 4;</code>
-     */
-    public int getControlObjectId() {
-      return controlObjectId_;
-    }
-
-    private void initFields() {
-      id_ = 0;
-      fromTime_ = 0;
-      toTime_ = 0;
-      controlObjectId_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(2, fromTime_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, toTime_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeUInt32(4, controlObjectId_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, fromTime_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, toTime_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, controlObjectId_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.ChangeOverPeriodIndex}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndexOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+    public static final class ChangeOverPeriodIndex extends
+            com.google.protobuf.GeneratedMessage
+            implements ChangeOverPeriodIndexOrBuilder {
+        // Use ChangeOverPeriodIndex.newBuilder() to construct.
+        private ChangeOverPeriodIndex(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        id_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        fromTime_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        toTime_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        controlObjectId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex build() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        private ChangeOverPeriodIndex(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        return result;
-      }
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex buildPartial() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        private static final ChangeOverPeriodIndex defaultInstance;
+
+        public static ChangeOverPeriodIndex getDefaultInstance() {
+            return defaultInstance;
         }
-        result.id_ = id_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
+
+        public ChangeOverPeriodIndex getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        result.fromTime_ = fromTime_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.toTime_ = toTime_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.controlObjectId_ = controlObjectId_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex other) {
-        if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
-        }
-        if (other.hasFromTime()) {
-          setFromTime(other.getFromTime());
-        }
-        if (other.hasToTime()) {
-          setToTime(other.getToTime());
-        }
-        if (other.hasControlObjectId()) {
-          setControlObjectId(other.getControlObjectId());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // optional uint32 id = 1;
-      private int id_ ;
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public Builder setId(int value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 id = 1;</code>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 from_time = 2;
-      private int fromTime_ ;
-      /**
-       * <code>optional uint32 from_time = 2;</code>
-       */
-      public boolean hasFromTime() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional uint32 from_time = 2;</code>
-       */
-      public int getFromTime() {
-        return fromTime_;
-      }
-      /**
-       * <code>optional uint32 from_time = 2;</code>
-       */
-      public Builder setFromTime(int value) {
-        bitField0_ |= 0x00000002;
-        fromTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 from_time = 2;</code>
-       */
-      public Builder clearFromTime() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        fromTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 to_time = 3;
-      private int toTime_ ;
-      /**
-       * <code>optional uint32 to_time = 3;</code>
-       */
-      public boolean hasToTime() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional uint32 to_time = 3;</code>
-       */
-      public int getToTime() {
-        return toTime_;
-      }
-      /**
-       * <code>optional uint32 to_time = 3;</code>
-       */
-      public Builder setToTime(int value) {
-        bitField0_ |= 0x00000004;
-        toTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 to_time = 3;</code>
-       */
-      public Builder clearToTime() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        toTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 control_object_id = 4;
-      private int controlObjectId_ ;
-      /**
-       * <code>optional uint32 control_object_id = 4;</code>
-       */
-      public boolean hasControlObjectId() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional uint32 control_object_id = 4;</code>
-       */
-      public int getControlObjectId() {
-        return controlObjectId_;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 4;</code>
-       */
-      public Builder setControlObjectId(int value) {
-        bitField0_ |= 0x00000008;
-        controlObjectId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 4;</code>
-       */
-      public Builder clearControlObjectId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        controlObjectId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ChangeOverPeriodIndex)
-    }
-
-    static {
-      defaultInstance = new ChangeOverPeriodIndex(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ChangeOverPeriodIndex)
-  }
-
-  public interface ElementStateOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // optional uint32 time = 1;
-    /**
-     * <code>optional uint32 time = 1;</code>
-     */
-    boolean hasTime();
-    /**
-     * <code>optional uint32 time = 1;</code>
-     */
-    int getTime();
-
-    // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    boolean hasValue();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue();
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder();
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.ElementState}
-   */
-  public static final class ElementState extends
-      com.google.protobuf.GeneratedMessage
-      implements ElementStateOrBuilder {
-    // Use ElementState.newBuilder() to construct.
-    private ElementState(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ElementState(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final ElementState defaultInstance;
-    public static ElementState getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public ElementState getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ElementState(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              time_ = input.readUInt32();
-              break;
-            }
-            case 18: {
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                subBuilder = value_.toBuilder();
-              }
-              value_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(value_);
-                value_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000002;
-              break;
-            }
-          }
+            return this.unknownFields;
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
+
+        private ChangeOverPeriodIndex(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            bitField0_ |= 0x00000001;
+                            id_ = input.readUInt32();
+                            break;
+                        }
+                        case 16: {
+                            bitField0_ |= 0x00000002;
+                            fromTime_ = input.readUInt32();
+                            break;
+                        }
+                        case 24: {
+                            bitField0_ |= 0x00000004;
+                            toTime_ = input.readUInt32();
+                            break;
+                        }
+                        case 32: {
+                            bitField0_ |= 0x00000008;
+                            controlObjectId_ = input.readUInt32();
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
+        }
+
+        public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
-    }
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
+        }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder.class);
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<ChangeOverPeriodIndex> PARSER =
+                new com.google.protobuf.AbstractParser<ChangeOverPeriodIndex>() {
+                    public ChangeOverPeriodIndex parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new ChangeOverPeriodIndex(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<ChangeOverPeriodIndex> getParserForType() {
+            return PARSER;
+        }
+
+        private int bitField0_;
+        // optional uint32 id = 1;
+        public static final int ID_FIELD_NUMBER = 1;
+        private int id_;
+
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        public boolean hasId() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <code>optional uint32 id = 1;</code>
+         */
+        public int getId() {
+            return id_;
+        }
+
+        // optional uint32 from_time = 2;
+        public static final int FROM_TIME_FIELD_NUMBER = 2;
+        private int fromTime_;
+
+        /**
+         * <code>optional uint32 from_time = 2;</code>
+         */
+        public boolean hasFromTime() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <code>optional uint32 from_time = 2;</code>
+         */
+        public int getFromTime() {
+            return fromTime_;
+        }
+
+        // optional uint32 to_time = 3;
+        public static final int TO_TIME_FIELD_NUMBER = 3;
+        private int toTime_;
+
+        /**
+         * <code>optional uint32 to_time = 3;</code>
+         */
+        public boolean hasToTime() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <code>optional uint32 to_time = 3;</code>
+         */
+        public int getToTime() {
+            return toTime_;
+        }
+
+        // optional uint32 control_object_id = 4;
+        public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 4;
+        private int controlObjectId_;
+
+        /**
+         * <code>optional uint32 control_object_id = 4;</code>
+         */
+        public boolean hasControlObjectId() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+
+        /**
+         * <code>optional uint32 control_object_id = 4;</code>
+         */
+        public int getControlObjectId() {
+            return controlObjectId_;
+        }
+
+        private void initFields() {
+            id_ = 0;
+            fromTime_ = 0;
+            toTime_ = 0;
+            controlObjectId_ = 0;
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, id_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeUInt32(2, fromTime_);
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                output.writeUInt32(3, toTime_);
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                output.writeUInt32(4, controlObjectId_);
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(1, id_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(2, fromTime_);
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(3, toTime_);
+            }
+            if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(4, controlObjectId_);
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ChangeOverPeriodIndex}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndexOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                id_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                fromTime_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000002);
+                toTime_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000004);
+                controlObjectId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000008);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex build() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex buildPartial() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.id_ = id_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                result.fromTime_ = fromTime_;
+                if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                    to_bitField0_ |= 0x00000004;
+                }
+                result.toTime_ = toTime_;
+                if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+                    to_bitField0_ |= 0x00000008;
+                }
+                result.controlObjectId_ = controlObjectId_;
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex other) {
+                if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex.getDefaultInstance())
+                    return this;
+                if (other.hasId()) {
+                    setId(other.getId());
+                }
+                if (other.hasFromTime()) {
+                    setFromTime(other.getFromTime());
+                }
+                if (other.hasToTime()) {
+                    setToTime(other.getToTime());
+                }
+                if (other.hasControlObjectId()) {
+                    setControlObjectId(other.getControlObjectId());
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ChangeOverPeriodIndex) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional uint32 id = 1;
+            private int id_;
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public boolean hasId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public int getId() {
+                return id_;
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public Builder setId(int value) {
+                bitField0_ |= 0x00000001;
+                id_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 id = 1;</code>
+             */
+            public Builder clearId() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                id_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 from_time = 2;
+            private int fromTime_;
+
+            /**
+             * <code>optional uint32 from_time = 2;</code>
+             */
+            public boolean hasFromTime() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional uint32 from_time = 2;</code>
+             */
+            public int getFromTime() {
+                return fromTime_;
+            }
+
+            /**
+             * <code>optional uint32 from_time = 2;</code>
+             */
+            public Builder setFromTime(int value) {
+                bitField0_ |= 0x00000002;
+                fromTime_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 from_time = 2;</code>
+             */
+            public Builder clearFromTime() {
+                bitField0_ = (bitField0_ & ~0x00000002);
+                fromTime_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 to_time = 3;
+            private int toTime_;
+
+            /**
+             * <code>optional uint32 to_time = 3;</code>
+             */
+            public boolean hasToTime() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional uint32 to_time = 3;</code>
+             */
+            public int getToTime() {
+                return toTime_;
+            }
+
+            /**
+             * <code>optional uint32 to_time = 3;</code>
+             */
+            public Builder setToTime(int value) {
+                bitField0_ |= 0x00000004;
+                toTime_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 to_time = 3;</code>
+             */
+            public Builder clearToTime() {
+                bitField0_ = (bitField0_ & ~0x00000004);
+                toTime_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 control_object_id = 4;
+            private int controlObjectId_;
+
+            /**
+             * <code>optional uint32 control_object_id = 4;</code>
+             */
+            public boolean hasControlObjectId() {
+                return ((bitField0_ & 0x00000008) == 0x00000008);
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 4;</code>
+             */
+            public int getControlObjectId() {
+                return controlObjectId_;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 4;</code>
+             */
+            public Builder setControlObjectId(int value) {
+                bitField0_ |= 0x00000008;
+                controlObjectId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 4;</code>
+             */
+            public Builder clearControlObjectId() {
+                bitField0_ = (bitField0_ & ~0x00000008);
+                controlObjectId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ChangeOverPeriodIndex)
+        }
+
+        static {
+            defaultInstance = new ChangeOverPeriodIndex(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ChangeOverPeriodIndex)
     }
 
-    public static com.google.protobuf.Parser<ElementState> PARSER =
-        new com.google.protobuf.AbstractParser<ElementState>() {
-      public ElementState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ElementState(input, extensionRegistry);
-      }
-    };
+    public interface ElementStateOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<ElementState> getParserForType() {
-      return PARSER;
-    }
+        // optional uint32 time = 1;
 
-    private int bitField0_;
-    // optional uint32 time = 1;
-    public static final int TIME_FIELD_NUMBER = 1;
-    private int time_;
-    /**
-     * <code>optional uint32 time = 1;</code>
-     */
-    public boolean hasTime() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 time = 1;</code>
-     */
-    public int getTime() {
-      return time_;
-    }
+        /**
+         * <code>optional uint32 time = 1;</code>
+         */
+        boolean hasTime();
 
-    // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-    public static final int VALUE_FIELD_NUMBER = 2;
-    private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_;
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    public boolean hasValue() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
-      return value_;
-    }
-    /**
-     * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
-      return value_;
+        /**
+         * <code>optional uint32 time = 1;</code>
+         */
+        int getTime();
+
+        // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        boolean hasValue();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue();
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder();
     }
 
-    private void initFields() {
-      time_ = 0;
-      value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, time_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, value_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, time_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, value_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.ElementState}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getValueFieldBuilder();
+    public static final class ElementState extends
+            com.google.protobuf.GeneratedMessage
+            implements ElementStateOrBuilder {
+        // Use ElementState.newBuilder() to construct.
+        private ElementState(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        time_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        if (valueBuilder_ == null) {
-          value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-        } else {
-          valueBuilder_.clear();
+        private ElementState(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private static final ElementState defaultInstance;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState build() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        public static ElementState getDefaultInstance() {
+            return defaultInstance;
         }
-        return result;
-      }
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState buildPartial() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        public ElementState getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        result.time_ = time_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        if (valueBuilder_ == null) {
-          result.value_ = value_;
-        } else {
-          result.value_ = valueBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState other) {
-        if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance()) return this;
-        if (other.hasTime()) {
-          setTime(other.getTime());
-        }
-        if (other.hasValue()) {
-          mergeValue(other.getValue());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // optional uint32 time = 1;
-      private int time_ ;
-      /**
-       * <code>optional uint32 time = 1;</code>
-       */
-      public boolean hasTime() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 time = 1;</code>
-       */
-      public int getTime() {
-        return time_;
-      }
-      /**
-       * <code>optional uint32 time = 1;</code>
-       */
-      public Builder setTime(int value) {
-        bitField0_ |= 0x00000001;
-        time_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 time = 1;</code>
-       */
-      public Builder clearTime() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        time_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional .almaz2.domain_objects.FieldTypeValue value = 2;
-      private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> valueBuilder_;
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public boolean hasValue() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
-        if (valueBuilder_ == null) {
-          return value_;
-        } else {
-          return valueBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public Builder setValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-        if (valueBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          value_ = value;
-          onChanged();
-        } else {
-          valueBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public Builder setValue(
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
-        if (valueBuilder_ == null) {
-          value_ = builderForValue.build();
-          onChanged();
-        } else {
-          valueBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public Builder mergeValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
-        if (valueBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              value_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
-            value_ =
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(value_).mergeFrom(value).buildPartial();
-          } else {
-            value_ = value;
-          }
-          onChanged();
-        } else {
-          valueBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public Builder clearValue() {
-        if (valueBuilder_ == null) {
-          value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
-          onChanged();
-        } else {
-          valueBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getValueBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getValueFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
-        if (valueBuilder_ != null) {
-          return valueBuilder_.getMessageOrBuilder();
-        } else {
-          return value_;
-        }
-      }
-      /**
-       * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> 
-          getValueFieldBuilder() {
-        if (valueBuilder_ == null) {
-          valueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
-                  value_,
-                  getParentForChildren(),
-                  isClean());
-          value_ = null;
-        }
-        return valueBuilder_;
-      }
-
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ElementState)
-    }
-
-    static {
-      defaultInstance = new ElementState(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ElementState)
-  }
-
-  public interface ControlElementChangeOverPeriodOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // optional uint32 control_object_id = 1;
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    boolean hasControlObjectId();
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    int getControlObjectId();
-
-    // optional uint32 control_element_id = 3;
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    boolean hasControlElementId();
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    int getControlElementId();
-
-    // repeated .almaz2.domain_objects.ElementState states = 4;
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> 
-        getStatesList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index);
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    int getStatesCount();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-        getStatesOrBuilderList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.ControlElementChangeOverPeriod}
-   */
-  public static final class ControlElementChangeOverPeriod extends
-      com.google.protobuf.GeneratedMessage
-      implements ControlElementChangeOverPeriodOrBuilder {
-    // Use ControlElementChangeOverPeriod.newBuilder() to construct.
-    private ControlElementChangeOverPeriod(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ControlElementChangeOverPeriod(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final ControlElementChangeOverPeriod defaultInstance;
-    public static ControlElementChangeOverPeriod getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public ControlElementChangeOverPeriod getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ControlElementChangeOverPeriod(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              controlObjectId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000002;
-              controlElementId_ = input.readUInt32();
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              states_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.PARSER, extensionRegistry));
-              break;
-            }
-          }
+            return this.unknownFields;
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-          states_ = java.util.Collections.unmodifiableList(states_);
+
+        private ElementState(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            bitField0_ |= 0x00000001;
+                            time_ = input.readUInt32();
+                            break;
+                        }
+                        case 18: {
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder subBuilder = null;
+                            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                                subBuilder = value_.toBuilder();
+                            }
+                            value_ = input.readMessage(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.PARSER, extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(value_);
+                                value_ = subBuilder.buildPartial();
+                            }
+                            bitField0_ |= 0x00000002;
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
         }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
+
+        public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
-    }
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
+        }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.Builder.class);
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<ElementState> PARSER =
+                new com.google.protobuf.AbstractParser<ElementState>() {
+                    public ElementState parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new ElementState(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<ElementState> getParserForType() {
+            return PARSER;
+        }
+
+        private int bitField0_;
+        // optional uint32 time = 1;
+        public static final int TIME_FIELD_NUMBER = 1;
+        private int time_;
+
+        /**
+         * <code>optional uint32 time = 1;</code>
+         */
+        public boolean hasTime() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <code>optional uint32 time = 1;</code>
+         */
+        public int getTime() {
+            return time_;
+        }
+
+        // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+        public static final int VALUE_FIELD_NUMBER = 2;
+        private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_;
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        public boolean hasValue() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
+            return value_;
+        }
+
+        /**
+         * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
+            return value_;
+        }
+
+        private void initFields() {
+            time_ = 0;
+            value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, time_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeMessage(2, value_);
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(1, time_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(2, value_);
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ElementState}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getValueFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                time_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                if (valueBuilder_ == null) {
+                    value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                } else {
+                    valueBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000002);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ElementState_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState build() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState buildPartial() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.time_ = time_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                if (valueBuilder_ == null) {
+                    result.value_ = value_;
+                } else {
+                    result.value_ = valueBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState other) {
+                if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance())
+                    return this;
+                if (other.hasTime()) {
+                    setTime(other.getTime());
+                }
+                if (other.hasValue()) {
+                    mergeValue(other.getValue());
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional uint32 time = 1;
+            private int time_;
+
+            /**
+             * <code>optional uint32 time = 1;</code>
+             */
+            public boolean hasTime() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 time = 1;</code>
+             */
+            public int getTime() {
+                return time_;
+            }
+
+            /**
+             * <code>optional uint32 time = 1;</code>
+             */
+            public Builder setTime(int value) {
+                bitField0_ |= 0x00000001;
+                time_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 time = 1;</code>
+             */
+            public Builder clearTime() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                time_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional .almaz2.domain_objects.FieldTypeValue value = 2;
+            private ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder> valueBuilder_;
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public boolean hasValue() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue getValue() {
+                if (valueBuilder_ == null) {
+                    return value_;
+                } else {
+                    return valueBuilder_.getMessage();
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public Builder setValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                if (valueBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    value_ = value;
+                    onChanged();
+                } else {
+                    valueBuilder_.setMessage(value);
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public Builder setValue(
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder builderForValue) {
+                if (valueBuilder_ == null) {
+                    value_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    valueBuilder_.setMessage(builderForValue.build());
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public Builder mergeValue(ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue value) {
+                if (valueBuilder_ == null) {
+                    if (((bitField0_ & 0x00000002) == 0x00000002) &&
+                            value_ != ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance()) {
+                        value_ =
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.newBuilder(value_).mergeFrom(value).buildPartial();
+                    } else {
+                        value_ = value;
+                    }
+                    onChanged();
+                } else {
+                    valueBuilder_.mergeFrom(value);
+                }
+                bitField0_ |= 0x00000002;
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public Builder clearValue() {
+                if (valueBuilder_ == null) {
+                    value_ = ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.getDefaultInstance();
+                    onChanged();
+                } else {
+                    valueBuilder_.clear();
+                }
+                bitField0_ = (bitField0_ & ~0x00000002);
+                return this;
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder getValueBuilder() {
+                bitField0_ |= 0x00000002;
+                onChanged();
+                return getValueFieldBuilder().getBuilder();
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder getValueOrBuilder() {
+                if (valueBuilder_ != null) {
+                    return valueBuilder_.getMessageOrBuilder();
+                } else {
+                    return value_;
+                }
+            }
+
+            /**
+             * <code>optional .almaz2.domain_objects.FieldTypeValue value = 2;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>
+            getValueFieldBuilder() {
+                if (valueBuilder_ == null) {
+                    valueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValue.Builder, ru.kodos.almaz2.domain_objects.PropertiesClass.FieldTypeValueOrBuilder>(
+                            value_,
+                            getParentForChildren(),
+                            isClean());
+                    value_ = null;
+                }
+                return valueBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ElementState)
+        }
+
+        static {
+            defaultInstance = new ElementState(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ElementState)
     }
 
-    public static com.google.protobuf.Parser<ControlElementChangeOverPeriod> PARSER =
-        new com.google.protobuf.AbstractParser<ControlElementChangeOverPeriod>() {
-      public ControlElementChangeOverPeriod parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ControlElementChangeOverPeriod(input, extensionRegistry);
-      }
-    };
+    public interface ControlElementChangeOverPeriodOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<ControlElementChangeOverPeriod> getParserForType() {
-      return PARSER;
-    }
+        // optional uint32 control_object_id = 1;
 
-    private int bitField0_;
-    // optional uint32 control_object_id = 1;
-    public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 1;
-    private int controlObjectId_;
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    public boolean hasControlObjectId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    public int getControlObjectId() {
-      return controlObjectId_;
-    }
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        boolean hasControlObjectId();
 
-    // optional uint32 control_element_id = 3;
-    public static final int CONTROL_ELEMENT_ID_FIELD_NUMBER = 3;
-    private int controlElementId_;
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    public boolean hasControlElementId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    public int getControlElementId() {
-      return controlElementId_;
-    }
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        int getControlObjectId();
 
-    // repeated .almaz2.domain_objects.ElementState states = 4;
-    public static final int STATES_FIELD_NUMBER = 4;
-    private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_;
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
-      return states_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-        getStatesOrBuilderList() {
-      return states_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    public int getStatesCount() {
-      return states_.size();
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
-      return states_.get(index);
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-        int index) {
-      return states_.get(index);
+        // optional uint32 control_element_id = 3;
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        boolean hasControlElementId();
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        int getControlElementId();
+
+        // repeated .almaz2.domain_objects.ElementState states = 4;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>
+        getStatesList();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index);
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        int getStatesCount();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+        getStatesOrBuilderList();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                int index);
     }
 
-    private void initFields() {
-      controlObjectId_ = 0;
-      controlElementId_ = 0;
-      states_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, controlObjectId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(3, controlElementId_);
-      }
-      for (int i = 0; i < states_.size(); i++) {
-        output.writeMessage(4, states_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, controlObjectId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, controlElementId_);
-      }
-      for (int i = 0; i < states_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, states_.get(i));
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.ControlElementChangeOverPeriod}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriodOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getStatesFieldBuilder();
+    public static final class ControlElementChangeOverPeriod extends
+            com.google.protobuf.GeneratedMessage
+            implements ControlElementChangeOverPeriodOrBuilder {
+        // Use ControlElementChangeOverPeriod.newBuilder() to construct.
+        private ControlElementChangeOverPeriod(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        controlObjectId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        controlElementId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (statesBuilder_ == null) {
-          states_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          statesBuilder_.clear();
+        private ControlElementChangeOverPeriod(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private static final ControlElementChangeOverPeriod defaultInstance;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.getDefaultInstance();
-      }
-
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod build() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        public static ControlElementChangeOverPeriod getDefaultInstance() {
+            return defaultInstance;
         }
-        return result;
-      }
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod buildPartial() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        public ControlElementChangeOverPeriod getDefaultInstanceForType() {
+            return defaultInstance;
         }
-        result.controlObjectId_ = controlObjectId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.controlElementId_ = controlElementId_;
-        if (statesBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004)) {
-            states_ = java.util.Collections.unmodifiableList(states_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.states_ = states_;
-        } else {
-          result.states_ = statesBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod other) {
-        if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.getDefaultInstance()) return this;
-        if (other.hasControlObjectId()) {
-          setControlObjectId(other.getControlObjectId());
-        }
-        if (other.hasControlElementId()) {
-          setControlElementId(other.getControlElementId());
-        }
-        if (statesBuilder_ == null) {
-          if (!other.states_.isEmpty()) {
-            if (states_.isEmpty()) {
-              states_ = other.states_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureStatesIsMutable();
-              states_.addAll(other.states_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.states_.isEmpty()) {
-            if (statesBuilder_.isEmpty()) {
-              statesBuilder_.dispose();
-              statesBuilder_ = null;
-              states_ = other.states_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              statesBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getStatesFieldBuilder() : null;
-            } else {
-              statesBuilder_.addAllMessages(other.states_);
-            }
-          }
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // optional uint32 control_object_id = 1;
-      private int controlObjectId_ ;
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public boolean hasControlObjectId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public int getControlObjectId() {
-        return controlObjectId_;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public Builder setControlObjectId(int value) {
-        bitField0_ |= 0x00000001;
-        controlObjectId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public Builder clearControlObjectId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        controlObjectId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 control_element_id = 3;
-      private int controlElementId_ ;
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public boolean hasControlElementId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public int getControlElementId() {
-        return controlElementId_;
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public Builder setControlElementId(int value) {
-        bitField0_ |= 0x00000002;
-        controlElementId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public Builder clearControlElementId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        controlElementId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // repeated .almaz2.domain_objects.ElementState states = 4;
-      private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_ =
-        java.util.Collections.emptyList();
-      private void ensureStatesIsMutable() {
-        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>(states_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> statesBuilder_;
-
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
-        if (statesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(states_);
-        } else {
-          return statesBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public int getStatesCount() {
-        if (statesBuilder_ == null) {
-          return states_.size();
-        } else {
-          return statesBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
-        if (statesBuilder_ == null) {
-          return states_.get(index);
-        } else {
-          return statesBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder setStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.set(index, value);
-          onChanged();
-        } else {
-          statesBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder setStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder addStates(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.add(value);
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder addStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.add(index, value);
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder addStates(
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.add(builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder addStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder addAllStates(
-          java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> values) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          super.addAll(values, states_);
-          onChanged();
-        } else {
-          statesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder clearStates() {
-        if (statesBuilder_ == null) {
-          states_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          statesBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public Builder removeStates(int index) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.remove(index);
-          onChanged();
-        } else {
-          statesBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder getStatesBuilder(
-          int index) {
-        return getStatesFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-          int index) {
-        if (statesBuilder_ == null) {
-          return states_.get(index);  } else {
-          return statesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-           getStatesOrBuilderList() {
-        if (statesBuilder_ != null) {
-          return statesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(states_);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder() {
-        return getStatesFieldBuilder().addBuilder(
-            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder(
-          int index) {
-        return getStatesFieldBuilder().addBuilder(
-            index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder> 
-           getStatesBuilderList() {
-        return getStatesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-          getStatesFieldBuilder() {
-        if (statesBuilder_ == null) {
-          statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>(
-                  states_,
-                  ((bitField0_ & 0x00000004) == 0x00000004),
-                  getParentForChildren(),
-                  isClean());
-          states_ = null;
-        }
-        return statesBuilder_;
-      }
-
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ControlElementChangeOverPeriod)
-    }
-
-    static {
-      defaultInstance = new ControlElementChangeOverPeriod(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ControlElementChangeOverPeriod)
-  }
-
-  public interface SensorChangeOverPeriodOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // optional uint32 control_object_id = 1;
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    boolean hasControlObjectId();
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    int getControlObjectId();
-
-    // optional uint32 control_element_id = 3;
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    boolean hasControlElementId();
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    int getControlElementId();
-
-    // optional uint32 sensor_id = 4;
-    /**
-     * <code>optional uint32 sensor_id = 4;</code>
-     */
-    boolean hasSensorId();
-    /**
-     * <code>optional uint32 sensor_id = 4;</code>
-     */
-    int getSensorId();
-
-    // repeated .almaz2.domain_objects.ElementState states = 5;
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> 
-        getStatesList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index);
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    int getStatesCount();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-        getStatesOrBuilderList();
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code almaz2.domain_objects.SensorChangeOverPeriod}
-   */
-  public static final class SensorChangeOverPeriod extends
-      com.google.protobuf.GeneratedMessage
-      implements SensorChangeOverPeriodOrBuilder {
-    // Use SensorChangeOverPeriod.newBuilder() to construct.
-    private SensorChangeOverPeriod(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private SensorChangeOverPeriod(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final SensorChangeOverPeriod defaultInstance;
-    public static SensorChangeOverPeriod getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public SensorChangeOverPeriod getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SensorChangeOverPeriod(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              controlObjectId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000002;
-              controlElementId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000004;
-              sensorId_ = input.readUInt32();
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              states_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.PARSER, extensionRegistry));
-              break;
-            }
-          }
+            return this.unknownFields;
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-          states_ = java.util.Collections.unmodifiableList(states_);
+
+        private ControlElementChangeOverPeriod(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            bitField0_ |= 0x00000001;
+                            controlObjectId_ = input.readUInt32();
+                            break;
+                        }
+                        case 24: {
+                            bitField0_ |= 0x00000002;
+                            controlElementId_ = input.readUInt32();
+                            break;
+                        }
+                        case 34: {
+                            if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                                states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>();
+                                mutable_bitField0_ |= 0x00000004;
+                            }
+                            states_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.PARSER, extensionRegistry));
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                    states_ = java.util.Collections.unmodifiableList(states_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
         }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
+
+        public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
-    }
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
+        }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.Builder.class);
-    }
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.Builder.class);
+        }
 
-    public static com.google.protobuf.Parser<SensorChangeOverPeriod> PARSER =
-        new com.google.protobuf.AbstractParser<SensorChangeOverPeriod>() {
-      public SensorChangeOverPeriod parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SensorChangeOverPeriod(input, extensionRegistry);
-      }
-    };
+        public static com.google.protobuf.Parser<ControlElementChangeOverPeriod> PARSER =
+                new com.google.protobuf.AbstractParser<ControlElementChangeOverPeriod>() {
+                    public ControlElementChangeOverPeriod parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new ControlElementChangeOverPeriod(input, extensionRegistry);
+                    }
+                };
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<SensorChangeOverPeriod> getParserForType() {
-      return PARSER;
-    }
+        @java.lang.Override
+        public com.google.protobuf.Parser<ControlElementChangeOverPeriod> getParserForType() {
+            return PARSER;
+        }
 
-    private int bitField0_;
-    // optional uint32 control_object_id = 1;
-    public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 1;
-    private int controlObjectId_;
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    public boolean hasControlObjectId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 control_object_id = 1;</code>
-     */
-    public int getControlObjectId() {
-      return controlObjectId_;
-    }
+        private int bitField0_;
+        // optional uint32 control_object_id = 1;
+        public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 1;
+        private int controlObjectId_;
 
-    // optional uint32 control_element_id = 3;
-    public static final int CONTROL_ELEMENT_ID_FIELD_NUMBER = 3;
-    private int controlElementId_;
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    public boolean hasControlElementId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional uint32 control_element_id = 3;</code>
-     */
-    public int getControlElementId() {
-      return controlElementId_;
-    }
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        public boolean hasControlObjectId() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
 
-    // optional uint32 sensor_id = 4;
-    public static final int SENSOR_ID_FIELD_NUMBER = 4;
-    private int sensorId_;
-    /**
-     * <code>optional uint32 sensor_id = 4;</code>
-     */
-    public boolean hasSensorId() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional uint32 sensor_id = 4;</code>
-     */
-    public int getSensorId() {
-      return sensorId_;
-    }
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        public int getControlObjectId() {
+            return controlObjectId_;
+        }
 
-    // repeated .almaz2.domain_objects.ElementState states = 5;
-    public static final int STATES_FIELD_NUMBER = 5;
-    private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_;
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
-      return states_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
+        // optional uint32 control_element_id = 3;
+        public static final int CONTROL_ELEMENT_ID_FIELD_NUMBER = 3;
+        private int controlElementId_;
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        public boolean hasControlElementId() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        public int getControlElementId() {
+            return controlElementId_;
+        }
+
+        // repeated .almaz2.domain_objects.ElementState states = 4;
+        public static final int STATES_FIELD_NUMBER = 4;
+        private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
+            return states_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
         getStatesOrBuilderList() {
-      return states_;
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    public int getStatesCount() {
-      return states_.size();
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
-      return states_.get(index);
-    }
-    /**
-     * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-     */
-    public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-        int index) {
-      return states_.get(index);
+            return states_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        public int getStatesCount() {
+            return states_.size();
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
+            return states_.get(index);
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                int index) {
+            return states_.get(index);
+        }
+
+        private void initFields() {
+            controlObjectId_ = 0;
+            controlElementId_ = 0;
+            states_ = java.util.Collections.emptyList();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, controlObjectId_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeUInt32(3, controlElementId_);
+            }
+            for (int i = 0; i < states_.size(); i++) {
+                output.writeMessage(4, states_.get(i));
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(1, controlObjectId_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(3, controlElementId_);
+            }
+            for (int i = 0; i < states_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(4, states_.get(i));
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.ControlElementChangeOverPeriod}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriodOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getStatesFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                controlObjectId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                controlElementId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000002);
+                if (statesBuilder_ == null) {
+                    states_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                } else {
+                    statesBuilder_.clear();
+                }
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod build() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod buildPartial() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.controlObjectId_ = controlObjectId_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                result.controlElementId_ = controlElementId_;
+                if (statesBuilder_ == null) {
+                    if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                        states_ = java.util.Collections.unmodifiableList(states_);
+                        bitField0_ = (bitField0_ & ~0x00000004);
+                    }
+                    result.states_ = states_;
+                } else {
+                    result.states_ = statesBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod other) {
+                if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod.getDefaultInstance())
+                    return this;
+                if (other.hasControlObjectId()) {
+                    setControlObjectId(other.getControlObjectId());
+                }
+                if (other.hasControlElementId()) {
+                    setControlElementId(other.getControlElementId());
+                }
+                if (statesBuilder_ == null) {
+                    if (!other.states_.isEmpty()) {
+                        if (states_.isEmpty()) {
+                            states_ = other.states_;
+                            bitField0_ = (bitField0_ & ~0x00000004);
+                        } else {
+                            ensureStatesIsMutable();
+                            states_.addAll(other.states_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.states_.isEmpty()) {
+                        if (statesBuilder_.isEmpty()) {
+                            statesBuilder_.dispose();
+                            statesBuilder_ = null;
+                            states_ = other.states_;
+                            bitField0_ = (bitField0_ & ~0x00000004);
+                            statesBuilder_ =
+                                    com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                                            getStatesFieldBuilder() : null;
+                        } else {
+                            statesBuilder_.addAllMessages(other.states_);
+                        }
+                    }
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ControlElementChangeOverPeriod) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional uint32 control_object_id = 1;
+            private int controlObjectId_;
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public boolean hasControlObjectId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public int getControlObjectId() {
+                return controlObjectId_;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public Builder setControlObjectId(int value) {
+                bitField0_ |= 0x00000001;
+                controlObjectId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public Builder clearControlObjectId() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                controlObjectId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 control_element_id = 3;
+            private int controlElementId_;
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public boolean hasControlElementId() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public int getControlElementId() {
+                return controlElementId_;
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public Builder setControlElementId(int value) {
+                bitField0_ |= 0x00000002;
+                controlElementId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public Builder clearControlElementId() {
+                bitField0_ = (bitField0_ & ~0x00000002);
+                controlElementId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // repeated .almaz2.domain_objects.ElementState states = 4;
+            private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureStatesIsMutable() {
+                if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+                    states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>(states_);
+                    bitField0_ |= 0x00000004;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> statesBuilder_;
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
+                if (statesBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(states_);
+                } else {
+                    return statesBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public int getStatesCount() {
+                if (statesBuilder_ == null) {
+                    return states_.size();
+                } else {
+                    return statesBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
+                if (statesBuilder_ == null) {
+                    return states_.get(index);
+                } else {
+                    return statesBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder setStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.set(index, value);
+                    onChanged();
+                } else {
+                    statesBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder setStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder addStates(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.add(value);
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder addStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.add(index, value);
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder addStates(
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder addStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder addAllStates(
+                    java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> values) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    super.addAll(values, states_);
+                    onChanged();
+                } else {
+                    statesBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder clearStates() {
+                if (statesBuilder_ == null) {
+                    states_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000004);
+                    onChanged();
+                } else {
+                    statesBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public Builder removeStates(int index) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.remove(index);
+                    onChanged();
+                } else {
+                    statesBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder getStatesBuilder(
+                    int index) {
+                return getStatesFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                    int index) {
+                if (statesBuilder_ == null) {
+                    return states_.get(index);
+                } else {
+                    return statesBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+            getStatesOrBuilderList() {
+                if (statesBuilder_ != null) {
+                    return statesBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(states_);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder() {
+                return getStatesFieldBuilder().addBuilder(
+                        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder(
+                    int index) {
+                return getStatesFieldBuilder().addBuilder(
+                        index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 4;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder>
+            getStatesBuilderList() {
+                return getStatesFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+            getStatesFieldBuilder() {
+                if (statesBuilder_ == null) {
+                    statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>(
+                            states_,
+                            ((bitField0_ & 0x00000004) == 0x00000004),
+                            getParentForChildren(),
+                            isClean());
+                    states_ = null;
+                }
+                return statesBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.ControlElementChangeOverPeriod)
+        }
+
+        static {
+            defaultInstance = new ControlElementChangeOverPeriod(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.ControlElementChangeOverPeriod)
     }
 
-    private void initFields() {
-      controlObjectId_ = 0;
-      controlElementId_ = 0;
-      sensorId_ = 0;
-      states_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+    public interface SensorChangeOverPeriodOrBuilder
+            extends com.google.protobuf.MessageOrBuilder {
 
-      memoizedIsInitialized = 1;
-      return true;
-    }
+        // optional uint32 control_object_id = 1;
 
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, controlObjectId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(3, controlElementId_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(4, sensorId_);
-      }
-      for (int i = 0; i < states_.size(); i++) {
-        output.writeMessage(5, states_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        boolean hasControlObjectId();
 
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        int getControlObjectId();
 
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, controlObjectId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, controlElementId_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sensorId_);
-      }
-      for (int i = 0; i < states_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, states_.get(i));
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
+        // optional uint32 control_element_id = 3;
 
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        boolean hasControlElementId();
 
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        int getControlElementId();
+
+        // optional uint32 sensor_id = 4;
+
+        /**
+         * <code>optional uint32 sensor_id = 4;</code>
+         */
+        boolean hasSensorId();
+
+        /**
+         * <code>optional uint32 sensor_id = 4;</code>
+         */
+        int getSensorId();
+
+        // repeated .almaz2.domain_objects.ElementState states = 5;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>
+        getStatesList();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index);
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        int getStatesCount();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+        getStatesOrBuilderList();
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                int index);
     }
 
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code almaz2.domain_objects.SensorChangeOverPeriod}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriodOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.Builder.class);
-      }
-
-      // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getStatesFieldBuilder();
+    public static final class SensorChangeOverPeriod extends
+            com.google.protobuf.GeneratedMessage
+            implements SensorChangeOverPeriodOrBuilder {
+        // Use SensorChangeOverPeriod.newBuilder() to construct.
+        private SensorChangeOverPeriod(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        controlObjectId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        controlElementId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        sensorId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        if (statesBuilder_ == null) {
-          states_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        } else {
-          statesBuilder_.clear();
+        private SensorChangeOverPeriod(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        return this;
-      }
 
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
+        private static final SensorChangeOverPeriod defaultInstance;
 
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
-      }
+        public static SensorChangeOverPeriod getDefaultInstance() {
+            return defaultInstance;
+        }
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod getDefaultInstanceForType() {
-        return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.getDefaultInstance();
-      }
+        public SensorChangeOverPeriod getDefaultInstanceForType() {
+            return defaultInstance;
+        }
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod build() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
 
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod buildPartial() {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
         }
-        result.controlObjectId_ = controlObjectId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.controlElementId_ = controlElementId_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.sensorId_ = sensorId_;
-        if (statesBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008)) {
-            states_ = java.util.Collections.unmodifiableList(states_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.states_ = states_;
-        } else {
-          result.states_ = statesBuilder_.build();
-        }
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod) {
-          return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod other) {
-        if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.getDefaultInstance()) return this;
-        if (other.hasControlObjectId()) {
-          setControlObjectId(other.getControlObjectId());
-        }
-        if (other.hasControlElementId()) {
-          setControlElementId(other.getControlElementId());
-        }
-        if (other.hasSensorId()) {
-          setSensorId(other.getSensorId());
-        }
-        if (statesBuilder_ == null) {
-          if (!other.states_.isEmpty()) {
-            if (states_.isEmpty()) {
-              states_ = other.states_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-            } else {
-              ensureStatesIsMutable();
-              states_.addAll(other.states_);
+        private SensorChangeOverPeriod(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            bitField0_ |= 0x00000001;
+                            controlObjectId_ = input.readUInt32();
+                            break;
+                        }
+                        case 24: {
+                            bitField0_ |= 0x00000002;
+                            controlElementId_ = input.readUInt32();
+                            break;
+                        }
+                        case 32: {
+                            bitField0_ |= 0x00000004;
+                            sensorId_ = input.readUInt32();
+                            break;
+                        }
+                        case 42: {
+                            if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                                states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>();
+                                mutable_bitField0_ |= 0x00000008;
+                            }
+                            states_.add(input.readMessage(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.PARSER, extensionRegistry));
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                    states_ = java.util.Collections.unmodifiableList(states_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
             }
-            onChanged();
-          }
-        } else {
-          if (!other.states_.isEmpty()) {
-            if (statesBuilder_.isEmpty()) {
-              statesBuilder_.dispose();
-              statesBuilder_ = null;
-              states_ = other.states_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-              statesBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getStatesFieldBuilder() : null;
-            } else {
-              statesBuilder_.addAllMessages(other.states_);
+        }
+
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<SensorChangeOverPeriod> PARSER =
+                new com.google.protobuf.AbstractParser<SensorChangeOverPeriod>() {
+                    public SensorChangeOverPeriod parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new SensorChangeOverPeriod(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<SensorChangeOverPeriod> getParserForType() {
+            return PARSER;
+        }
+
+        private int bitField0_;
+        // optional uint32 control_object_id = 1;
+        public static final int CONTROL_OBJECT_ID_FIELD_NUMBER = 1;
+        private int controlObjectId_;
+
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        public boolean hasControlObjectId() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <code>optional uint32 control_object_id = 1;</code>
+         */
+        public int getControlObjectId() {
+            return controlObjectId_;
+        }
+
+        // optional uint32 control_element_id = 3;
+        public static final int CONTROL_ELEMENT_ID_FIELD_NUMBER = 3;
+        private int controlElementId_;
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        public boolean hasControlElementId() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <code>optional uint32 control_element_id = 3;</code>
+         */
+        public int getControlElementId() {
+            return controlElementId_;
+        }
+
+        // optional uint32 sensor_id = 4;
+        public static final int SENSOR_ID_FIELD_NUMBER = 4;
+        private int sensorId_;
+
+        /**
+         * <code>optional uint32 sensor_id = 4;</code>
+         */
+        public boolean hasSensorId() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <code>optional uint32 sensor_id = 4;</code>
+         */
+        public int getSensorId() {
+            return sensorId_;
+        }
+
+        // repeated .almaz2.domain_objects.ElementState states = 5;
+        public static final int STATES_FIELD_NUMBER = 5;
+        private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_;
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
+            return states_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+        getStatesOrBuilderList() {
+            return states_;
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        public int getStatesCount() {
+            return states_.size();
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
+            return states_.get(index);
+        }
+
+        /**
+         * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+         */
+        public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                int index) {
+            return states_.get(index);
+        }
+
+        private void initFields() {
+            controlObjectId_ = 0;
+            controlElementId_ = 0;
+            sensorId_ = 0;
+            states_ = java.util.Collections.emptyList();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized != -1) return isInitialized == 1;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, controlObjectId_);
             }
-          }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                output.writeUInt32(3, controlElementId_);
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                output.writeUInt32(4, sensorId_);
+            }
+            for (int i = 0; i < states_.size(); i++) {
+                output.writeMessage(5, states_.get(i));
+            }
+            getUnknownFields().writeTo(output);
         }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        return true;
-      }
+        private int memoizedSerializedSize = -1;
 
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
 
-      // optional uint32 control_object_id = 1;
-      private int controlObjectId_ ;
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public boolean hasControlObjectId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public int getControlObjectId() {
-        return controlObjectId_;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public Builder setControlObjectId(int value) {
-        bitField0_ |= 0x00000001;
-        controlObjectId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 control_object_id = 1;</code>
-       */
-      public Builder clearControlObjectId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        controlObjectId_ = 0;
-        onChanged();
-        return this;
-      }
+            size = 0;
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(1, controlObjectId_);
+            }
+            if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(3, controlElementId_);
+            }
+            if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeUInt32Size(4, sensorId_);
+            }
+            for (int i = 0; i < states_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(5, states_.get(i));
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
 
-      // optional uint32 control_element_id = 3;
-      private int controlElementId_ ;
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public boolean hasControlElementId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public int getControlElementId() {
-        return controlElementId_;
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public Builder setControlElementId(int value) {
-        bitField0_ |= 0x00000002;
-        controlElementId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 control_element_id = 3;</code>
-       */
-      public Builder clearControlElementId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        controlElementId_ = 0;
-        onChanged();
-        return this;
-      }
+        private static final long serialVersionUID = 0L;
 
-      // optional uint32 sensor_id = 4;
-      private int sensorId_ ;
-      /**
-       * <code>optional uint32 sensor_id = 4;</code>
-       */
-      public boolean hasSensorId() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional uint32 sensor_id = 4;</code>
-       */
-      public int getSensorId() {
-        return sensorId_;
-      }
-      /**
-       * <code>optional uint32 sensor_id = 4;</code>
-       */
-      public Builder setSensorId(int value) {
-        bitField0_ |= 0x00000004;
-        sensorId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 sensor_id = 4;</code>
-       */
-      public Builder clearSensorId() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        sensorId_ = 0;
-        onChanged();
-        return this;
-      }
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
 
-      // repeated .almaz2.domain_objects.ElementState states = 5;
-      private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_ =
-        java.util.Collections.emptyList();
-      private void ensureStatesIsMutable() {
-        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>(states_);
-          bitField0_ |= 0x00000008;
-         }
-      }
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> statesBuilder_;
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
 
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
-        if (statesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(states_);
-        } else {
-          return statesBuilder_.getMessageList();
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
         }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public int getStatesCount() {
-        if (statesBuilder_ == null) {
-          return states_.size();
-        } else {
-          return statesBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
-        if (statesBuilder_ == null) {
-          return states_.get(index);
-        } else {
-          return statesBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder setStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.set(index, value);
-          onChanged();
-        } else {
-          statesBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder setStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder addStates(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.add(value);
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder addStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
-        if (statesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureStatesIsMutable();
-          states_.add(index, value);
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder addStates(
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.add(builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder addStates(
-          int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          statesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder addAllStates(
-          java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> values) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          super.addAll(values, states_);
-          onChanged();
-        } else {
-          statesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder clearStates() {
-        if (statesBuilder_ == null) {
-          states_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          statesBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public Builder removeStates(int index) {
-        if (statesBuilder_ == null) {
-          ensureStatesIsMutable();
-          states_.remove(index);
-          onChanged();
-        } else {
-          statesBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder getStatesBuilder(
-          int index) {
-        return getStatesFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
-          int index) {
-        if (statesBuilder_ == null) {
-          return states_.get(index);  } else {
-          return statesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-           getStatesOrBuilderList() {
-        if (statesBuilder_ != null) {
-          return statesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(states_);
-        }
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder() {
-        return getStatesFieldBuilder().addBuilder(
-            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder(
-          int index) {
-        return getStatesFieldBuilder().addBuilder(
-            index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
-       */
-      public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder> 
-           getStatesBuilderList() {
-        return getStatesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> 
-          getStatesFieldBuilder() {
-        if (statesBuilder_ == null) {
-          statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>(
-                  states_,
-                  ((bitField0_ & 0x00000008) == 0x00000008),
-                  getParentForChildren(),
-                  isClean());
-          states_ = null;
-        }
-        return statesBuilder_;
-      }
 
-      // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.SensorChangeOverPeriod)
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code almaz2.domain_objects.SensorChangeOverPeriod}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder>
+                implements ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriodOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.class, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.Builder.class);
+            }
+
+            // Construct using ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                    getStatesFieldBuilder();
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                controlObjectId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                controlElementId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000002);
+                sensorId_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000004);
+                if (statesBuilder_ == null) {
+                    states_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000008);
+                } else {
+                    statesBuilder_.clear();
+                }
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod getDefaultInstanceForType() {
+                return ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.getDefaultInstance();
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod build() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod buildPartial() {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod result = new ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod(this);
+                int from_bitField0_ = bitField0_;
+                int to_bitField0_ = 0;
+                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                    to_bitField0_ |= 0x00000001;
+                }
+                result.controlObjectId_ = controlObjectId_;
+                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                    to_bitField0_ |= 0x00000002;
+                }
+                result.controlElementId_ = controlElementId_;
+                if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                    to_bitField0_ |= 0x00000004;
+                }
+                result.sensorId_ = sensorId_;
+                if (statesBuilder_ == null) {
+                    if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                        states_ = java.util.Collections.unmodifiableList(states_);
+                        bitField0_ = (bitField0_ & ~0x00000008);
+                    }
+                    result.states_ = states_;
+                } else {
+                    result.states_ = statesBuilder_.build();
+                }
+                result.bitField0_ = to_bitField0_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod) {
+                    return mergeFrom((ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod other) {
+                if (other == ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod.getDefaultInstance())
+                    return this;
+                if (other.hasControlObjectId()) {
+                    setControlObjectId(other.getControlObjectId());
+                }
+                if (other.hasControlElementId()) {
+                    setControlElementId(other.getControlElementId());
+                }
+                if (other.hasSensorId()) {
+                    setSensorId(other.getSensorId());
+                }
+                if (statesBuilder_ == null) {
+                    if (!other.states_.isEmpty()) {
+                        if (states_.isEmpty()) {
+                            states_ = other.states_;
+                            bitField0_ = (bitField0_ & ~0x00000008);
+                        } else {
+                            ensureStatesIsMutable();
+                            states_.addAll(other.states_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.states_.isEmpty()) {
+                        if (statesBuilder_.isEmpty()) {
+                            statesBuilder_.dispose();
+                            statesBuilder_ = null;
+                            states_ = other.states_;
+                            bitField0_ = (bitField0_ & ~0x00000008);
+                            statesBuilder_ =
+                                    com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                                            getStatesFieldBuilder() : null;
+                        } else {
+                            statesBuilder_.addAllMessages(other.states_);
+                        }
+                    }
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.SensorChangeOverPeriod) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            // optional uint32 control_object_id = 1;
+            private int controlObjectId_;
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public boolean hasControlObjectId() {
+                return ((bitField0_ & 0x00000001) == 0x00000001);
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public int getControlObjectId() {
+                return controlObjectId_;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public Builder setControlObjectId(int value) {
+                bitField0_ |= 0x00000001;
+                controlObjectId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 control_object_id = 1;</code>
+             */
+            public Builder clearControlObjectId() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+                controlObjectId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 control_element_id = 3;
+            private int controlElementId_;
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public boolean hasControlElementId() {
+                return ((bitField0_ & 0x00000002) == 0x00000002);
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public int getControlElementId() {
+                return controlElementId_;
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public Builder setControlElementId(int value) {
+                bitField0_ |= 0x00000002;
+                controlElementId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 control_element_id = 3;</code>
+             */
+            public Builder clearControlElementId() {
+                bitField0_ = (bitField0_ & ~0x00000002);
+                controlElementId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // optional uint32 sensor_id = 4;
+            private int sensorId_;
+
+            /**
+             * <code>optional uint32 sensor_id = 4;</code>
+             */
+            public boolean hasSensorId() {
+                return ((bitField0_ & 0x00000004) == 0x00000004);
+            }
+
+            /**
+             * <code>optional uint32 sensor_id = 4;</code>
+             */
+            public int getSensorId() {
+                return sensorId_;
+            }
+
+            /**
+             * <code>optional uint32 sensor_id = 4;</code>
+             */
+            public Builder setSensorId(int value) {
+                bitField0_ |= 0x00000004;
+                sensorId_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 sensor_id = 4;</code>
+             */
+            public Builder clearSensorId() {
+                bitField0_ = (bitField0_ & ~0x00000004);
+                sensorId_ = 0;
+                onChanged();
+                return this;
+            }
+
+            // repeated .almaz2.domain_objects.ElementState states = 5;
+            private java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> states_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureStatesIsMutable() {
+                if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+                    states_ = new java.util.ArrayList<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState>(states_);
+                    bitField0_ |= 0x00000008;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder> statesBuilder_;
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> getStatesList() {
+                if (statesBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(states_);
+                } else {
+                    return statesBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public int getStatesCount() {
+                if (statesBuilder_ == null) {
+                    return states_.size();
+                } else {
+                    return statesBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState getStates(int index) {
+                if (statesBuilder_ == null) {
+                    return states_.get(index);
+                } else {
+                    return statesBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder setStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.set(index, value);
+                    onChanged();
+                } else {
+                    statesBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder setStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder addStates(ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.add(value);
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder addStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState value) {
+                if (statesBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureStatesIsMutable();
+                    states_.add(index, value);
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder addStates(
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder addStates(
+                    int index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder builderForValue) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    statesBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder addAllStates(
+                    java.lang.Iterable<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState> values) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    super.addAll(values, states_);
+                    onChanged();
+                } else {
+                    statesBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder clearStates() {
+                if (statesBuilder_ == null) {
+                    states_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000008);
+                    onChanged();
+                } else {
+                    statesBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public Builder removeStates(int index) {
+                if (statesBuilder_ == null) {
+                    ensureStatesIsMutable();
+                    states_.remove(index);
+                    onChanged();
+                } else {
+                    statesBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder getStatesBuilder(
+                    int index) {
+                return getStatesFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder getStatesOrBuilder(
+                    int index) {
+                if (statesBuilder_ == null) {
+                    return states_.get(index);
+                } else {
+                    return statesBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public java.util.List<? extends ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+            getStatesOrBuilderList() {
+                if (statesBuilder_ != null) {
+                    return statesBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(states_);
+                }
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder() {
+                return getStatesFieldBuilder().addBuilder(
+                        ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder addStatesBuilder(
+                    int index) {
+                return getStatesFieldBuilder().addBuilder(
+                        index, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .almaz2.domain_objects.ElementState states = 5;</code>
+             */
+            public java.util.List<ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder>
+            getStatesBuilderList() {
+                return getStatesFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilder<
+                    ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>
+            getStatesFieldBuilder() {
+                if (statesBuilder_ == null) {
+                    statesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                            ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementState.Builder, ru.kodos.almaz2.domain_objects.ControlObjectChangeOverPeriodClass.ElementStateOrBuilder>(
+                            states_,
+                            ((bitField0_ & 0x00000008) == 0x00000008),
+                            getParentForChildren(),
+                            isClean());
+                    states_ = null;
+                }
+                return statesBuilder_;
+            }
+
+            // @@protoc_insertion_point(builder_scope:almaz2.domain_objects.SensorChangeOverPeriod)
+        }
+
+        static {
+            defaultInstance = new SensorChangeOverPeriod(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:almaz2.domain_objects.SensorChangeOverPeriod)
     }
+
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ElementState_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable;
+    private static com.google.protobuf.Descriptors.Descriptor
+            internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new SensorChangeOverPeriod(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\'control_object_change_over_period.prot" +
+                        "o\022\025almaz2.domain_objects\032\020properties.pro" +
+                        "to\"b\n\025ChangeOverPeriodIndex\022\n\n\002id\030\001 \001(\r\022" +
+                        "\021\n\tfrom_time\030\002 \001(\r\022\017\n\007to_time\030\003 \001(\r\022\031\n\021c" +
+                        "ontrol_object_id\030\004 \001(\r\"R\n\014ElementState\022\014" +
+                        "\n\004time\030\001 \001(\r\0224\n\005value\030\002 \001(\0132%.almaz2.dom" +
+                        "ain_objects.FieldTypeValue\"\214\001\n\036ControlEl" +
+                        "ementChangeOverPeriod\022\031\n\021control_object_" +
+                        "id\030\001 \001(\r\022\032\n\022control_element_id\030\003 \001(\r\0223\n\006" +
+                        "states\030\004 \003(\0132#.almaz2.domain_objects.Ele",
+                "mentState\"\227\001\n\026SensorChangeOverPeriod\022\031\n\021" +
+                        "control_object_id\030\001 \001(\r\022\032\n\022control_eleme" +
+                        "nt_id\030\003 \001(\r\022\021\n\tsensor_id\030\004 \001(\r\0223\n\006states" +
+                        "\030\005 \003(\0132#.almaz2.domain_objects.ElementSt" +
+                        "ateBD\n\036ru.kodos.almaz2.domain_objectsB\"C" +
+                        "ontrolObjectChangeOverPeriodClass"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor =
+                                getDescriptor().getMessageTypes().get(0);
+                        internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor,
+                                new java.lang.String[]{"Id", "FromTime", "ToTime", "ControlObjectId",});
+                        internal_static_almaz2_domain_objects_ElementState_descriptor =
+                                getDescriptor().getMessageTypes().get(1);
+                        internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ElementState_descriptor,
+                                new java.lang.String[]{"Time", "Value",});
+                        internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor =
+                                getDescriptor().getMessageTypes().get(2);
+                        internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor,
+                                new java.lang.String[]{"ControlObjectId", "ControlElementId", "States",});
+                        internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor =
+                                getDescriptor().getMessageTypes().get(3);
+                        internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable = new
+                                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                                internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor,
+                                new java.lang.String[]{"ControlObjectId", "ControlElementId", "SensorId", "States",});
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                                ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
+                        }, assigner
+                );
     }
 
-    // @@protoc_insertion_point(class_scope:almaz2.domain_objects.SensorChangeOverPeriod)
-  }
-
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ElementState_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\'control_object_change_over_period.prot" +
-      "o\022\025almaz2.domain_objects\032\020properties.pro" +
-      "to\"b\n\025ChangeOverPeriodIndex\022\n\n\002id\030\001 \001(\r\022" +
-      "\021\n\tfrom_time\030\002 \001(\r\022\017\n\007to_time\030\003 \001(\r\022\031\n\021c" +
-      "ontrol_object_id\030\004 \001(\r\"R\n\014ElementState\022\014" +
-      "\n\004time\030\001 \001(\r\0224\n\005value\030\002 \001(\0132%.almaz2.dom" +
-      "ain_objects.FieldTypeValue\"\214\001\n\036ControlEl" +
-      "ementChangeOverPeriod\022\031\n\021control_object_" +
-      "id\030\001 \001(\r\022\032\n\022control_element_id\030\003 \001(\r\0223\n\006" +
-      "states\030\004 \003(\0132#.almaz2.domain_objects.Ele",
-      "mentState\"\227\001\n\026SensorChangeOverPeriod\022\031\n\021" +
-      "control_object_id\030\001 \001(\r\022\032\n\022control_eleme" +
-      "nt_id\030\003 \001(\r\022\021\n\tsensor_id\030\004 \001(\r\0223\n\006states" +
-      "\030\005 \003(\0132#.almaz2.domain_objects.ElementSt" +
-      "ateBD\n\036ru.kodos.almaz2.domain_objectsB\"C" +
-      "ontrolObjectChangeOverPeriodClass"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ChangeOverPeriodIndex_descriptor,
-              new java.lang.String[] { "Id", "FromTime", "ToTime", "ControlObjectId", });
-          internal_static_almaz2_domain_objects_ElementState_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_almaz2_domain_objects_ElementState_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ElementState_descriptor,
-              new java.lang.String[] { "Time", "Value", });
-          internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_ControlElementChangeOverPeriod_descriptor,
-              new java.lang.String[] { "ControlObjectId", "ControlElementId", "States", });
-          internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_almaz2_domain_objects_SensorChangeOverPeriod_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_almaz2_domain_objects_SensorChangeOverPeriod_descriptor,
-              new java.lang.String[] { "ControlObjectId", "ControlElementId", "SensorId", "States", });
-          return null;
-        }
-      };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ru.kodos.almaz2.domain_objects.PropertiesClass.getDescriptor(),
-        }, assigner);
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

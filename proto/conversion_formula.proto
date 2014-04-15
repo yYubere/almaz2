@@ -3,47 +3,45 @@ package almaz2.domain_objects;
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ConversionFormulaClass";
 
 // арифметическая или логическая операция над аргументами формулы
-message ConversionOperation
-{
+message ConversionOperation {
   // перечисление возможных типов операций
-  enum Type
-  {
-	IF  = 1;  // arg1 ? arg2 : arg3 
-	EQ  = 2;  // arg1 == arg2
-	NE  = 3;  // arg1 != arg2
-	GT  = 4;  // arg1 > arg2
-	LT  = 5;  // arg1 < arg2
-	GE  = 6;  // arg1 >= arg2
-	LE  = 7;  // arg1 <= arg2
-	AND = 8;  // arg1 && arg2
-	OR  = 9;  // arg1 || arg2
-	SET = 10; // arg1
-	ADD = 11; // arg1 + arg2
-	SUB = 12; // arg1 - arg2
-	MUL = 13; // arg1 * arg2
-	DIV = 14; // arg1 / arg2
-	TAB = 15; // пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
+  enum Type {
+    IF = 1; // arg1 ? arg2 : arg3
+    EQ = 2; // arg1 == arg2
+    NE = 3; // arg1 != arg2
+    GT = 4; // arg1 > arg2
+    LT = 5; // arg1 < arg2
+    GE = 6; // arg1 >= arg2
+    LE = 7; // arg1 <= arg2
+    AND = 8; // arg1 && arg2
+    OR = 9; // arg1 || arg2
+    SET = 10; // arg1
+    ADD = 11; // arg1 + arg2
+    SUB = 12; // arg1 - arg2
+    MUL = 13; // arg1 * arg2
+    DIV = 14; // arg1 / arg2
+    TAB = 15; // пересчёт по таблице (arg1 - исходное значение, arg2 - таблица)
   }
-    
-  // описание аргумента операции
-  message Argument
-  {
-	// индекс аргумента, переданного в формулу
-	optional uint32 argument_index = 1;
 
-	// константное значение
-	optional FieldTypeValue constant = 2;
-  
-	// вложенная операция
-	optional ConversionOperation operation = 3;
+  // описание аргумента операции
+  message Argument {
+    // индекс аргумента, переданного в формулу
+    optional uint32 argument_index = 1;
+
+    // константное значение
+    optional FieldTypeValue constant = 2;
+
+    // вложенная операция
+    optional ConversionOperation operation = 3;
   }
 
   // тип операции
   optional Type type = 1;
-  
+
   // список аргументов
   repeated Argument arguments = 2;
 }

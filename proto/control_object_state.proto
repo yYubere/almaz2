@@ -1,15 +1,15 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ControlObjectStateClass";
 
-message ControlElementState
-{
-  message SensorState
-  {
+message ControlElementState {
+  message SensorState {
     // id датчика КЭ
     optional uint32 id = 1;
 
@@ -17,8 +17,7 @@ message ControlElementState
     optional FieldTypeValue value = 2;
   }
 
-  message ManagedElementState
-  {
+  message ManagedElementState {
     // id УЭ
     optional uint32 id = 1;
 
@@ -39,14 +38,13 @@ message ControlElementState
   repeated ManagedElementState managed_element_states = 4;
 }
 
-message ControlObjectState
-{
+message ControlObjectState {
   // id паспорта КО
   optional uint32 id = 1;
 
   // время изменения состояния (unix time)
   optional uint32 time = 2;
-  
+
   // Блок состояний КЭ
   repeated ControlElementState states = 3;
 }

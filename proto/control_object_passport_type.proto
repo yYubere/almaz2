@@ -1,76 +1,76 @@
 package almaz2.domain_objects;
 
 import "field_types.proto";
+
 import "properties.proto";
+
 import "control_object_equipment.proto";
+
 import "conversion_formula.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ControlObjectPassportTypeClass";
 
 // привязка сущностей к аргументам формулы пересчёта
-message ArgumentsBind
-{
+message ArgumentsBind {
   optional uint32 parent_id = 1;
   optional uint32 item_id = 2;
   optional string table_id = 3;
 }
 
 // правило пересчёта
-message ConversionRule
-{
+message ConversionRule {
   // формула пересчёта
   optional ConversionOperation formula = 1;
-  
+
   // привязка результата формулы к сущности
   optional ArgumentsBind result_bind = 2;
-  
+
   // привязки сущностей к аргументам формулы
   repeated ArgumentsBind arguments_bind = 3;
 }
 
 // описание контролируемого элемента
-message ControlElementDescription
-{
-    // id КЭ
-    optional uint32 id = 1;
+message ControlElementDescription {
+  // id КЭ
+  optional uint32 id = 1;
 
-    // id паспорта типа КЭ
-    optional string passport_type_id = 2;
+  // id паспорта типа КЭ
+  optional string passport_type_id = 2;
 
-    // имя КЭ
-    optional MultiLanguageString display_name = 3;
+  // имя КЭ
+  optional MultiLanguageString display_name = 3;
 
-    // значения характеристик
-    repeated FieldTypeValue values = 6;
+  // значения характеристик
+  repeated FieldTypeValue values = 6;
 }
 
 // паспорт типа КО
-message ControlObjectPassportType
-{
-    // id паспорта типа КО
-    optional string type_id = 1;
+message ControlObjectPassportType {
+  // id паспорта типа КО
+  optional string type_id = 1;
 
-    // id базового типа КО
-    optional string base_type_id = 2;
+  // id базового типа КО
+  optional string base_type_id = 2;
 
-    // имя типа
-    optional MultiLanguageString display_name = 4;
+  // имя типа
+  optional MultiLanguageString display_name = 4;
 
-    // блок характеристик
-    optional Properties properties = 5;
+  // блок характеристик
+  optional Properties properties = 5;
 
-    // оборудование КО
-    repeated ControlObjectEquipment equipments = 6;
+  // оборудование КО
+  repeated ControlObjectEquipment equipments = 6;
 
-    // описание контролируемого элемента (массив)
-    repeated ControlElementDescription control_elements = 7;
+  // описание контролируемого элемента (массив)
+  repeated ControlElementDescription control_elements = 7;
 
-    // правила пересчёта логических входов в контролируемый элемент
-    repeated ConversionRule sensors_rules = 8;
-    repeated ConversionRule control_elements_rules = 9;
+  // правила пересчёта логических входов в контролируемый элемент
+  repeated ConversionRule sensors_rules = 8;
+  repeated ConversionRule control_elements_rules = 9;
 
-    // правила пересчёта контролируемого элемента в управляемый элемент оборудования
-    repeated ConversionRule output_rules = 10;
+  // правила пересчёта контролируемого элемента в управляемый элемент оборудования
+  repeated ConversionRule output_rules = 10;
 
 }

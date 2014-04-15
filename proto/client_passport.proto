@@ -3,23 +3,23 @@ package almaz2.domain_objects;
 import "field_types.proto";
 
 option java_package = "ru.kodos.almaz2.domain_objects";
+
 option java_outer_classname = "ClientPassportClass";
 
-message ClientPassport
-{
-	// Идентификатор клиента.
-    optional uint32 passport_id = 1;
-	// id паспорта типа интерфейса
-    optional string passport_type_id = 2; // заглушка для унификации паспортов
-	
-	// отображаемое имя
-	optional MultiLanguageString display_name = 3;
-	
-	// описание
-	optional MultiLanguageString description = 4;
-	
-	// Публичный ключ клиента.
-    optional string public_key = 5;
-    // Временный ключ первичной авторизации.
-    optional string primary_key = 6;
+message ClientPassport {
+  // Идентификатор клиента.
+  optional uint32 passport_id = 1;
+  // id паспорта типа интерфейса
+  optional string passport_type_id = 2; // заглушка для унификации паспортов
+
+  // отображаемое имя
+  optional MultiLanguageString display_name = 3;
+
+  // описание
+  optional MultiLanguageString description = 4;
+
+  // Публичный ключ клиента.
+  optional string public_key = 5;
+  // Временный ключ первичной авторизации.
+  optional string primary_key = 6;
 }
